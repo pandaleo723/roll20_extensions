@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Roll20 Sheet Filler</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Roll20 Sheet Filler</h1>
+    <p class="hint">Open a character sheet on Roll20, paste JSON below, then click Fill.</p>
+
+    <label for="data">Character data (JSON)</label>
+    <textarea id="data" spellcheck="false"></textarea>
+
+    <div class="buttons">
+      <button id="fill">Fill sheet</button>
+      <button id="sample" class="secondary">Load sample</button>
+    </div>
+
+    <pre id="status"></pre>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

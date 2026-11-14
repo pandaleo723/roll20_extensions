@@ -1,0 +1,57 @@
+body {
+  width: 340px;
+  margin: 0;
+  padding: 12px;
+  font: 13px/1.4 system-ui, sans-serif;
+  color: #222;
+  background: #fff;
+}
+h1 {
+  font-size: 16px;
+  margin: 0 0 4px;
+}
+.hint {
+  margin: 0 0 10px;
+  color: #666;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  font: 12px/1.4 Consolas, monospace;
+  resize: vertical;
+}
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+button {
+  flex: 1;
+  padding: 6px;
+  border: 0;
+  border-radius: 4px;
+  background: #b5121b;
+  color: #fff;
+  cursor: pointer;
+}
+button.secondary {
+  background: #ddd;
+  color: #222;
+}
+#status {
+  white-space: pre-wrap;
+  margin: 10px 0 0;
+  font-size: 12px;
+}
+#status.error {
+  color: #b5121b;
+}
+#status.ok {
+  color: #1a7f37;
+}
