@@ -7,7 +7,15 @@
   </head>
   <body>
     <h1>Roll20 Sheet Filler</h1>
-    <p class="hint">Open a character sheet on Roll20, paste JSON below, then click Fill.</p>
+    <label for="lang">Spell language / 法术语言</label>
+    <select id="lang">
+      <option value="zh">中文</option>
+      <option value="en">English</option>
+    </select>
+    <p class="hint">Use the 📖 buttons in the sheet's Cantrips section to pick a spell.</p>
+
+    <hr />
+    <p class="hint">Or fill whole-sheet fields: paste JSON below, then click Fill.</p>
 
     <label for="data">Character data (JSON)</label>
     <textarea id="data" spellcheck="false"></textarea>

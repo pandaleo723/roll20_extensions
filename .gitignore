@@ -21,3 +21,9 @@ Thumbs.db
 # Env
 .env
 .env.*
+
+# Personal, non-redistributable game data (see data/README.md)
+data/local/
+
+# Saved Roll20 sheets for the local harness (Roll20 markup + character data)
+test/fixtures/

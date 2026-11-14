@@ -1,0 +1,28 @@
+body {
+  margin-right: 340px;
+  background: #fff;
+}
+#harness-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  overflow-y: auto;
+  z-index: 2147483000;
+  padding: 10px;
+  background: #1e1e1e;
+  color: #ddd;
+  font: 12px/1.4 Consolas, monospace;
+}
+#harness-bar ol {
+  padding-left: 18px;
+}
+#harness-bar li {
+  word-break: break-all;
+  margin-bottom: 2px;
+}
+#harness-bar button {
+  margin-left: 6px;
+  font: inherit;
+}

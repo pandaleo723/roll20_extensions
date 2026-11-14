@@ -19,6 +19,16 @@ label {
   font-weight: 600;
   margin-bottom: 4px;
 }
+select {
+  width: 100%;
+  margin-bottom: 6px;
+  font: inherit;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+}
 textarea {
   box-sizing: border-box;
   width: 100%;

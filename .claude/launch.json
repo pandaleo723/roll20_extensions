@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sheet-harness",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["tools/harness/serve.js"],
+      "port": 5179
+    }
+  ]
+}

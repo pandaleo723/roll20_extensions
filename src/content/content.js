@@ -1,57 +1,8 @@
-// Content script: runs inside every frame of app.roll20.net
-// (the character sheet usually lives in an iframe, hence "all_frames" in the manifest).
+// Content script entry point. Runs in every Roll20 frame; the character sheet itself lives
+// in a cross-origin iframe (storage.googleapis.com/roll20-cdn/.../legacy-sheets).
+// Helpers come from fields.js, spells.js, picker.js and sections.js (loaded first, see manifest).
 
-const LOG_PREFIX = "[Roll20 Sheet Filler]";
-console.log(LOG_PREFIX, "loaded in frame:", location.href);
-
-/**
- * Find the editable sheet fields for a Roll20 attribute name.
- * Legacy Roll20 sheets name their inputs "attr_<attribute>", e.g. attr_strength.
- * The same attribute often appears several times (PC / NPC / vehicle views,
- * hidden copies), so return every editable match, not just the first.
- */
-function findFields(attrName) {
-  const all = [
-    ...document.querySelectorAll(
-      `input[name="attr_${attrName}"], select[name="attr_${attrName}"], textarea[name="attr_${attrName}"]`
-    ),
-  ];
-  return all.filter((el) => !el.readOnly && !el.disabled);
-}
-
-/** Set a value and fire the events Roll20 listens for, so the change is saved. */
-function setFieldValue(el, value) {
-  if (el.type === "checkbox") {
-    el.checked = Boolean(value);
-  } else if (el.type === "radio") {
-    // Radios share a name; pick the one whose value matches.
-    const radio = document.querySelector(
-      `input[type="radio"][name="${el.name}"][value="${String(value)}"]`
-    );
-    if (!radio) return false;
-    radio.checked = true;
-    el = radio;
-  } else {
-    el.value = String(value);
-  }
-  el.dispatchEvent(new Event("input", { bubbles: true }));
-  el.dispatchEvent(new Event("change", { bubbles: true }));
-  return true;
-}
-
-/** Fill every key of `data` whose field exists in this frame. */
-function fillSheet(data) {
-  const filled = [];
-  const missing = [];
-  for (const [attrName, value] of Object.entries(data)) {
-    const els = findFields(attrName);
-    // Radios share one name: setFieldValue picks the right one, so call it once.
-    const targets = els[0]?.type === "radio" ? [els[0]] : els;
-    const ok = targets.map((el) => setFieldValue(el, value)).some(Boolean);
-    (ok ? filled : missing).push(attrName);
-  }
-  return { filled, missing };
-}
+console.log(R20F.LOG_PREFIX, "loaded in frame:", location.href.split("?")[0]);
 
 /** Debug helper: summarise what form fields this frame contains. */
 function describeFrame() {
@@ -60,34 +11,38 @@ function describeFrame() {
     frame: location.href.split("?")[0],
     totalFields: fields.length,
     attrFields: fields.filter((e) => e.name?.startsWith("attr_")).length,
-    sampleFields: fields.slice(0, 25).map((e) => ({
-      tag: e.tagName.toLowerCase(),
-      type: e.type,
-      name: e.name,
-      id: e.id,
-      class: String(e.className).slice(0, 60),
-    })),
+    repeatingSections: [...document.querySelectorAll(".repcontainer[data-groupname]")].map(
+      (c) => `${c.dataset.groupname} (${c.querySelectorAll(":scope > .repitem").length} rows)`
+    ),
     nestedIframes: [...document.querySelectorAll("iframe")].map((f) => f.src.split("?")[0]),
-    shadowHosts: [...document.querySelectorAll("*")].filter((e) => e.shadowRoot).length,
   };
 }
 
-// The sheet renders some time after the frame loads, so log a summary after a delay.
-setTimeout(() => console.log(LOG_PREFIX, "frame summary:", describeFrame()), 5000);
+const isSheetFrame = () => document.querySelector('[name^="attr_"]') !== null;
 
+// The sheet renders some time after the frame loads: poll for it (up to 60s).
+let sheetChecks = 0;
+const sheetTimer = setInterval(() => {
+  if (isSheetFrame()) {
+    clearInterval(sheetTimer);
+    console.log(R20F.LOG_PREFIX, "sheet frame summary:", describeFrame());
+    R20F.watchSections();
+  } else if (++sheetChecks >= 60) {
+    clearInterval(sheetTimer);
+  }
+}, 1000);
+
+// Popup "Fill sheet" (whole-sheet JSON fill)
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   if (message?.type !== "FILL_SHEET") return false;
 
-  const result = fillSheet(message.data);
-  console.log(LOG_PREFIX, "fill result:", result);
-  if (result.filled.length === 0) {
-    console.log(LOG_PREFIX, "nothing filled here; frame summary:", describeFrame());
-  }
+  const entries = Object.entries(message.data);
+  // The message reaches every frame; only the frame that holds the sheet answers.
+  if (R20F.countFields(document, entries.map(([k]) => k)) === 0) return false;
 
-  // The message reaches every frame; only the frame that actually holds
-  // the sheet answers, so the popup gets a meaningful reply.
-  if (result.filled.length > 0) {
+  R20F.fillFields(document, entries).then((result) => {
+    console.log(R20F.LOG_PREFIX, "fill result:", result);
     sendResponse(result);
-  }
-  return false;
+  });
+  return true; // async response
 });

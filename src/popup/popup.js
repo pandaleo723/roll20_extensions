@@ -30,6 +30,13 @@ chrome.storage.local.get(STORAGE_KEY).then((stored) => {
   dataEl.value = stored[STORAGE_KEY] ?? "";
 });
 
+// Spell language, shared with the in-sheet picker.
+const langEl = document.getElementById("lang");
+chrome.storage.sync.get("lang").then(({ lang }) => {
+  langEl.value = lang === "en" ? "en" : "zh";
+});
+langEl.addEventListener("change", () => chrome.storage.sync.set({ lang: langEl.value }));
+
 document.getElementById("sample").addEventListener("click", () => {
   dataEl.value = JSON.stringify(SAMPLE, null, 2);
 });
