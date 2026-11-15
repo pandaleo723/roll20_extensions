@@ -24,7 +24,36 @@ const INCLUDE = [
   ["data/srd"],
   ["data/README.md"],
   ["icons", (rel) => /^icon\d+\.png$/.test(path.basename(rel))], // not the SVG sources / promo tile
+  ["_locales"], // localized extension name/description (manifest __MSG_*__ placeholders)
 ];
+
+/**
+ * With "default_locale", Chrome requires _locales/<default>/messages.json, and every __MSG_key__
+ * in the manifest must resolve. Check each locale so a missing translation fails here, not in review.
+ */
+function checkLocales(manifest, stageDir) {
+  const keys = [...JSON.stringify(manifest).matchAll(/__MSG_(\w+)__/g)].map((m) => m[1]);
+  if (!manifest.default_locale) {
+    if (keys.length) fail(`manifest uses __MSG_${keys[0]}__ but has no "default_locale"`);
+    return [];
+  }
+  const dir = path.join(stageDir, "_locales");
+  if (!fs.existsSync(path.join(dir, manifest.default_locale, "messages.json"))) {
+    fail(`default_locale "${manifest.default_locale}" has no _locales/${manifest.default_locale}/messages.json`);
+  }
+  const locales = fs.readdirSync(dir);
+  for (const loc of locales) {
+    let messages;
+    try {
+      messages = JSON.parse(fs.readFileSync(path.join(dir, loc, "messages.json"), "utf8"));
+    } catch (err) {
+      fail(`_locales/${loc}/messages.json is not valid JSON: ${err.message}`);
+    }
+    const missing = keys.filter((k) => !messages[k]?.message);
+    if (missing.length) fail(`_locales/${loc}/messages.json is missing: ${missing.join(", ")}`);
+  }
+  return locales;
+}
 
 // Anything matching these (relative, forward slashes) must never be in the package.
 const FORBIDDEN = [
@@ -187,6 +216,9 @@ function main() {
     if (missing.length) fail(`files referenced by manifest.json are missing from the package:\n  ${missing.join("\n  ")}`);
 
     if (!manifest.icons) console.warn("package: WARNING: manifest.json has no \"icons\" (required by the Chrome Web Store)");
+
+    const locales = checkLocales(manifest, stage);
+    if (locales.length) console.log(`Locales: ${locales.join(", ")} (default: ${manifest.default_locale})`);
 
     fs.mkdirSync(DIST, { recursive: true });
     const zipPath = path.join(DIST, `roll20-utils-extension-${version}.zip`);

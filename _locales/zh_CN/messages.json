@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Roll20 Utils Extension（非官方）",
+    "description": "扩展名称（最多 75 个字符）"
+  },
+  "extDesc": {
+    "message": "测试版。非官方 Roll20 辅助工具：从可搜索的法术列表（中文 / English）选择法术，自动填入 D&D 5e 角色卡。",
+    "description": "简短描述（最多 132 个字符）"
+  },
+  "actionTitle": {
+    "message": "Roll20 Utils Extension（非官方）",
+    "description": "工具栏按钮提示"
+  }
+}

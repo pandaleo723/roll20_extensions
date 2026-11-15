@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Roll20 Utils Extension (Unofficial)",
-  "version": "0.3.0",
-  "description": "Beta. Unofficial helpers for Roll20: pick spells from a searchable list (中文 / English) to fill D&D 5e character sheets.",
+  "name": "__MSG_extName__",
+  "version": "0.3.1",
+  "default_locale": "en",
+  "description": "__MSG_extDesc__",
   "permissions": [
     "storage"
   ],
@@ -16,7 +17,7 @@
     "service_worker": "src/background/background.js"
   },
   "action": {
-    "default_title": "Roll20 Utils Extension (Unofficial)",
+    "default_title": "__MSG_actionTitle__",
     "default_popup": "src/popup/popup.html",
     "default_icon": {
       "16": "icons/icon16.png",

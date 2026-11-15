@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Roll20 Utils Extension (Unofficial)",
+    "description": "Extension name (Chrome Web Store, chrome://extensions). Max 75 characters."
+  },
+  "extDesc": {
+    "message": "Beta. Unofficial helpers for Roll20: pick spells from a searchable list (中文 / English) to fill D&D 5e character sheets.",
+    "description": "Short description (store summary). Max 132 characters."
+  },
+  "actionTitle": {
+    "message": "Roll20 Utils Extension (Unofficial)",
+    "description": "Toolbar button tooltip."
+  }
+}
