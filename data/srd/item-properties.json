@@ -3,7 +3,7 @@
   "id": "property:twoHanded",
   "type": "property",
   "key": "twoHanded",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 214,
   "name": {
@@ -11,15 +11,15 @@
    "zh": "双手"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "A Two-Handed weapon requires two hands when you attack with it.",
+   "zh": "用双手武器攻击时，你需要双手并用。"
   }
  },
  {
   "id": "property:ammunition",
   "type": "property",
   "key": "ammunition",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 213,
   "name": {
@@ -27,15 +27,15 @@
    "zh": "弹药"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.",
+   "zh": "使用具有弹药属性的武器发动远程攻击时，你必须拥有该武器需求的弹药。所需弹药的种类会与武器的射程写在一起。每次使用该武器攻击都会花费一枚弹药，且取出该弹药的行为视为此次攻击的一部分（你需要一只空手来为一把单手武器的弹药上膛或上弦）。在战斗结束后，你可以花费一分钟搜索战场，以回收你在战斗中所消耗的弹药的一半（向下取整），而剩下的那些弹药将会损失。"
   }
  },
  {
   "id": "property:finesse",
   "type": "property",
   "key": "finesse",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 213,
   "name": {
@@ -43,15 +43,15 @@
    "zh": "灵巧"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
+   "zh": "使用一把灵巧武器发动攻击时，你可以自由选择此次攻击检定与伤害掷骰使用力量调整值还是敏捷调整值。但是攻击检定与伤害掷骰必须使用同一个调整值。"
   }
  },
  {
   "id": "property:heavy",
   "type": "property",
   "key": "heavy",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 213,
   "name": {
@@ -59,15 +59,15 @@
    "zh": "重型"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13.",
+   "zh": "如果你的力量属性值低于 13 点，则你用重型近战武器发动的攻击检定具有劣势；如果你的敏捷属性值低于 13 点，则你用重型远程武器发动的攻击检定具有劣势。"
   }
  },
  {
   "id": "property:light",
   "type": "property",
   "key": "light",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 213,
   "name": {
@@ -75,15 +75,15 @@
    "zh": "轻型"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.",
+   "zh": "当你在自己回合中执行攻击动作，并用一把轻型武器发动一次攻击后，你可以在同一回合中用附赠动作发动一次额外的攻击。这次额外的攻击你必须使用另一把轻型武器发动，并且这次攻击的伤害无法加入你的属性调整值（除非该调整值为负数）。例如，若你在你的回合中执行了攻击动作，一只手手持短剑，另一只手手持匕首，而这两把武器均有轻型词条，则你可以使用你的动作和附赠动作，来用这两把武器各发动一次攻击。但你不能将力量或敏捷调整值加入附赠动作攻击武器的造成的伤害中（除非该调整值为负数）。"
   }
  },
  {
   "id": "property:loading",
   "type": "property",
   "key": "loading",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 214,
   "name": {
@@ -91,15 +91,15 @@
    "zh": "装填"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make.",
+   "zh": "当你使用动作、附赠动作或反应来射击装填类武器时，你只能发射一枚弹药，不管你通常可以进行多少次攻击。"
   }
  },
  {
   "id": "property:reach",
   "type": "property",
   "key": "reach",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 214,
   "name": {
@@ -107,15 +107,15 @@
    "zh": "触及"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it.",
+   "zh": "使用长兵器攻击时，你的触及范围增加5英尺，同时在确定你用它进行借机攻击的触及范围时也增加5英尺。"
   }
  },
  {
   "id": "property:thrown",
   "type": "property",
   "key": "thrown",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 214,
   "name": {
@@ -123,15 +123,15 @@
    "zh": "投掷"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon.",
+   "zh": "如果一把武器具有投掷属性，你可以把它投掷出去来发动一次远程攻击。同时，拔出这把武器可以视作这次攻击的一部分。如果投掷出去的武器是一把近战武器，则你在攻击检定和伤害掷骰中使用与你用其发动近战攻击时相同的属性调整值。"
   }
  },
  {
   "id": "property:versatile",
   "type": "property",
   "key": "versatile",
-  "srd52": false,
+  "srd52": true,
   "source": "XPHB",
   "page": 214,
   "name": {
@@ -139,8 +139,8 @@
    "zh": "多用"
   },
   "description": {
-   "en": "",
-   "zh": ""
+   "en": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack.",
+   "zh": "多用武器可以单手使用也可以双手使用。该词条后将跟随一个括号，其内的伤害数值即为双手持用该武器进行近战攻击时的伤害。"
   }
  },
  {

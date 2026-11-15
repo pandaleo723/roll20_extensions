@@ -66,6 +66,7 @@ var R20U = (globalThis.R20U ??= {});
       R20U.injectSectionButtons(MODULE_ID, [SECTION], {
         // Inventory rows have no ⚙ panel: their details open with the row's "i" toggle.
         rowPanel: ".subitem",
+        compact: true, // the inventory uses 9px text and 20px rows
         rowLabel: () => ({ text: R20U.ui(R20U.settings.lang).pickItem }),
         addLabel: () => ({ text: "📖 +", title: R20U.ui(R20U.settings.lang).addItem }),
         onRow: (groupName, row) => openItemPicker(groupName, row),

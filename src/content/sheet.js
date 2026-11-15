@@ -121,6 +121,20 @@ const BUTTON_CSS = `
     width: 22px; height: 22px; padding: 0; border-radius: 50%; text-align: center;
     font: italic 700 13px/20px Georgia, serif;
   }
+  /* Compact bar (small sections like the inventory): one bordered box at the section's text
+     size, holding the 📖 text button and a smaller ⓘ circle. */
+  .r20u-rowbar.compact {
+    display: flex; align-items: center; gap: 4px; width: max-content; height: 18px;
+    padding: 0 3px 0 0; border: 1px solid #b5121b; border-radius: 4px; background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  }
+  .r20u-rowbar.compact .r20u-btn { margin: 0; border: 0; box-shadow: none; background: transparent; }
+  .r20u-rowbar.compact .r20u-row { font-size: 10px; line-height: 18px; padding: 0 4px 0 6px; border-radius: 3px 0 0 3px; }
+  .r20u-rowbar.compact .r20u-row:hover { background: #fbeaea; }
+  .r20u-rowbar.compact .r20u-info {
+    width: 12px; height: 12px; border: 1px solid #b5121b; font-size: 9px; line-height: 11px;
+  }
+  .r20u-rowbar.compact .r20u-info:hover { background: #b5121b; color: #fff; }
   .r20u-btn.r20u-add { margin: 0 0 0 6px; padding: 2px 6px; vertical-align: middle; }
   @media print { .r20u-btn { display: none !important; } }
 `;
@@ -165,16 +179,17 @@ function applyLabel(btn) {
  *  - next to Roll20's "+Add" ("📖 +")                        -> onAdd(groupName)
  *  - optional ⓘ next to the row button ("i" in a circle)     -> onRowInfo(groupName, row)
  * `rowPanel` = selector of the row's edit panel (default ".options"; the inventory uses
- * ".subitem", shown by the row's "i" toggle). Idempotent; skips print layouts.
+ * ".subitem", shown by the row's "i" toggle); `compact` = small bar for sections with small text.
+ * Idempotent; skips print layouts.
  */
 R20U.injectSectionButtons = function (moduleId, groupNames,
-  { rowLabel, addLabel, onRow, onAdd, onRowInfo, infoLabel, rowPanel = ".options" }) {
+  { rowLabel, addLabel, onRow, onAdd, onRowInfo, infoLabel, rowPanel = ".options", compact = false }) {
   for (const groupName of groupNames) {
     for (const row of R20U.sectionRows(groupName)) {
       if (row.querySelector(`.r20u-rowbar[data-module="${moduleId}"]`)) continue;
       const panel = row.querySelector(rowPanel); // only visible while the gear / "i" is open
       if (!panel) continue;
-      const bar = Object.assign(document.createElement("div"), { className: "r20u-rowbar" });
+      const bar = Object.assign(document.createElement("div"), { className: compact ? "r20u-rowbar compact" : "r20u-rowbar" });
       bar.dataset.module = moduleId;
       bar.append(R20U.makeButton(moduleId, "row", rowLabel, () => onRow(groupName, row)));
       if (onRowInfo) {

@@ -178,8 +178,9 @@ function buildLookups(en, zh) {
       id: `property:${def.key}`,
       type: "property",
       key: def.key,
-      // Property rules text has no srd52 flag of its own in 5etools: the SRD build keeps only names.
-      srd52: false,
+      // 5etools doesn't flag these srd52, but the weapon properties are in SRD 5.2 ("Weapons" >
+      // "Properties", same rules as PHB 2024; 5etools marks them basicRules2024), so they ship.
+      srd52: Boolean(p.srd52 || p.basicRules2024),
       source: p.source,
       page: p.page,
       name: loc(def.en, def.zh),
