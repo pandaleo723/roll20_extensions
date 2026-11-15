@@ -1,0 +1,8822 @@
+[
+ {
+  "id": "battleaxe|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Battleaxe",
+   "zh": "战斧"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "Versatile",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Slashing, Alternate Damage: 1d10, Alternate Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "1d10",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "versatile",
+     "name": {
+      "en": "Versatile",
+      "zh": "多用"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Topple",
+     "zh": "失衡"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+     "zh": "如果你用此武器击中一个生物，你可以迫使该生物进行一次体质豁免检定（DC 8 加上用于进行攻击掷骰的能力调整值以及你的熟练加值）。豁免失败时，该生物获得倒地状态。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "blowgun|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Blowgun",
+   "zh": "吹箭筒"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "Ammunition, Loading",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1, Damage Type: Piercing, Range: 25/100",
+  "weapon": {
+   "category": "martial",
+   "melee": false,
+   "ranged": true,
+   "damage": "1",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 25,
+    "long": 100
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "loading",
+     "name": {
+      "en": "Loading",
+      "zh": "装填"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "needle",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "club|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Club",
+   "zh": "短棒"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "Light",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d4, Damage Type: Bludgeoning",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d4",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Slow",
+     "zh": "缓速"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+     "zh": "如果你用这个武器击中一个生物并对其造成伤害，你可以将其速度减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，速度的减少不会超过10英尺。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "dagger|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Dagger",
+   "zh": "匕首"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "Finesse, Light, Thrown",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d4, Damage Type: Piercing, Range: 20/60",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d4",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 20,
+    "long": 60
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "finesse",
+     "name": {
+      "en": "Finesse",
+      "zh": "灵巧"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "thrown",
+     "name": {
+      "en": "Thrown",
+      "zh": "投掷"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Nick",
+     "zh": "迅击"
+    },
+    "description": {
+     "en": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+     "zh": "当你进行轻型属性的额外攻击时，你可以将其作为攻击动作的一部分进行，而不是作为附赠动作。每个回合中你只能进行这一次额外攻击。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str-or-dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "dart|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Dart",
+   "zh": "飞镖"
+  },
+  "weight": 0.25,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "Finesse, Thrown",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d4, Damage Type: Piercing, Range: 20/60",
+  "weapon": {
+   "category": "simple",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d4",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 20,
+    "long": 60
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "finesse",
+     "name": {
+      "en": "Finesse",
+      "zh": "灵巧"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "thrown",
+     "name": {
+      "en": "Thrown",
+      "zh": "投掷"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str-or-dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "flail|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Flail",
+   "zh": "链枷"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Bludgeoning",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Sap",
+     "zh": "削弱"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+     "zh": "当你用这把武器命中一个生物时，直到你的下一回合开始前，该生物的下一次攻击检定将具有劣势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "glaive|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Glaive",
+   "zh": "长柄刀"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 2000,
+   "en": "20 GP",
+   "zh": "20 金币"
+  },
+  "roll20Properties": "Heavy, Reach, Two-Handed",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d10, Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d10",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": true,
+   "properties": [
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "reach",
+     "name": {
+      "en": "Reach",
+      "zh": "触及"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Graze",
+     "zh": "擦掠"
+    },
+    "description": {
+     "en": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+     "zh": "当你以这把武器对一个生物发动的攻击检定失手时，你仍可以对目标生物造成一定伤害。其数额等同于此次攻击所使用的属性调整值，其伤害类型与你所使用的武器一致，并且这个伤害只能通过属性调整值的提高而增长。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "greataxe|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Greataxe",
+   "zh": "巨斧"
+  },
+  "weight": 7,
+  "cost": {
+   "cp": 3000,
+   "en": "30 GP",
+   "zh": "30 金币"
+  },
+  "roll20Properties": "Heavy, Two-Handed",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d12, Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d12",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Cleave",
+     "zh": "横扫"
+    },
+    "description": {
+     "en": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+     "zh": "当你用这把武器进行的近战攻击检定命中一个生物时，你可以用该武器对位于该生物 5 尺内，且同样身处你触及范围内的另一生物再进行一次近战攻击检定。命中时，第二个生物也会受到此武器的伤害，但你无法将你的属性调整值加入这次伤害中（除非该调整值为负数）。每个回合中你只能发动一次横扫的额外攻击。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "greatclub|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Greatclub",
+   "zh": "巨棒"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 20,
+   "en": "2 SP",
+   "zh": "2 银币"
+  },
+  "roll20Properties": "Two-Handed",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Bludgeoning",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Push",
+     "zh": "推离"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+     "zh": "当你用这把武器命中一个生物时，如果该生物的体型不超过大型，则你可以将这个生物从你身边直线推离至多 10 尺。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "greatsword|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Greatsword",
+   "zh": "巨剑"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "Heavy, Two-Handed",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 2d6, Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "2d6",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Graze",
+     "zh": "擦掠"
+    },
+    "description": {
+     "en": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+     "zh": "当你以这把武器对一个生物发动的攻击检定失手时，你仍可以对目标生物造成一定伤害。其数额等同于此次攻击所使用的属性调整值，其伤害类型与你所使用的武器一致，并且这个伤害只能通过属性调整值的提高而增长。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "halberd|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Halberd",
+   "zh": "长戟"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 2000,
+   "en": "20 GP",
+   "zh": "20 金币"
+  },
+  "roll20Properties": "Heavy, Reach, Two-Handed",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d10, Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d10",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": true,
+   "properties": [
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "reach",
+     "name": {
+      "en": "Reach",
+      "zh": "触及"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Cleave",
+     "zh": "横扫"
+    },
+    "description": {
+     "en": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+     "zh": "当你用这把武器进行的近战攻击检定命中一个生物时，你可以用该武器对位于该生物 5 尺内，且同样身处你触及范围内的另一生物再进行一次近战攻击检定。命中时，第二个生物也会受到此武器的伤害，但你无法将你的属性调整值加入这次伤害中（除非该调整值为负数）。每个回合中你只能发动一次横扫的额外攻击。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "hand crossbow|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Hand Crossbow",
+   "zh": "手弩"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 7500,
+   "en": "75 GP",
+   "zh": "75 金币"
+  },
+  "roll20Properties": "Ammunition, Light, Loading",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d6, Damage Type: Piercing, Range: 30/120",
+  "weapon": {
+   "category": "martial",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d6",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 30,
+    "long": 120
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "loading",
+     "name": {
+      "en": "Loading",
+      "zh": "装填"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "bolt",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "handaxe|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Handaxe",
+   "zh": "手斧"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "Light, Thrown",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d6, Damage Type: Slashing, Range: 20/60",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d6",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 20,
+    "long": 60
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "thrown",
+     "name": {
+      "en": "Thrown",
+      "zh": "投掷"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "heavy crossbow|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Heavy Crossbow",
+   "zh": "重弩"
+  },
+  "weight": 18,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "Ammunition, Heavy, Loading, Two-Handed",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d10, Damage Type: Piercing, Range: 100/400",
+  "weapon": {
+   "category": "martial",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d10",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 100,
+    "long": 400
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "loading",
+     "name": {
+      "en": "Loading",
+      "zh": "装填"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Push",
+     "zh": "推离"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+     "zh": "当你用这把武器命中一个生物时，如果该生物的体型不超过大型，则你可以将这个生物从你身边直线推离至多 10 尺。"
+    }
+   },
+   "ammoType": "bolt",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "javelin|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Javelin",
+   "zh": "标枪"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 50,
+   "en": "5 SP",
+   "zh": "5 银币"
+  },
+  "roll20Properties": "Thrown",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d6, Damage Type: Piercing, Range: 30/120",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d6",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 30,
+    "long": 120
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "thrown",
+     "name": {
+      "en": "Thrown",
+      "zh": "投掷"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Slow",
+     "zh": "缓速"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+     "zh": "如果你用这个武器击中一个生物并对其造成伤害，你可以将其速度减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，速度的减少不会超过10英尺。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "lance|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Lance",
+   "zh": "骑枪"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "Heavy, Reach, Two-Handed (unless mounted)",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d10, Damage Type: Piercing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d10",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": true,
+   "properties": [
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "reach",
+     "name": {
+      "en": "Reach",
+      "zh": "触及"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "unless mounted",
+      "zh": "骑乘时除外"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Topple",
+     "zh": "失衡"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+     "zh": "如果你用此武器击中一个生物，你可以迫使该生物进行一次体质豁免检定（DC 8 加上用于进行攻击掷骰的能力调整值以及你的熟练加值）。豁免失败时，该生物获得倒地状态。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "A Lance requires two hands to wield when you aren't mounted.",
+   "zh": "当你没有骑乘时，长矛需要双手来挥舞。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "light crossbow|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Light Crossbow",
+   "zh": "轻弩"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "Ammunition, Loading, Two-Handed",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d8, Damage Type: Piercing, Range: 80/320",
+  "weapon": {
+   "category": "simple",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d8",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 80,
+    "long": 320
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "loading",
+     "name": {
+      "en": "Loading",
+      "zh": "装填"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Slow",
+     "zh": "缓速"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+     "zh": "如果你用这个武器击中一个生物并对其造成伤害，你可以将其速度减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，速度的减少不会超过10英尺。"
+    }
+   },
+   "ammoType": "bolt",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "light hammer|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Light Hammer",
+   "zh": "轻锤"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "Light, Thrown",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d4, Damage Type: Bludgeoning, Range: 20/60",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d4",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 20,
+    "long": 60
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "thrown",
+     "name": {
+      "en": "Thrown",
+      "zh": "投掷"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Nick",
+     "zh": "迅击"
+    },
+    "description": {
+     "en": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+     "zh": "当你进行轻型属性的额外攻击时，你可以将其作为攻击动作的一部分进行，而不是作为附赠动作。每个回合中你只能进行这一次额外攻击。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "longbow|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Longbow",
+   "zh": "长弓"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "Ammunition, Heavy, Two-Handed",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d8, Damage Type: Piercing, Range: 150/600",
+  "weapon": {
+   "category": "martial",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d8",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 150,
+    "long": 600
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Slow",
+     "zh": "缓速"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+     "zh": "如果你用这个武器击中一个生物并对其造成伤害，你可以将其速度减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，速度的减少不会超过10英尺。"
+    }
+   },
+   "ammoType": "arrow",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "longsword|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Longsword",
+   "zh": "长剑"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 1500,
+   "en": "15 GP",
+   "zh": "15 金币"
+  },
+  "roll20Properties": "Versatile",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Slashing, Alternate Damage: 1d10, Alternate Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "1d10",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "versatile",
+     "name": {
+      "en": "Versatile",
+      "zh": "多用"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Sap",
+     "zh": "削弱"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+     "zh": "当你用这把武器命中一个生物时，直到你的下一回合开始前，该生物的下一次攻击检定将具有劣势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "mace|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Mace",
+   "zh": "硬头锤"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d6, Damage Type: Bludgeoning",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d6",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Sap",
+     "zh": "削弱"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+     "zh": "当你用这把武器命中一个生物时，直到你的下一回合开始前，该生物的下一次攻击检定将具有劣势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "maul|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Maul",
+   "zh": "巨锤"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "Heavy, Two-Handed",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 2d6, Damage Type: Bludgeoning",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "2d6",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Topple",
+     "zh": "失衡"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+     "zh": "如果你用此武器击中一个生物，你可以迫使该生物进行一次体质豁免检定（DC 8 加上用于进行攻击掷骰的能力调整值以及你的熟练加值）。豁免失败时，该生物获得倒地状态。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "morningstar|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Morningstar",
+   "zh": "钉头锤"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 1500,
+   "en": "15 GP",
+   "zh": "15 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Piercing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Sap",
+     "zh": "削弱"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+     "zh": "当你用这把武器命中一个生物时，直到你的下一回合开始前，该生物的下一次攻击检定将具有劣势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "musket|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Musket",
+   "zh": "滑膛枪"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 50000,
+   "en": "500 GP",
+   "zh": "500 金币"
+  },
+  "roll20Properties": "Ammunition, Loading, Two-Handed",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d12, Damage Type: Piercing, Range: 40/120",
+  "weapon": {
+   "category": "martial",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d12",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 40,
+    "long": 120
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "loading",
+     "name": {
+      "en": "Loading",
+      "zh": "装填"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Slow",
+     "zh": "缓速"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+     "zh": "如果你用这个武器击中一个生物并对其造成伤害，你可以将其速度减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，速度的减少不会超过10英尺。"
+    }
+   },
+   "ammoType": "firearm bullet",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "pike|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Pike",
+   "zh": "长矛"
+  },
+  "weight": 18,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "Heavy, Reach, Two-Handed",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d10, Damage Type: Piercing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d10",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": true,
+   "properties": [
+    {
+     "key": "heavy",
+     "name": {
+      "en": "Heavy",
+      "zh": "重型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "reach",
+     "name": {
+      "en": "Reach",
+      "zh": "触及"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Push",
+     "zh": "推离"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+     "zh": "当你用这把武器命中一个生物时，如果该生物的体型不超过大型，则你可以将这个生物从你身边直线推离至多 10 尺。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "pistol|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Pistol",
+   "zh": "手枪"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 25000,
+   "en": "250 GP",
+   "zh": "250 金币"
+  },
+  "roll20Properties": "Ammunition, Loading",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d10, Damage Type: Piercing, Range: 30/90",
+  "weapon": {
+   "category": "martial",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d10",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 30,
+    "long": 90
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "loading",
+     "name": {
+      "en": "Loading",
+      "zh": "装填"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "firearm bullet",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "quarterstaff|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Quarterstaff",
+   "zh": "长棍"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 20,
+   "en": "2 SP",
+   "zh": "2 银币"
+  },
+  "roll20Properties": "Versatile",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d6, Damage Type: Bludgeoning, Alternate Damage: 1d8, Alternate Damage Type: Bludgeoning",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d6",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "1d8",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "versatile",
+     "name": {
+      "en": "Versatile",
+      "zh": "多用"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Topple",
+     "zh": "失衡"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+     "zh": "如果你用此武器击中一个生物，你可以迫使该生物进行一次体质豁免检定（DC 8 加上用于进行攻击掷骰的能力调整值以及你的熟练加值）。豁免失败时，该生物获得倒地状态。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "rapier|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Rapier",
+   "zh": "刺剑"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "Finesse",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Piercing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "finesse",
+     "name": {
+      "en": "Finesse",
+      "zh": "灵巧"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str-or-dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "scimitar|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Scimitar",
+   "zh": "弯刀"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "Finesse, Light",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d6, Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d6",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "finesse",
+     "name": {
+      "en": "Finesse",
+      "zh": "灵巧"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Nick",
+     "zh": "迅击"
+    },
+    "description": {
+     "en": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+     "zh": "当你进行轻型属性的额外攻击时，你可以将其作为攻击动作的一部分进行，而不是作为附赠动作。每个回合中你只能进行这一次额外攻击。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str-or-dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "shortbow|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Shortbow",
+   "zh": "短弓"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "Ammunition, Two-Handed",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d6, Damage Type: Piercing, Range: 80/320",
+  "weapon": {
+   "category": "simple",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d6",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 80,
+    "long": 320
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "twoHanded",
+     "name": {
+      "en": "Two-Handed",
+      "zh": "双手"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "arrow",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "shortsword|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Shortsword",
+   "zh": "短剑"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "Finesse, Light",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d6, Damage Type: Piercing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d6",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "finesse",
+     "name": {
+      "en": "Finesse",
+      "zh": "灵巧"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Vex",
+     "zh": "侵扰"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+     "zh": "当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有优势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str-or-dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "sickle|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Sickle",
+   "zh": "镰刀"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "Light",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d4, Damage Type: Slashing",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d4",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "light",
+     "name": {
+      "en": "Light",
+      "zh": "轻型"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Nick",
+     "zh": "迅击"
+    },
+    "description": {
+     "en": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+     "zh": "当你进行轻型属性的额外攻击时，你可以将其作为攻击动作的一部分进行，而不是作为附赠动作。每个回合中你只能进行这一次额外攻击。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "sling|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "R",
+   "en": "Ranged Weapon",
+   "zh": "远程武器"
+  },
+  "name": {
+   "en": "Sling",
+   "zh": "投石索"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "Ammunition",
+  "roll20Modifiers": "Item Type: Ranged Weapon, Damage: 1d4, Damage Type: Bludgeoning, Range: 30/120",
+  "weapon": {
+   "category": "simple",
+   "melee": false,
+   "ranged": true,
+   "damage": "1d4",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "",
+   "range": {
+    "normal": 30,
+    "long": 120
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "ammunition",
+     "name": {
+      "en": "Ammunition",
+      "zh": "弹药"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Slow",
+     "zh": "缓速"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+     "zh": "如果你用这个武器击中一个生物并对其造成伤害，你可以将其速度减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，速度的减少不会超过10英尺。"
+    }
+   },
+   "ammoType": "sling bullet",
+   "ability": "dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "spear|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Spear",
+   "zh": "矛"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "Thrown, Versatile",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d6, Damage Type: Piercing, Alternate Damage: 1d8, Alternate Damage Type: Piercing, Range: 20/60",
+  "weapon": {
+   "category": "simple",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d6",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "1d8",
+   "range": {
+    "normal": 20,
+    "long": 60
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "thrown",
+     "name": {
+      "en": "Thrown",
+      "zh": "投掷"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "versatile",
+     "name": {
+      "en": "Versatile",
+      "zh": "多用"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Sap",
+     "zh": "削弱"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+     "zh": "当你用这把武器命中一个生物时，直到你的下一回合开始前，该生物的下一次攻击检定将具有劣势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "trident|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Trident",
+   "zh": "三叉戟"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "Thrown, Versatile",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Piercing, Alternate Damage: 1d10, Alternate Damage Type: Piercing, Range: 20/60",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "1d10",
+   "range": {
+    "normal": 20,
+    "long": 60
+   },
+   "reach": false,
+   "properties": [
+    {
+     "key": "thrown",
+     "name": {
+      "en": "Thrown",
+      "zh": "投掷"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "versatile",
+     "name": {
+      "en": "Versatile",
+      "zh": "多用"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Topple",
+     "zh": "失衡"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+     "zh": "如果你用此武器击中一个生物，你可以迫使该生物进行一次体质豁免检定（DC 8 加上用于进行攻击掷骰的能力调整值以及你的熟练加值）。豁免失败时，该生物获得倒地状态。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "war pick|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "War Pick",
+   "zh": "战镐"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "Versatile",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Piercing, Alternate Damage: 1d10, Alternate Damage Type: Piercing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "piercing",
+    "zh": "穿刺"
+   },
+   "versatileDamage": "1d10",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "versatile",
+     "name": {
+      "en": "Versatile",
+      "zh": "多用"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Sap",
+     "zh": "削弱"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+     "zh": "当你用这把武器命中一个生物时，直到你的下一回合开始前，该生物的下一次攻击检定将具有劣势。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "warhammer|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Warhammer",
+   "zh": "战锤"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 1500,
+   "en": "15 GP",
+   "zh": "15 金币"
+  },
+  "roll20Properties": "Versatile",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d8, Damage Type: Bludgeoning, Alternate Damage: 1d10, Alternate Damage Type: Bludgeoning",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d8",
+   "damageType": {
+    "en": "bludgeoning",
+    "zh": "钝击"
+   },
+   "versatileDamage": "1d10",
+   "range": null,
+   "reach": false,
+   "properties": [
+    {
+     "key": "versatile",
+     "name": {
+      "en": "Versatile",
+      "zh": "多用"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Push",
+     "zh": "推离"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+     "zh": "当你用这把武器命中一个生物时，如果该生物的体型不超过大型，则你可以将这个生物从你身边直线推离至多 10 尺。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "whip|xphb",
+  "source": "XPHB",
+  "page": 215,
+  "srd52": true,
+  "kind": "weapon",
+  "type": {
+   "code": "M",
+   "en": "Melee Weapon",
+   "zh": "近战武器"
+  },
+  "name": {
+   "en": "Whip",
+   "zh": "鞭子"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "Finesse, Reach",
+  "roll20Modifiers": "Item Type: Melee Weapon, Damage: 1d4, Damage Type: Slashing",
+  "weapon": {
+   "category": "martial",
+   "melee": true,
+   "ranged": false,
+   "damage": "1d4",
+   "damageType": {
+    "en": "slashing",
+    "zh": "挥砍"
+   },
+   "versatileDamage": "",
+   "range": null,
+   "reach": true,
+   "properties": [
+    {
+     "key": "finesse",
+     "name": {
+      "en": "Finesse",
+      "zh": "灵巧"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    },
+    {
+     "key": "reach",
+     "name": {
+      "en": "Reach",
+      "zh": "触及"
+     },
+     "note": {
+      "en": "",
+      "zh": ""
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     }
+    }
+   ],
+   "mastery": {
+    "srd52": true,
+    "name": {
+     "en": "Slow",
+     "zh": "缓速"
+    },
+    "description": {
+     "en": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+     "zh": "如果你用这个武器击中一个生物并对其造成伤害，你可以将其速度减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，速度的减少不会超过10英尺。"
+    }
+   },
+   "ammoType": "",
+   "ability": "str-or-dex"
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "breastplate|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "MA",
+   "en": "Medium Armor",
+   "zh": "中甲"
+  },
+  "name": {
+   "en": "Breastplate",
+   "zh": "胸甲"
+  },
+  "weight": 20,
+  "cost": {
+   "cp": 40000,
+   "en": "400 GP",
+   "zh": "400 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Medium Armor, AC: 14",
+  "armor": {
+   "category": "medium",
+   "ac": 14,
+   "dexMax": 2,
+   "strength": null,
+   "stealthDisadvantage": false
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "chain mail|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "HA",
+   "en": "Heavy Armor",
+   "zh": "重甲"
+  },
+  "name": {
+   "en": "Chain Mail",
+   "zh": "链甲"
+  },
+  "weight": 55,
+  "cost": {
+   "cp": 7500,
+   "en": "75 GP",
+   "zh": "75 金币"
+  },
+  "roll20Properties": "Stealth Disadvantage",
+  "roll20Modifiers": "Item Type: Heavy Armor, AC: 16",
+  "armor": {
+   "category": "heavy",
+   "ac": 16,
+   "dexMax": 0,
+   "strength": 13,
+   "stealthDisadvantage": true
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "chain shirt|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "MA",
+   "en": "Medium Armor",
+   "zh": "中甲"
+  },
+  "name": {
+   "en": "Chain Shirt",
+   "zh": "链甲衫"
+  },
+  "weight": 20,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Medium Armor, AC: 13",
+  "armor": {
+   "category": "medium",
+   "ac": 13,
+   "dexMax": 2,
+   "strength": null,
+   "stealthDisadvantage": false
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "half plate armor|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "MA",
+   "en": "Medium Armor",
+   "zh": "中甲"
+  },
+  "name": {
+   "en": "Half Plate Armor",
+   "zh": "半身板甲"
+  },
+  "weight": 40,
+  "cost": {
+   "cp": 75000,
+   "en": "750 GP",
+   "zh": "750 金币"
+  },
+  "roll20Properties": "Stealth Disadvantage",
+  "roll20Modifiers": "Item Type: Medium Armor, AC: 15",
+  "armor": {
+   "category": "medium",
+   "ac": 15,
+   "dexMax": 2,
+   "strength": null,
+   "stealthDisadvantage": true
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "hide armor|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "MA",
+   "en": "Medium Armor",
+   "zh": "中甲"
+  },
+  "name": {
+   "en": "Hide Armor",
+   "zh": "兽皮甲"
+  },
+  "weight": 12,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Medium Armor, AC: 12",
+  "armor": {
+   "category": "medium",
+   "ac": 12,
+   "dexMax": 2,
+   "strength": null,
+   "stealthDisadvantage": false
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "leather armor|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "LA",
+   "en": "Light Armor",
+   "zh": "轻甲"
+  },
+  "name": {
+   "en": "Leather Armor",
+   "zh": "皮甲"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Light Armor, AC: 11",
+  "armor": {
+   "category": "light",
+   "ac": 11,
+   "dexMax": null,
+   "strength": null,
+   "stealthDisadvantage": false
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "padded armor|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "LA",
+   "en": "Light Armor",
+   "zh": "轻甲"
+  },
+  "name": {
+   "en": "Padded Armor",
+   "zh": "布甲"
+  },
+  "weight": 8,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "Stealth Disadvantage",
+  "roll20Modifiers": "Item Type: Light Armor, AC: 11",
+  "armor": {
+   "category": "light",
+   "ac": 11,
+   "dexMax": null,
+   "strength": null,
+   "stealthDisadvantage": true
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "plate armor|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "HA",
+   "en": "Heavy Armor",
+   "zh": "重甲"
+  },
+  "name": {
+   "en": "Plate Armor",
+   "zh": "板甲"
+  },
+  "weight": 65,
+  "cost": {
+   "cp": 150000,
+   "en": "1500 GP",
+   "zh": "1500 金币"
+  },
+  "roll20Properties": "Stealth Disadvantage",
+  "roll20Modifiers": "Item Type: Heavy Armor, AC: 18",
+  "armor": {
+   "category": "heavy",
+   "ac": 18,
+   "dexMax": 0,
+   "strength": 15,
+   "stealthDisadvantage": true
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "ring mail|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "HA",
+   "en": "Heavy Armor",
+   "zh": "重甲"
+  },
+  "name": {
+   "en": "Ring Mail",
+   "zh": "环甲"
+  },
+  "weight": 40,
+  "cost": {
+   "cp": 3000,
+   "en": "30 GP",
+   "zh": "30 金币"
+  },
+  "roll20Properties": "Stealth Disadvantage",
+  "roll20Modifiers": "Item Type: Heavy Armor, AC: 14",
+  "armor": {
+   "category": "heavy",
+   "ac": 14,
+   "dexMax": 0,
+   "strength": null,
+   "stealthDisadvantage": true
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "scale mail|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "MA",
+   "en": "Medium Armor",
+   "zh": "中甲"
+  },
+  "name": {
+   "en": "Scale Mail",
+   "zh": "鳞甲"
+  },
+  "weight": 45,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "Stealth Disadvantage",
+  "roll20Modifiers": "Item Type: Medium Armor, AC: 14",
+  "armor": {
+   "category": "medium",
+   "ac": 14,
+   "dexMax": 2,
+   "strength": null,
+   "stealthDisadvantage": true
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "splint armor|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "HA",
+   "en": "Heavy Armor",
+   "zh": "重甲"
+  },
+  "name": {
+   "en": "Splint Armor",
+   "zh": "板条甲"
+  },
+  "weight": 60,
+  "cost": {
+   "cp": 20000,
+   "en": "200 GP",
+   "zh": "200 金币"
+  },
+  "roll20Properties": "Stealth Disadvantage",
+  "roll20Modifiers": "Item Type: Heavy Armor, AC: 17",
+  "armor": {
+   "category": "heavy",
+   "ac": 17,
+   "dexMax": 0,
+   "strength": 15,
+   "stealthDisadvantage": true
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "studded leather armor|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "armor",
+  "type": {
+   "code": "LA",
+   "en": "Light Armor",
+   "zh": "轻甲"
+  },
+  "name": {
+   "en": "Studded Leather Armor",
+   "zh": "镶钉皮甲"
+  },
+  "weight": 13,
+  "cost": {
+   "cp": 4500,
+   "en": "45 GP",
+   "zh": "45 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Light Armor, AC: 12",
+  "armor": {
+   "category": "light",
+   "ac": 12,
+   "dexMax": null,
+   "strength": null,
+   "stealthDisadvantage": false
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "shield|xphb",
+  "source": "XPHB",
+  "page": 219,
+  "srd52": true,
+  "kind": "shield",
+  "type": {
+   "code": "S",
+   "en": "Shield",
+   "zh": "盾牌"
+  },
+  "name": {
+   "en": "Shield",
+   "zh": "盾牌"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Shield, AC: 2",
+  "armor": {
+   "category": "shield",
+   "ac": 2,
+   "dexMax": null,
+   "strength": null,
+   "stealthDisadvantage": false
+  },
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "arrow|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Arrow",
+   "zh": "箭"
+  },
+  "weight": 0.05,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "description": {
+   "en": "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nArrows are typically stored in a Quiver (bought separately).",
+   "zh": "箭是与具有弹药特性的武器一起使用来进行远程攻击的。每次使用该武器攻击时，你都会消耗一件弹药。从箭袋、箭盒或其他容器中取出弹药是攻击动作的一部分（你需要一只空闲的手来装填单手武器）。在战斗结束时，你可以通过花一分钟时间搜索战场来回收你消耗的一半弹药。\n箭矢通常存放在箭袋中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "arrows (20)|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Arrows (20)",
+   "zh": "箭矢 (20)"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "contents": [
+   {
+    "id": "arrow|xphb",
+    "quantity": 20
+   }
+  ],
+  "description": {
+   "en": "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nArrows are typically stored in a Quiver (bought separately).",
+   "zh": "箭是与具有弹药特性的武器一起使用来进行远程攻击的。每次使用该武器攻击时，你都会消耗一件弹药。从箭袋、箭盒或其他容器中取出弹药是攻击动作的一部分（你需要一只空闲的手来装填单手武器）。在战斗结束时，你可以通过花一分钟时间搜索战场来回收你消耗的一半弹药。\n箭矢通常存放在箭袋中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "bolt|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Bolt",
+   "zh": "弩矢"
+  },
+  "weight": 0.075,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "description": {
+   "en": "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nBolts are typically stored in a Crossbow Bolt Case (bought separately).",
+   "zh": "弩箭是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。\n弩矢通常存放在 弩矢匣 中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "bolts (20)|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Bolts (20)",
+   "zh": "弩矢（20支）"
+  },
+  "weight": 1.5,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "contents": [
+   {
+    "id": "bolt|xphb",
+    "quantity": 20
+   }
+  ],
+  "description": {
+   "en": "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nBolts are typically stored in a Crossbow Bolt Case (bought separately).",
+   "zh": "弩箭是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。\n弩矢通常存放在 弩矢匣 中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "firearm bullet|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Firearm Bullet",
+   "zh": "枪械子弹"
+  },
+  "weight": 0.2,
+  "cost": {
+   "cp": 30,
+   "en": "3 SP",
+   "zh": "3 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "description": {
+   "en": "Firearm Bullets are destroyed upon use in a modern firearm.",
+   "zh": "枪械子弹在现代枪械中使用后会被摧毁。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "firearm bullets (10)|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Firearm Bullets (10)",
+   "zh": "枪械子弹 (10)"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 300,
+   "en": "3 GP",
+   "zh": "3 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "contents": [
+   {
+    "id": "firearm bullet|xphb",
+    "quantity": 10
+   }
+  ],
+  "description": {
+   "en": "Firearm Bullets are destroyed upon use in a modern firearm.",
+   "zh": "枪械子弹在现代枪械中使用后会被摧毁。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "needle|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Needle",
+   "zh": "针"
+  },
+  "weight": 0.02,
+  "cost": {
+   "cp": 2,
+   "en": "2 CP",
+   "zh": "2 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "description": {
+   "en": "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nNeedles are typically stored in a Pouch (bought separately).",
+   "zh": "吹箭针是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。\n针通常存放在小包 中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "needles (50)|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Needles (50)",
+   "zh": "吹矢（50）"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "contents": [
+   {
+    "id": "needle|xphb",
+    "quantity": 50
+   }
+  ],
+  "description": {
+   "en": "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nNeedles are typically stored in a Pouch (bought separately).",
+   "zh": "吹箭针是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。\n针通常存放在小包 中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "sling bullet|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Sling Bullet",
+   "zh": "投石索子弹"
+  },
+  "weight": 0.075,
+  "cost": {
+   "cp": 0.2,
+   "en": "0.2 CP",
+   "zh": "0.2 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "description": {
+   "en": "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nSling Bullets are typically stored in a Pouch (bought separately).",
+   "zh": "投石索子弹是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。\n投石索子弹通常存放在小包 中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "sling bullets (20)|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "ammunition",
+  "type": {
+   "code": "A",
+   "en": "Ammunition",
+   "zh": "弹药"
+  },
+  "name": {
+   "en": "Sling Bullets (20)",
+   "zh": "投石索子弹(20)"
+  },
+  "weight": 1.5,
+  "cost": {
+   "cp": 4,
+   "en": "4 CP",
+   "zh": "4 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "Item Type: Ammunition",
+  "contents": [
+   {
+    "id": "sling bullet|xphb",
+    "quantity": 20
+   }
+  ],
+  "description": {
+   "en": "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nSling Bullets are typically stored in a Pouch (bought separately).",
+   "zh": "投石索子弹是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。\n投石索子弹通常存放在小包 中（需单独购买）。"
+  },
+  "translator": ""
+ },
+ {
+  "id": "amulet|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Amulet",
+   "zh": "护符"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "For an Amulet to be an effective Holy Symbol, it must be worn or held.",
+   "zh": "为了让护符成为一个有效的圣徽，它必须被佩戴或手持。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "crystal|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Crystal",
+   "zh": "水晶"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "emblem|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Emblem",
+   "zh": "纹章"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "For an Emblem to be an effective Holy Symbol, it must be borne on fabric (such as a tabard or banner) or a Shield.",
+   "zh": "为了使纹章成为一个有效的圣徽，它必须被挂在到织物上（比如外衣或旗帜）或者是一个盾牌上。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "orb|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Orb",
+   "zh": "法球"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 2000,
+   "en": "20 GP",
+   "zh": "20 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "reliquary|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Reliquary",
+   "zh": "圣物匣"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "For a Reliquary to be an effective Holy Symbol, it must be held.",
+   "zh": "为了使圣物匣成为一个有效的圣徽，它必须被手持。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "rod|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Rod",
+   "zh": "权杖"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "sprig of mistletoe|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Sprig of Mistletoe",
+   "zh": "槲寄生枝条"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "staff|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Staff",
+   "zh": "法杖"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "wand|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Wand",
+   "zh": "魔杖"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "wooden staff|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Wooden Staff",
+   "zh": "木质法杖"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": ""
+ },
+ {
+  "id": "yew wand|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "focus",
+  "type": {
+   "code": "SCF",
+   "en": "Spellcasting Focus",
+   "zh": "法器"
+  },
+  "name": {
+   "en": "Yew Wand",
+   "zh": "紫杉魔杖"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "alchemist's supplies|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Alchemist's Supplies",
+   "zh": "炼金工具"
+  },
+  "weight": 8,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Intelligence\n• Utilize: Identify a substance (DC 15), or start a fire (DC 15)\n• Craft: Acid, Alchemist's Fire, Component Pouch, Oil, Paper, Perfume",
+   "zh": "• 属性： 智力\n• 操作： 辨析一种物质（DC 15），或生起一场火（DC 15）\n• 制造： 强酸, 炽火胶, 材料包, 燃油, 纸张, 香水"
+  },
+  "translator": ""
+ },
+ {
+  "id": "bagpipes|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Bagpipes",
+   "zh": "风笛"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 3000,
+   "en": "30 GP",
+   "zh": "30 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "brewer's supplies|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Brewer's Supplies",
+   "zh": "酿酒工具"
+  },
+  "weight": 9,
+  "cost": {
+   "cp": 2000,
+   "en": "20 GP",
+   "zh": "20 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Intelligence\n• Utilize: Detect poisoned drink (DC 15), or identify alcohol (DC 10)\n• Craft: Antitoxin",
+   "zh": "• 属性： 智力\n• 操作： 检测饮品是否下毒（DC 15），或辨识酒精（DC 10）\n• 制造： 抗毒剂"
+  },
+  "translator": ""
+ },
+ {
+  "id": "calligrapher's supplies|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Calligrapher's Supplies",
+   "zh": "书法工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Write text with impressive flourishes that guard against forgery (DC 15)\n• Craft: Ink, Spell Scroll",
+   "zh": "• 属性： 敏捷\n• 操作： 以华丽的字迹撰写文字防止造假（DC 15）\n• 制造： 墨水, 法术卷轴"
+  },
+  "translator": ""
+ },
+ {
+  "id": "carpenter's tools|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Carpenter's Tools",
+   "zh": "木匠工具"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 800,
+   "en": "8 GP",
+   "zh": "8 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Strength\n• Utilize: Seal or pry open a door or container (DC 20)\n• Craft: Club, Greatclub, Quarterstaff, Barrel, Chest, Ladder, Pole, Portable Ram, Torch",
+   "zh": "• 属性： 力量\n• 操作： 封死或撬开一扇门或一个容器（DC 20）\n• 制造： 短棒, 巨棒, 长棍, 木桶, 箱子, 梯子, 长杆, 便携式攻城锤, 火把"
+  },
+  "translator": ""
+ },
+ {
+  "id": "cartographer's tools|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Cartographer's Tools",
+   "zh": "制图工具"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 1500,
+   "en": "15 GP",
+   "zh": "15 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Draft a map of a small area (DC 15)\n• Craft: Map",
+   "zh": "• 属性： 感知\n• 操作： 为一小片区域绘制地图（DC 15）\n• 制造： 地图"
+  },
+  "translator": ""
+ },
+ {
+  "id": "cobbler's tools|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Cobbler's Tools",
+   "zh": "鞋匠工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Modify footwear to give Advantage on the wearer's next Dexterity (Acrobatics) check (DC 10)\n• Craft: Climber's Kit",
+   "zh": "• 属性： 敏捷\n• 操作： 改造足具来为穿戴者的下一次敏捷（特技）检定提供优势（DC 10）\n• 制造： 攀爬工具"
+  },
+  "translator": ""
+ },
+ {
+  "id": "cook's utensils|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Cook's Utensils",
+   "zh": "厨师工具"
+  },
+  "weight": 8,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Improve food's flavor (DC 10), or detect spoiled or poisoned food (DC 15)\n• Craft: Rations",
+   "zh": "• 属性： 感知\n• 操作： 改善食物风味（DC 10），检查食物是否腐坏或有毒（DC 15）\n• 制造： 口粮"
+  },
+  "translator": ""
+ },
+ {
+  "id": "dice set|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "GS",
+   "en": "Gaming Set",
+   "zh": "赌具"
+  },
+  "name": {
+   "en": "Dice Set",
+   "zh": "骰子组"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Discern whether someone is cheating (DC 10), or win the game (DC 20)",
+   "zh": "• 属性： 感知\n• 操作： 判断某人是否作弊（DC 10），或赢得游戏（DC 20）"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "disguise kit|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "T",
+   "en": "Tool",
+   "zh": "工具"
+  },
+  "name": {
+   "en": "Disguise Kit",
+   "zh": "易容工具"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Apply makeup (DC 10)\n• Craft: Costume",
+   "zh": "• 属性： 魅力\n• 操作： 化妆（DC 10）\n• 制造： 戏服"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "dragonchess set|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "GS",
+   "en": "Gaming Set",
+   "zh": "赌具"
+  },
+  "name": {
+   "en": "Dragonchess Set",
+   "zh": "龙棋组"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Discern whether someone is cheating (DC 10), or win the game (DC 20)",
+   "zh": "• 属性： 感知\n• 操作： 判断某人是否作弊（DC 10），或赢得游戏（DC 20）"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "drum|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Drum",
+   "zh": "鼓"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 600,
+   "en": "6 GP",
+   "zh": "6 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "dulcimer|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Dulcimer",
+   "zh": "扬琴"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "flute|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Flute",
+   "zh": "长笛"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "forgery kit|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "T",
+   "en": "Tool",
+   "zh": "工具"
+  },
+  "name": {
+   "en": "Forgery Kit",
+   "zh": "文书伪造工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 1500,
+   "en": "15 GP",
+   "zh": "15 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Mimic 10 or fewer words of someone else's handwriting (DC 15), or duplicate a wax seal (DC 20)",
+   "zh": "• 属性： 敏捷\n• 操作： 模仿其他人的笔迹，至多10个单词（DC 15），或伪造一份火漆（DC 20）"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "glassblower's tools|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Glassblower's Tools",
+   "zh": "玻璃匠工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 3000,
+   "en": "30 GP",
+   "zh": "30 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Intelligence\n• Utilize: Discern what a glass object held in the past 24 hours (DC 15)\n• Craft: Glass Bottle, Magnifying Glass, Spyglass, Vial",
+   "zh": "• 属性： 智力\n• 操作： 判断一个玻璃物件在过去24小时内盛过什么内容物（DC 15）\n• 制造： 玻璃瓶, 放大镜, 望远镜, 小瓶"
+  },
+  "translator": ""
+ },
+ {
+  "id": "herbalism kit|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "T",
+   "en": "Tool",
+   "zh": "工具"
+  },
+  "name": {
+   "en": "Herbalism Kit",
+   "zh": "草药工具"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Intelligence\n• Utilize: Identify a plant (DC 10)\n• Craft: Antitoxin, Candle, Healer's Kit, Potion of Healing",
+   "zh": "• 属性： 智力\n• 操作： 辨认植物（DC 10）\n• 制造： 抗毒剂, 蜡烛, 医疗包, 治疗药水"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "horn|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Horn",
+   "zh": "号角"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 300,
+   "en": "3 GP",
+   "zh": "3 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "jeweler's tools|xphb",
+  "source": "XPHB",
+  "page": 220,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Jeweler's Tools",
+   "zh": "珠宝匠工具"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Intelligence\n• Utilize: Discern a gem's value (DC 15)\n• Craft: Arcane Focus, Holy Symbol",
+   "zh": "• 属性： 智力\n• 操作： 判断珠宝价值（DC 15）\n• 制造： 奥术法器, 圣徽"
+  },
+  "translator": ""
+ },
+ {
+  "id": "leatherworker's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Leatherworker's Tools",
+   "zh": "皮匠工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Add a design to a leather item (DC 10)\n• Craft: Sling, Whip, Hide Armor, Leather Armor, Studded Leather Armor, Backpack, Crossbow Bolt Case, Map or Scroll Case, Parchment, Pouch, Quiver, Waterskin",
+   "zh": "• 属性： 敏捷\n• 操作： 对一个皮制品进行图案设计 (DC 10)\n• 制造： 投石索, 鞭子, 兽皮甲, 皮甲, 镶钉皮甲, 背包, 弩矢匣, 地图或卷轴匣, 羊皮纸, 小包, 箭袋, 水袋"
+  },
+  "translator": ""
+ },
+ {
+  "id": "lute|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Lute",
+   "zh": "鲁特琴"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 3500,
+   "en": "35 GP",
+   "zh": "35 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "lyre|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Lyre",
+   "zh": "里拉琴"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 3000,
+   "en": "30 GP",
+   "zh": "30 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "mason's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Mason's Tools",
+   "zh": "石匠工具"
+  },
+  "weight": 8,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Strength\n• Utilize: Chisel a symbol or hole in stone (DC 10)\n• Craft: Block and Tackle",
+   "zh": "• 属性： 力量\n• 操作： 在石头上凿出一个符号标志或一个洞（DC 10）\n• 制造： 滑轮组"
+  },
+  "translator": ""
+ },
+ {
+  "id": "navigator's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "T",
+   "en": "Tool",
+   "zh": "工具"
+  },
+  "name": {
+   "en": "Navigator's Tools",
+   "zh": "领航工具"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Plot a course (DC 10), or determine position by stargazing (DC 15)",
+   "zh": "• 属性： 感知\n• 操作： 计划路线（DC 10），或通过观星判断位置（DC 15）"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "painter's supplies|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Painter's Supplies",
+   "zh": "画家工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Paint a recognizable image of something you've seen (DC 10)\n• Craft: Druidic Focus, Holy Symbol",
+   "zh": "• 属性： 感知\n• 操作： 画出你所见过的某个事物的可辨图像（DC 10）\n• 制造： 德鲁伊法器, 圣徽"
+  },
+  "translator": ""
+ },
+ {
+  "id": "pan flute|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Pan Flute",
+   "zh": "排箫"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 1200,
+   "en": "12 GP",
+   "zh": "12 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "playing cards|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "GS",
+   "en": "Gaming Set",
+   "zh": "赌具"
+  },
+  "name": {
+   "en": "Playing Cards",
+   "zh": "纸牌"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 50,
+   "en": "5 SP",
+   "zh": "5 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Discern whether someone is cheating (DC 10), or win the game (DC 20)",
+   "zh": "• 属性： 感知\n• 操作： 判断某人是否作弊（DC 10），或赢得游戏（DC 20）"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "poisoner's kit|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "T",
+   "en": "Tool",
+   "zh": "工具"
+  },
+  "name": {
+   "en": "Poisoner's Kit",
+   "zh": "毒药工具"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Intelligence\n• Utilize: Detect a poisoned object (DC 10)\n• Craft: Basic Poison",
+   "zh": "• 属性： 智力\n• 操作： 侦测有毒物件（DC 10）\n• 制造： 基础毒药"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "potter's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Potter's Tools",
+   "zh": "陶匠工具"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Intelligence\n• Utilize: Discern what a ceramic object held in the past 24 hours (DC 15)\n• Craft: Jug, Lamp",
+   "zh": "• 属性： 智力\n• 操作： 判断一个陶瓷物件在过去 24 小时内盛过什么内容物（DC 15）\n• 制造： 壶, 油灯"
+  },
+  "translator": ""
+ },
+ {
+  "id": "shawm|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Shawm",
+   "zh": "芦笛"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "smith's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Smith's Tools",
+   "zh": "铁匠工具"
+  },
+  "weight": 8,
+  "cost": {
+   "cp": 2000,
+   "en": "20 GP",
+   "zh": "20 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Strength\n• Utilize: Pry open a door or container (DC 20)\n• Craft: Any Melee weapon (except Club, Greatclub, Quarterstaff, and Whip), Medium armor (except Hide), Heavy armor, Ball Bearings, Bucket, Caltrops, Chain, Crowbar, Firearm Bullets, Grappling Hook, Iron Pot, Iron Spikes, Sling Bullets",
+   "zh": "• 属性： 力量\n• 操作： 撬开一扇门或容器（DC 20）\n• 制造： 任意近战武器（除了短棒，巨棒，长棍和鞭子）、中甲（除了兽皮甲）、重甲、滚珠、吊桶、铁蒺藜、链条、撬棍、枪械子弹、爪钩、铁壶、铁钉(组)、投石索子弹"
+  },
+  "translator": ""
+ },
+ {
+  "id": "thieves' tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "T",
+   "en": "Tool",
+   "zh": "工具"
+  },
+  "name": {
+   "en": "Thieves' Tools",
+   "zh": "盗贼工具"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Pick a lock (DC 15), or disarm a trap (DC 15)",
+   "zh": "• 属性： 敏捷\n• 操作： 开锁（DC 15），或解除陷阱（DC 15）"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "three-dragon ante set|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "GS",
+   "en": "Gaming Set",
+   "zh": "赌具"
+  },
+  "name": {
+   "en": "Three-Dragon Ante Set",
+   "zh": "整副三龙牌"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Wisdom\n• Utilize: Discern whether someone is cheating (DC 10), or win the game (DC 20)",
+   "zh": "• 属性： 感知\n• 操作： 判断某人是否作弊（DC 10），或赢得游戏（DC 20）"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "tinker's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Tinker's Tools",
+   "zh": "修补工具"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Assemble a Tiny item composed of scrap, which falls apart in 1 minute (DC 20)\n• Craft: Musket, Pistol, Bell, Bullseye Lantern, Flask, Hooded Lantern, Hunting Trap, Lock, Manacles, Mirror, Shovel, Signal Whistle, Tinderbox",
+   "zh": "• 属性： 敏捷\n• 操作： 用废料组装出一个微型物品，这个物品会在一分钟后散架。（DC 20）\n• 制造： 滑膛枪, 手枪, 铃铛, 牛眼提灯, 扁瓶, 附盖提灯, 捕猎陷阱, 锁, 镣铐, 镜子, 铲子, 信号笛, 火绒盒"
+  },
+  "translator": ""
+ },
+ {
+  "id": "viol|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "INS",
+   "en": "Instrument",
+   "zh": "乐器"
+  },
+  "name": {
+   "en": "Viol",
+   "zh": "提琴"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 3000,
+   "en": "30 GP",
+   "zh": "30 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Charisma\n• Utilize: Play a known tune (DC 10), or improvise a song (DC 15)",
+   "zh": "• 属性： 魅力\n• 操作： 演奏一首已知曲目（DC 10），或即兴创作一首歌曲（DC 15）"
+  },
+  "translator": ""
+ },
+ {
+  "id": "weaver's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Weaver's Tools",
+   "zh": "织布工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Mend a tear in clothing (DC 10), or sew a Tiny design (DC 10)\n• Craft: Padded Armor, Basket, Bedroll, Blanket, Fine Clothes, Net, Robe, Rope, Sack, String, Tent, Traveler's Clothes",
+   "zh": "• 属性： 敏捷\n• 操作： 修补衣服上的破口（DC 10），或是缝制一个微型图案（DC 10）\n• 制造： 布甲, 篮子, 铺盖, 毯子, 高档服装, 捕网, 法袍, 绳索, 麻袋, 细线, 帐篷, 旅行服装"
+  },
+  "translator": ""
+ },
+ {
+  "id": "woodcarver's tools|xphb",
+  "source": "XPHB",
+  "page": 221,
+  "srd52": true,
+  "kind": "tool",
+  "type": {
+   "code": "AT",
+   "en": "Artisan's Tools",
+   "zh": "工匠工具"
+  },
+  "name": {
+   "en": "Woodcarver's Tools",
+   "zh": "木雕工具"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "• Ability: Dexterity\n• Utilize: Carve a pattern in wood (DC 10)\n• Craft: Club, Greatclub, Quarterstaff, Ranged weapons (except Pistol, Musket, and Sling), Arcane Focus, Arrows, Bolts, Druidic Focus, Ink Pen, Needles",
+   "zh": "• 属性： 敏捷\n• 操作： 在木头上雕刻图案（DC 10）\n• 制造： 短棒, 巨棒, 长棍, 远程武器（除手枪, 滑膛枪, 和投石索外）, 奥术法器, 箭矢, 弩箭, 德鲁伊法器, 墨水笔, 针刺"
+  },
+  "translator": ""
+ },
+ {
+  "id": "acid|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Acid",
+   "zh": "强酸"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage.",
+   "zh": "当你执行攻击动作时，你可以将你的一次攻击替换为丢出一小瓶强酸。你可以选择位于你20尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（DC 8+你的敏捷调整值+你的熟练加值），否则承受2d6点强酸伤害。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "alchemist's fire|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Alchemist's Fire",
+   "zh": "炽火胶"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning.",
+   "zh": "当你执行攻击动作时，你可以将你的一次攻击替换为丢出一扁瓶炽火胶。你可以选择位于你20尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（DC 8+你的敏捷调整值+你的熟练加值），否则承受1d4点火焰伤害并开始燃烧。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "ale (mug)|xphb",
+  "source": "XPHB",
+  "page": 231,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "FD",
+   "en": "Food and Drink",
+   "zh": "食物和饮品"
+  },
+  "name": {
+   "en": "Ale (mug)",
+   "zh": "麦酒（马克杯）"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 4,
+   "en": "4 CP",
+   "zh": "4 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "antitoxin|xphb",
+  "source": "XPHB",
+  "page": 222,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Antitoxin",
+   "zh": "抗毒剂"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour.",
+   "zh": "以一个附赠动作，你可以喝下一小瓶抗毒剂来使你在避免或结束中毒状态的豁免中具有优势，持续一小时。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "backpack|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Backpack",
+   "zh": "背包"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.",
+   "zh": "一个背包最多能装入 30 磅重 1 立方尺大的东西。背包也能当作鞍囊使用。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "ball bearings|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Ball Bearings",
+   "zh": "滚珠"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings.",
+   "zh": "以一个操作动作，你能把一小包滚珠撒至地面，并覆盖你周围 10 尺内的一处 10 尺方形区域。任何生物每回合首次进入这片区域时都必须通过一次DC 10的敏捷豁免，否则陷入倒地状态。重新收集这些滚珠需要花费 10 分钟时间。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "barrel|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Barrel",
+   "zh": "木桶"
+  },
+  "weight": 70,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods.",
+   "zh": "一个木桶能够至多装入 40 加仑的液体或 4 立方尺的干燥货物。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "basic poison|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Basic Poison",
+   "zh": "基础毒药"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 10000,
+   "en": "100 GP",
+   "zh": "100 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Bonus Action, you can use a vial of Basic Poison to coat one weapon or up to three pieces of ammunition. A creature that takes Piercing or Slashing damage from the poisoned weapon or ammunition takes an extra 1d4 Poison damage. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+   "zh": "以一个附赠动作，你可以将一小瓶基础毒药涂抹在一把武器或至多三枚弹药上。当一个生物受到由涂过毒的武器或弹药所造成的穿刺或劈砍伤害时，该生物将受到额外1d4点毒素伤害。毒药一旦被涂抹，毒效只会持续1分钟或直至造成了额外伤害。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "basket|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Basket",
+   "zh": "篮子"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 40,
+   "en": "4 SP",
+   "zh": "4 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Basket holds up to 40 pounds within 2 cubic feet.",
+   "zh": "一个篮子能够至多装入 40 磅重 2 立方尺大的东西。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "bedroll|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Bedroll",
+   "zh": "铺盖"
+  },
+  "weight": 7,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the Dungeon Master's Guide).",
+   "zh": "一卷铺盖能睡下一个小型或中型生物。躺在铺盖中时，你自动通过抵抗极度寒冷的豁免检定（详见城主指南）。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "bell|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Bell",
+   "zh": "铃铛"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away.",
+   "zh": "以一个操作动作，你可以摇响一个铃铛，铃铛会发出 60 尺内都能够听到的声音。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "blanket|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Blanket",
+   "zh": "毯子"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 50,
+   "en": "5 SP",
+   "zh": "5 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "While wrapped in a blanket, you have Advantage on saving throws against extreme cold (see the Dungeon Master's Guide).",
+   "zh": "包裹在毯子中期间，你在抵抗极度寒冷的豁免检定上具有优势（详见城主指南）。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "block and tackle|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Block and Tackle",
+   "zh": "滑轮组"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Block and Tackle allows you to hoist up to four times the weight you can normally lift.",
+   "zh": "滑轮组允许你提起你正常能提动的四倍重量的物品。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "book|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Book",
+   "zh": "书籍"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic.",
+   "zh": "一本书会记载虚构或非虚构的内容。如果你在某些事物上参考了一本内容准确而非虚构的书，你在相关事物上的智力（奥秘、历史、自然或宗教）检定则获得 +5 的加值。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "bread (loaf)|xphb",
+  "source": "XPHB",
+  "page": 231,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "FD",
+   "en": "Food and Drink",
+   "zh": "食物和饮品"
+  },
+  "name": {
+   "en": "Bread (loaf)",
+   "zh": "面包（一块）"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 2,
+   "en": "2 CP",
+   "zh": "2 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "bucket|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Bucket",
+   "zh": "吊桶"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Bucket holds up to half a cubic foot of contents.",
+   "zh": "一个吊桶能装入至多半立方尺的东西。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "bullseye lantern|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Bullseye Lantern",
+   "zh": "牛眼提灯"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Bullseye Lantern burns Oil as fuel to cast Bright Light in a 60-foot Cone and Dim Light for an additional 60 feet.",
+   "zh": "一盏牛眼提灯使用燃油作为燃料，点着时能够发出60尺锥状区域的明亮光照以及额外60尺的微光光照。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "burglar's pack|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Burglar's Pack",
+   "zh": "窃贼套组"
+  },
+  "weight": 47.5,
+  "cost": {
+   "cp": 1600,
+   "en": "16 GP",
+   "zh": "16 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "backpack|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "ball bearings|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "bell|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "candle|xphb",
+    "quantity": 10
+   },
+   {
+    "id": "crowbar|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "hooded lantern|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "oil|xphb",
+    "quantity": 7
+   },
+   {
+    "id": "rations|xphb",
+    "quantity": 5
+   },
+   {
+    "id": "rope|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "tinderbox|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "waterskin|xphb",
+    "quantity": 1
+   }
+  ],
+  "description": {
+   "en": "A Burglar's Pack contains the following items: Backpack, Ball Bearings, Bell, 10 Candles, Crowbar, Hooded Lantern, 7 flasks of Oil, 5 days of Rations, Rope, Tinderbox, and Waterskin.",
+   "zh": "窃贼套组包含以下物品：背包、滚珠、铃铛、10 根蜡烛、撬棍、附盖提灯、7 扁瓶燃油、五天份的口粮、绳索、火绒盒和水袋。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "caltrops|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Caltrops",
+   "zh": "铁蒺藜"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.",
+   "zh": "以一个操作动作，你能把一包铁蒺撒至地面并覆盖你周围5尺内的一处5尺方形区域。任何生物每回合首次进入这片区域时都必须通过一次DC 15的敏捷豁免，否则受到1点穿刺伤害，并且速度降至0，直到其下一回合开始为止。重新收集这些铁蒺藜需要花费10分钟时间。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "candle|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Candle",
+   "zh": "蜡烛"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 1,
+   "en": "1 CP",
+   "zh": "1 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.",
+   "zh": "一根蜡烛可以燃烧 1 小时，并发出 5 尺范围的明亮光照，以及额外 5 尺的微光光照。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "chain|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Chain",
+   "zh": "链条"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Utilize action, you can wrap a Chain around an unwilling creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Strength (Athletics) check. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Chain requires the creature to make a successful DC 18 Dexterity (Acrobatics) check as an action. Bursting the Chain requires a successful DC 20 Strength (Athletics) check as an action.",
+   "zh": "以一个操作动作，你可以进行一次DC 13的力量（运动）检定。如果该检定成功，你能利用链条捆住一个位于你5尺内的非自愿生物，但该生物必须处于受擒、失能或束缚状态。如果你绑住了该生物的腿，该生物陷入束缚状态，直至挣脱。挣脱链条需要该生物使用动作来通过一次DC 18的敏捷（特技）检定。扯坏链条需要该生物使用动作来通过一次DC 20的力量（运动）检定。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "cheese (wedge)|xphb",
+  "source": "XPHB",
+  "page": 231,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "FD",
+   "en": "Food and Drink",
+   "zh": "食物和饮品"
+  },
+  "name": {
+   "en": "Cheese (wedge)",
+   "zh": "奶酪（一角）"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "chest|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Chest",
+   "zh": "箱子"
+  },
+  "weight": 25,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Chest holds up to 12 cubic feet of contents.",
+   "zh": "一个箱子至多能装入 12 立方尺的东西。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "climber's kit|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Climber's Kit",
+   "zh": "攀爬工具"
+  },
+  "weight": 12,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Climber's Kit includes boot tips, gloves, pitons, and a harness. As a Utilize action, you can use the Climber's Kit to anchor yourself; when you do, you can't fall more than 25 feet from the anchor point, and you can't move more than 25 feet from there without undoing the anchor as a Bonus Action.",
+   "zh": "一套攀爬工具包含鞋子包头、手套、岩钉和系带。以一个操作动作，你可以使用攀爬工具锚定自己，此时你不会从锚定处摔落超过25尺，且在使用附赠动作解除锚定前无法从锚定处向外移动超过25尺。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "common wine (bottle)|xphb",
+  "source": "XPHB",
+  "page": 231,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "FD",
+   "en": "Food and Drink",
+   "zh": "食物和饮品"
+  },
+  "name": {
+   "en": "Common Wine (bottle)",
+   "zh": "普通葡萄酒（瓶装）"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 20,
+   "en": "2 SP",
+   "zh": "2 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "component pouch|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Component Pouch",
+   "zh": "材料包"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells.",
+   "zh": "材料包是一种装有你法术所需的一切免费材料的防水小包。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "costume|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Costume",
+   "zh": "戏服"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "While wearing a Costume, you have Advantage on any ability check you make to impersonate the person or type of person it represents.",
+   "zh": "若你穿着对应的戏服，你为模仿他人或模仿某一类人所作的任何属性检定都具有优势。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "crossbow bolt case|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Crossbow Bolt Case",
+   "zh": "弩矢匣"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Crossbow Bolt Case holds up to 20 Bolts.",
+   "zh": "一个弩矢匣至多能存放20根弩矢。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "crowbar|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Crowbar",
+   "zh": "撬棍"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Using a Crowbar gives you Advantage on Strength checks where the Crowbar's leverage can be applied.",
+   "zh": "在能够撬动的地方使用撬棍可以给予你在这方面的力量检定优势。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "diplomat's pack|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Diplomat's Pack",
+   "zh": "外交套组"
+  },
+  "weight": 39,
+  "cost": {
+   "cp": 3900,
+   "en": "39 GP",
+   "zh": "39 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "chest|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "fine clothes|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "ink|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "ink pen|xphb",
+    "quantity": 5
+   },
+   {
+    "id": "lamp|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "map or scroll case|xphb",
+    "quantity": 2
+   },
+   {
+    "id": "oil|xphb",
+    "quantity": 4
+   },
+   {
+    "id": "paper|xphb",
+    "quantity": 5
+   },
+   {
+    "id": "parchment|xphb",
+    "quantity": 5
+   },
+   {
+    "id": "perfume|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "tinderbox|xphb",
+    "quantity": 1
+   }
+  ],
+  "description": {
+   "en": "A Diplomat's Pack contains the following items: Chest, Fine Clothes, Ink, 5 Ink Pens, Lamp, 2 Map or Scroll Cases, 4 flasks of Oil, 5 sheets of Paper, 5 sheets of Parchment, Perfume, and Tinderbox.",
+   "zh": "外交套组包含以下物品：箱子、高档服装、墨水、5 支墨水笔、油灯、2 个地图或卷轴匣、4 扁瓶燃油、5 张纸张、5 张羊皮纸、香水和火绒盒。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "dungeoneer's pack|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Dungeoneer's Pack",
+   "zh": "地城套组"
+  },
+  "weight": 55,
+  "cost": {
+   "cp": 1200,
+   "en": "12 GP",
+   "zh": "12 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "backpack|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "caltrops|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "crowbar|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "oil|xphb",
+    "quantity": 2
+   },
+   {
+    "id": "rations|xphb",
+    "quantity": 10
+   },
+   {
+    "id": "rope|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "tinderbox|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "torch|xphb",
+    "quantity": 10
+   },
+   {
+    "id": "waterskin|xphb",
+    "quantity": 1
+   }
+  ],
+  "description": {
+   "en": "A Dungeoneer's Pack contains the following items: Backpack, Caltrops, Crowbar, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.",
+   "zh": "地城套组包含以下物品：背包、铁蒺藜、撬棍、2 扁瓶燃油、10 天份的口粮、绳索、火绒盒、10 支火把和水袋。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "entertainer's pack|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Entertainer's Pack",
+   "zh": "艺人套组"
+  },
+  "weight": 58.5,
+  "cost": {
+   "cp": 4000,
+   "en": "40 GP",
+   "zh": "40 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "backpack|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "bedroll|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "bell|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "bullseye lantern|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "costume|xphb",
+    "quantity": 3
+   },
+   {
+    "id": "mirror|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "oil|xphb",
+    "quantity": 8
+   },
+   {
+    "id": "rations|xphb",
+    "quantity": 9
+   },
+   {
+    "id": "tinderbox|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "waterskin|xphb",
+    "quantity": 1
+   }
+  ],
+  "description": {
+   "en": "An Entertainer's Pack contains the following items: Backpack, Bedroll, Bell, Bullseye Lantern, 3 Costumes, Mirror, 8 flasks of Oil, 9 days of Rations, Tinderbox, and Waterskin.",
+   "zh": "艺人套组包含以下物品：背包、铺盖、铃铛、牛眼提灯、3 件戏服、镜子、8 扁瓶燃油、9 天份的口粮、火绒盒和水袋。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "exotic saddle|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "TAH",
+   "en": "Tack and Harness",
+   "zh": "鞍具和挽具"
+  },
+  "name": {
+   "en": "Exotic Saddle",
+   "zh": "特种鞍座"
+  },
+  "weight": 40,
+  "cost": {
+   "cp": 6000,
+   "en": "60 GP",
+   "zh": "60 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. An Exotic Saddle is required for riding an aquatic or a flying mount.",
+   "zh": "鞍座包括嚼子、缰绳、笼头以及其他鞍座所需的装备。骑乘水生或飞行坐骑需要使用特种鞍座。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "explorer's pack|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Explorer's Pack",
+   "zh": "探索套组"
+  },
+  "weight": 55,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "backpack|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "bedroll|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "oil|xphb",
+    "quantity": 2
+   },
+   {
+    "id": "rations|xphb",
+    "quantity": 10
+   },
+   {
+    "id": "rope|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "tinderbox|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "torch|xphb",
+    "quantity": 10
+   },
+   {
+    "id": "waterskin|xphb",
+    "quantity": 1
+   }
+  ],
+  "description": {
+   "en": "An Explorer's Pack contains the following items: Backpack, Bedroll, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin.",
+   "zh": "探索套组包含以下物品：背包、铺盖、2 扁瓶燃油、10 份口粮、绳索、火绒盒、10 支火把和水袋。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "feed (per day)|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "TAH",
+   "en": "Tack and Harness",
+   "zh": "鞍具和挽具"
+  },
+  "name": {
+   "en": "Feed (per day)",
+   "zh": "饲料（每日）"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "fine clothes|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Fine Clothes",
+   "zh": "高档服装"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 1500,
+   "en": "15 GP",
+   "zh": "15 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Fine Clothes are made of expensive fabrics and adorned with expertly crafted details. Some events and locations admit only people wearing these clothes.",
+   "zh": "高档服装使用昂贵的材料和装饰物制成，并缝制着极其精密的细节。有些活动和场合仅允许穿着高档服装的人参与。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "fine wine (bottle)|xphb",
+  "source": "XPHB",
+  "page": 231,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "FD",
+   "en": "Food and Drink",
+   "zh": "食物和饮品"
+  },
+  "name": {
+   "en": "Fine Wine (bottle)",
+   "zh": "优质红酒（瓶装）"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "flask|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Flask",
+   "zh": "扁瓶"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 2,
+   "en": "2 CP",
+   "zh": "2 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Flask holds up to 1 pint.",
+   "zh": "一个扁瓶具有 1 品脱容量。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "glass bottle|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Glass Bottle",
+   "zh": "玻璃瓶"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Glass Bottle holds up to 1½ pints.",
+   "zh": "一个玻璃瓶至多能装入 1.5 品脱的东西。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "grappling hook|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Grappling Hook",
+   "zh": "爪钩"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Utilize action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a DC 13 Dexterity (Acrobatics) check. If you tied a Rope to the hook, you can then climb it.",
+   "zh": "以一个操作动作，你能将爪钩朝着位于自身50尺内的一处栏杆、突起的边缘或是一处能够挂住的位置扔出，并进行一次DC 13的敏捷（特技）检定。如果检定成功，爪钩则成功钩在上面。如果爪钩上还连了绳子，你则可以爬上去。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "healer's kit|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Healer's Kit",
+   "zh": "医疗包"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Healer's Kit has ten uses. As a Utilize action, you can expend one of its uses to stabilize an Unconscious creature that has 0 Hit Points without needing to make a Wisdom (Medicine) check.",
+   "zh": "一个医疗包有十次使用次数。以一个操作动作，你可以花费一次使用次数用来稳定一名生命值为0的陷入昏迷的生物的伤势。你这么做时无需进行感知（医药）检定。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "holy water|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Holy Water",
+   "zh": "圣水"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.",
+   "zh": "当你执行攻击动作时，你可以将你的一次攻击替换为丢出一扁瓶圣水。你可以选择位于你20尺内可见的一个生物作为目标。该目标必须通过一次敏捷豁免（DC 8+你的敏捷调整值+你的熟练加值），并且如果这个目标是邪魔或亡灵生物，失败时承受2d8点光耀伤害。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "hooded lantern|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Hooded Lantern",
+   "zh": "附盖提灯"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Hooded Lantern burns Oil as fuel to cast Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. As a Bonus Action, you can lower the hood, reducing the light to Dim Light in a 5-foot radius, or raise it again.",
+   "zh": "一盏附盖提灯使用燃油作为燃料，点着时能够发出半径30尺的明亮光照以及额外30尺的微光光照。以一个附赠动作，你可以盖上或掀开提灯的盖子。盖上盖子时，提灯的光亮降至半径5尺的微光光照。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "hunting trap|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Hunting Trap",
+   "zh": "捕猎陷阱"
+  },
+  "weight": 25,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature.",
+   "zh": "以一个操作动作，你可以在某处设下捕猎陷阱。捕猎陷阱是一组带有锯齿的铁环，当一个生物踩到中心的压力板时，两边的锯齿会迅速合上。这组陷阱需要用沉重的链条固定至某个无法移动的物件上——例如大树或刺入地面的固定钉。踩到压力板的生物必须通过一次DC 13的敏捷豁免，否则受到1d4点穿刺伤害，并且速度降至0，直至他的下一回合开始。直到该生物挣脱陷阱前，它的移动范围会被链条的长度限制（通常为3尺）。一个生物可以使用它的动作来进行一次DC 13的力量（运动）检定，检定成功时能够让自己或自己触及范围内的一个其他生物脱困。每次检定失败都会导致被困生物受到1点穿刺伤害。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "ink|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Ink",
+   "zh": "墨水"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Ink comes in a 1-ounce bottle, which provides enough ink to write about 500 pages.",
+   "zh": "墨水一般装在 1 盎司的瓶子里，足够撰写 500 页的内容。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "ink pen|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Ink Pen",
+   "zh": "墨水笔"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 2,
+   "en": "2 CP",
+   "zh": "2 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Using Ink, an Ink Pen is used to write or draw.",
+   "zh": "墨水笔可以使用墨水来写字或绘画。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "iron pot|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Iron Pot",
+   "zh": "铁壶"
+  },
+  "weight": 10,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "An Iron Pot holds up to 1 gallon.",
+   "zh": "铁壶具有一加仑的容量。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "iron spike|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Iron Spike",
+   "zh": "铁钉"
+  },
+  "weight": 0.5,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Iron Spikes come in bundles of ten. As a Utilize action, you can use a blunt object, such as a Light Hammer, to hammer a spike into wood, earth, or a similar material. You can do so to jam a door shut or to then tie a Rope or Chain to the Spike.",
+   "zh": "一组铁钉具有十支。以一个操作动作，你可以使用一把钝器，例如轻锤，来将铁钉锤入木头、土地或类似的材质。你能通过这种方式堵死一扇门，或将绳索或链条固定在铁钉上。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "iron spikes|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Iron Spikes",
+   "zh": "铁钉(组)"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "iron spike|xphb",
+    "quantity": 10
+   }
+  ],
+  "description": {
+   "en": "Iron Spikes come in bundles of ten. As a Utilize action, you can use a blunt object, such as a Light Hammer, to hammer a spike into wood, earth, or a similar material. You can do so to jam a door shut or to then tie a Rope or Chain to the Spike.",
+   "zh": "一组铁钉具有十支。以一个操作动作，你可以使用一把钝器，例如轻锤，来将铁钉锤入木头、土地或类似的材质。你能通过这种方式堵死一扇门，或将绳索或链条固定在铁钉上。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "jug|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Jug",
+   "zh": "壶"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 2,
+   "en": "2 CP",
+   "zh": "2 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Jug holds up to 1 gallon.",
+   "zh": "壶具有一加仑的容量。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "ladder|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Ladder",
+   "zh": "梯子"
+  },
+  "weight": 25,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Ladder is 10 feet tall. You must climb to move up or down it.",
+   "zh": "一把梯子有 10 尺高。你只能在梯子上爬上或是爬下。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "lamp|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Lamp",
+   "zh": "油灯"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 50,
+   "en": "5 SP",
+   "zh": "5 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Lamp burns Oil as fuel to cast Bright Light in a 15-foot radius and Dim Light for an additional 30 feet.",
+   "zh": "一盏油灯使用燃油作为燃料，点着时能够发出半径15尺的明亮光照以及额外30尺的微光光照。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "lock|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Lock",
+   "zh": "锁"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Lock comes with a key. Without the key, a creature can use Thieves' Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+   "zh": "每套锁都有对应的钥匙。如果没有对应的钥匙，一个生物还可以使用盗贼工具来通过一次DC 15的敏捷（巧手）检定开锁。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "magnifying glass|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Magnifying Glass",
+   "zh": "放大镜"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 10000,
+   "en": "100 GP",
+   "zh": "100 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Magnifying Glass grants Advantage on any ability check made to appraise or inspect a highly detailed item. Lighting a fire with a Magnifying Glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite.",
+   "zh": "使用放大镜时，你为鉴定或检查精密物品所作的任何属性检定都会具有优势。想要使用放大镜点火，需要一束如同阳光般明亮的强光用于聚焦，还需要用于点燃的火绒，随后需要大约 5 分钟的时间来生火。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "manacles|xphb",
+  "source": "XPHB",
+  "page": 226,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Manacles",
+   "zh": "镣铐"
+  },
+  "weight": 6,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.\nEach set of Manacles comes with a key. Without the key, a creature can use Thieves' Tools to pick the Manacles' lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+   "zh": "以一个操作动作，你能利用镣铐捆住一个位于你 5 尺内的非自愿的小型或中型生物，但该生物必须处于受擒、失能或束缚状态，并且你成功通过一次DC 13的敏捷（巧手）检定。如果该检定成功，如果你铐住了该生物，该生物进行的攻击检定会具有劣势。如果镣铐还被锁链或钩子固定在了某处，该生物还会陷入束缚状态。挣脱镣铐需要该生物使用动作来通过一次DC 20的敏捷（巧手）检定。扯坏镣铐需要该生物使用动作来通过一次DC 25的力量（运动）检定。\n每套镣铐都有对应的钥匙。如果没有对应的钥匙，一个生物还可以使用盗贼工具来通过一次DC 15的敏捷（巧手）检定解开镣铐的锁。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "map|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Map",
+   "zh": "地图"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "If you consult an accurate Map, you gain a +5 bonus to Wisdom (Survival) checks you make to find your way in the place represented on it.",
+   "zh": "如果你在地图所绘制的地点参考了一张准确的地图，你为辨认位置所进行的感知（求生）检定获得 +5 的加值。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "map or scroll case|xphb",
+  "source": "XPHB",
+  "page": 224,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Map or Scroll Case",
+   "zh": "地图或卷轴匣"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Map or Scroll Case holds up to 10 sheets of paper or 5 sheets of parchment.",
+   "zh": "一个地图或卷轴匣至多能存放10张纸张或5张羊皮纸。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "military saddle|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "TAH",
+   "en": "Tack and Harness",
+   "zh": "鞍具和挽具"
+  },
+  "name": {
+   "en": "Military Saddle",
+   "zh": "军用鞍座"
+  },
+  "weight": 30,
+  "cost": {
+   "cp": 2000,
+   "en": "20 GP",
+   "zh": "20 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. A Military Saddle gives Advantage on any ability check you make to remain mounted.",
+   "zh": "鞍座包括嚼子、缰绳、笼头以及其他鞍座所需的装备。军用鞍座可以在你为维持骑乘所作的一切属性检定上提供优势。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "mirror|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Mirror",
+   "zh": "镜子"
+  },
+  "weight": 0.5,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A handheld steel Mirror is useful for personal cosmetics but also for peeking around corners and reflecting light as a signal.",
+   "zh": "一面手持的钢镜不光可以用来化妆打扮，也可以用来窥视拐角或利用反光打信号。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "net|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Net",
+   "zh": "捕网"
+  },
+  "weight": 3,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Restrained condition until it escapes. The target succeeds automatically if it is Huge or larger.\nTo escape, the target or a creature within 5 feet of it must take an action to make a DC 10 Strength (Athletics) check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.",
+   "zh": "当你执行攻击动作，你可以将你的一次攻击替换为丢出一张捕网。你可以选择位于你15尺内可见的一个生物作为目标。该目标必须通过一次敏捷豁免（DC 8+你的敏捷调整值+你的熟练加值），否则陷入束缚状态，直至挣脱。体型是巨型及以上的目标将自动通过豁免。\n被束缚的目标或者位于目标5尺内的生物，可以通过一个动作来进行一次DC 10的力量（运动）检定来挣脱捕网。若检定成功，被束缚的生物将被解放。摧毁捕网（AC 10；5 HP；免疫钝击、毒素和心灵伤害）也能解放被困目标并结束捕网的效果。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "oil|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Oil",
+   "zh": "燃油"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.\nDousing a Creature or an Object.\nWhen you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra 5 Fire damage from burning oil.\nDousing a Space.\nYou can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.\nFuel.\nOil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.",
+   "zh": "你能将燃油泼在一个生物、物件或一处空间上，你也可以将燃油作为燃料使用。具体使用方法如下。\n泼洒一个生物或一个物件.\n当你执行攻击动作，你可以将你的一次攻击替换为丢出一个油瓶。你可以选择位于你20尺内可见的一个生物或物体作为目标。该目标必须通过一次敏捷豁免检定（DC 8 +你的敏捷调整值+你的 熟练加值），否则将被油覆盖。如果目标在油干燥前（1分钟后）受到火焰伤害，目标将因燃烧的油额外受到5点火焰伤害。\n泼洒一处空间.\n以一个操作动作，你可以将一扁瓶燃油泼在地面上，以覆盖一块边长5尺且保持水平的方形区域。点燃后，从点燃时算起，燃油会持续燃烧两轮并在回合结束时熄灭（或 12 秒）。点燃时，任何进入该区域或在该区域结束其回合的生物都会受到 5 点火焰伤害。同一生物每回合只受该伤害作用一次。\n燃料.\n燃油能作为油灯和提灯的燃料使用。一旦点着，一扁瓶的燃油可以在油灯和提灯中持续燃烧 6 小时。持续时长并不需要是连续的，你可以熄灭点着的燃油（以一个操作动作），并在之后再点燃，直到总共燃烧了 6 小时。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "paper|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Paper",
+   "zh": "纸张"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 20,
+   "en": "2 SP",
+   "zh": "2 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "One sheet of Paper can hold about 250 handwritten words.",
+   "zh": "一页纸张能够写满 250 个手写单词。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "parchment|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Parchment",
+   "zh": "羊皮纸"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "One sheet of Parchment can hold about 250 handwritten words.",
+   "zh": "一页羊皮纸能够写满 250 个手写单词。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "perfume|xphb",
+  "source": "XPHB",
+  "page": 227,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Perfume",
+   "zh": "香水"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 500,
+   "en": "5 GP",
+   "zh": "5 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Perfume comes in a 4-ounce vial. For 1 hour after applying Perfume to yourself, you have Advantage on Charisma (Persuasion) checks made to influence an Indifferent Humanoid within 5 feet of yourself.",
+   "zh": "香水通常装在4盎司的小瓶里。为自己拍上香水后的一小时里，你为影响对你态度冷漠的类人生物所作的魅力（游说）检定都具有优势，但这个生物必须位于你的5尺内。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "pole|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Pole",
+   "zh": "长杆"
+  },
+  "weight": 7,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Pole is 10 feet long. You can use it to touch something up to 10 feet away. If you must make a Strength (Athletics) check as part of a High or Long Jump, you can use the Pole to vault, giving yourself Advantage on the check.",
+   "zh": "一柄长杆有10尺长。你可以用它去触碰10尺外的东西。如果你必须为一次跳高或跳远进行力量（运动）检定的话，你可以使用长杆进行跳远，来使这次检定具有优势。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "portable ram|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Portable Ram",
+   "zh": "便携式攻城锤"
+  },
+  "weight": 35,
+  "cost": {
+   "cp": 400,
+   "en": "4 GP",
+   "zh": "4 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "You can use a Portable Ram to break down doors. When doing so, you gain a +4 bonus to the Strength check. One other character can help you use the ram, giving you Advantage on this check.",
+   "zh": "你可以使用便携式攻城锤撞破一扇门。当你这么做时，你在力量检定上获得 +4 加值。其他一名角色可以协助你使用攻城锤，并使你这次检定具有优势。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "pouch|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Pouch",
+   "zh": "小包"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 50,
+   "en": "5 SP",
+   "zh": "5 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot.",
+   "zh": "一个小包能够至多装入6磅重、五分之一立方尺大的东西。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "priest's pack|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Priest's Pack",
+   "zh": "祭司套组"
+  },
+  "weight": 29,
+  "cost": {
+   "cp": 3300,
+   "en": "33 GP",
+   "zh": "33 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "backpack|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "blanket|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "holy water|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "lamp|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "rations|xphb",
+    "quantity": 7
+   },
+   {
+    "id": "robe|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "tinderbox|xphb",
+    "quantity": 1
+   }
+  ],
+  "description": {
+   "en": "A Priest's Pack contains the following items: Backpack, Blanket, Holy Water, Lamp, 7 days of Rations, Robe, and Tinderbox.",
+   "zh": "祭司套组包含以下物品：背包、毯子、圣水、油灯、7天份的口粮、法袍和火绒盒。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "quiver|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Quiver",
+   "zh": "箭袋"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Quiver holds up to 20 Arrows.",
+   "zh": "箭袋至多能装入20根箭矢。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "rations|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Rations",
+   "zh": "口粮"
+  },
+  "weight": 2,
+  "cost": {
+   "cp": 50,
+   "en": "5 SP",
+   "zh": "5 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See \"Malnutrition\" for the risks of not eating.",
+   "zh": "口粮由适合长途旅行携带的食物组成，包含肉干、风干水果、饼干和坚果等。不进食的危害详见\"饥饿\"。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "riding saddle|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "TAH",
+   "en": "Tack and Harness",
+   "zh": "鞍具和挽具"
+  },
+  "name": {
+   "en": "Riding Saddle",
+   "zh": "乘用鞍座"
+  },
+  "weight": 25,
+  "cost": {
+   "cp": 1000,
+   "en": "10 GP",
+   "zh": "10 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle.",
+   "zh": "鞍座包括嚼子、缰绳、笼头以及其他鞍座所需的装备。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "robe|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Robe",
+   "zh": "法袍"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Robe has vocational or ceremonial significance. Some events and locations admit only people wearing a Robe bearing certain colors or symbols.",
+   "zh": "长袍通常具有特别的职业或仪式意义。有些活动和场合仅允许穿着带有特定颜色或符号的长袍的人参与。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "rope|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Rope",
+   "zh": "绳索"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.\nYou can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.",
+   "zh": "以一个操作动作，你可以进行一次DC 10的敏捷（巧手）检定。如果该检定成功，你能用绳索打一个结。扯坏绳索需要成功通过一次DC 20的力量（运动）检定。\n你可以利用绳索捆住一个非自愿生物，但该生物必须处于受擒、失能或束缚状态。如果你绑住了该生物的腿，该生物陷入束缚状态，直至挣脱。挣脱绳索需要该生物使用动作来通过一次DC 15的敏捷（特技）检定。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "sack|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Sack",
+   "zh": "麻袋"
+  },
+  "weight": 0.5,
+  "cost": {
+   "cp": 1,
+   "en": "1 CP",
+   "zh": "1 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Sack holds up to 30 pounds within 1 cubic foot.",
+   "zh": "麻袋至多能够装入 30 磅 1 立方尺的东西。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "scholar's pack|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Scholar's Pack",
+   "zh": "学者套组"
+  },
+  "weight": 22,
+  "cost": {
+   "cp": 4000,
+   "en": "40 GP",
+   "zh": "40 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "contents": [
+   {
+    "id": "backpack|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "book|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "ink|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "ink pen|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "lamp|xphb",
+    "quantity": 1
+   },
+   {
+    "id": "oil|xphb",
+    "quantity": 10
+   },
+   {
+    "id": "parchment|xphb",
+    "quantity": 10
+   },
+   {
+    "id": "tinderbox|xphb",
+    "quantity": 1
+   }
+  ],
+  "description": {
+   "en": "A Scholar's Pack contains the following items: Backpack, Book, Ink, Ink Pen, Lamp, 10 flasks of Oil, 10 sheets of Parchment, and Tinderbox.",
+   "zh": "学者套组包含以下物品：背包、书籍、墨水、墨水笔、油灯、10 扁瓶燃油、10 张羊皮纸和火绒盒。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "shovel|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Shovel",
+   "zh": "铲子"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Working for 1 hour, you can use a Shovel to dig a hole that is 5 feet on each side in soil or similar material.",
+   "zh": "你可以使用铲子来花费一小时时间在土壤或类似材质的地方挖出一个5尺边长的洞。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "signal whistle|xphb",
+  "source": "XPHB",
+  "page": 228,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Signal Whistle",
+   "zh": "信号笛"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "When blown as a Utilize action, a Signal Whistle produces a sound that can be heard up to 600 feet away.",
+   "zh": "以一个操作动作，你可以吹响一支信号笛，并使信号笛发出 600 尺外都可以听见的响声。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "spyglass|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Spyglass",
+   "zh": "望远镜"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 100000,
+   "en": "1000 GP",
+   "zh": "1000 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Objects viewed through a Spyglass are magnified to twice their size.",
+   "zh": "通过望远镜看到的物件要比原先的尺寸大上两倍。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "stabling (per day)|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "TAH",
+   "en": "Tack and Harness",
+   "zh": "鞍具和挽具"
+  },
+  "name": {
+   "en": "Stabling (per day)",
+   "zh": "马厩(每日)"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 5,
+   "en": "5 CP",
+   "zh": "5 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "string|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "String",
+   "zh": "细线"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 10,
+   "en": "1 SP",
+   "zh": "1 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "String is 10 feet long. You can tie a knot in it as a Utilize action.",
+   "zh": "细线有 10 尺长。你能够以一个操作动作为它打一个结。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "tent|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Tent",
+   "zh": "帐篷"
+  },
+  "weight": 20,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Tent sleeps up to two Small or Medium creatures.",
+   "zh": "帐篷可以睡下两个小型或中型的生物。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "tinderbox|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Tinderbox",
+   "zh": "火绒盒"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 50,
+   "en": "5 SP",
+   "zh": "5 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.",
+   "zh": "火绒盒是一种装有打火石、火镰和火绒（通常是浸泡在燃油里的干布料）的小型容器，其中的物品可以用来点火。你可以使用附赠动作来用它点燃任何具有燃料的东西——例如蜡烛、油灯、提灯或火把。在没有燃料的情况下生火需要1分钟时间。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "torch|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Torch",
+   "zh": "火把"
+  },
+  "weight": 1,
+  "cost": {
+   "cp": 1,
+   "en": "1 CP",
+   "zh": "1 铜币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.",
+   "zh": "火把点燃后能够燃烧 1 小时，燃烧期间发出半径 20 尺的明亮光照以及额外 20 尺的微光光照。当你执行攻击动作时，你可以将火把当作简易近战武器，并使用火把发动攻击。命中时，目标受到 1 火焰伤害。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "traveler's clothes|xphb",
+  "source": "XPHB",
+  "page": 225,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Traveler's Clothes",
+   "zh": "旅行服装"
+  },
+  "weight": 4,
+  "cost": {
+   "cp": 200,
+   "en": "2 GP",
+   "zh": "2 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "Traveler's Clothes are resilient garments designed for travel in various environments.",
+   "zh": "旅行服装是为应对在多种环境中的旅途而设计的结实服装。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "trinket|xphb",
+  "source": "XPHB",
+  "page": 47,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Trinket",
+   "zh": "饰品"
+  },
+  "weight": null,
+  "cost": {
+   "cp": null,
+   "en": "",
+   "zh": ""
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "When you make your character, you can roll once on the Trinkets table to gain a Tiny trinket, a simple item lightly touched by mystery. The DM might also use this table. It can help stock a room in a dungeon or fill a creature's pockets.\nTrinkets\n1d100 | Trinket\n01 | A mummified goblin hand\n02 | A crystal that faintly glows in moonlight\n03 | A gold coin minted in an unknown land\n04 | A diary written in a language you don't know\n05 | A brass ring that never tarnishes\n06 | An old chess piece made from glass\n07 | A pair of knucklebone dice, each with a skull symbol on the side that would normally show six pips\n08 | A small idol depicting a nightmarish creature that gives you unsettling dreams when you sleep near it\n09 | A lock of someone's hair\n10 | The deed for a parcel of land in a realm unknown to you\n11 | A 1-ounce block made from an unknown material\n12 | A small cloth doll skewered with needles\n13 | A tooth from an unknown beast\n14 | An enormous scale, perhaps from a dragon\n15 | A bright-green feather\n16 | An old divination card bearing your likeness\n17 | A glass orb filled with moving smoke\n18 | A 1-pound egg with a bright-red shell\n19 | A pipe that blows bubbles\n20 | A glass jar containing a bit of flesh floating in pickling fluid\n21 | A gnome-crafted music box that plays a song you dimly remember from your childhood\n22 | A wooden statuette of a smug halfling\n23 | A brass orb etched with strange runes\n24 | A multicolored stone disk\n25 | A silver icon of a raven\n26 | A bag containing forty-seven teeth, one of which is rotten\n27 | A shard of obsidian that always feels warm to the touch\n28 | A dragon's talon strung on a leather necklace\n29 | A pair of old socks\n30 | A blank book whose pages refuse to hold ink, chalk, graphite, or any other marking\n31 | A silver badge that is a five-pointed star\n32 | A knife that belonged to a relative\n33 | A glass vial filled with nail clippings\n34 | A rectangular metal device with two tiny metal cups on one end that throws sparks when wet\n35 | A white, sequined glove sized for a human\n36 | A vest with one hundred tiny pockets\n37 | A weightless stone\n38 | A sketch of a goblin\n39 | An empty glass vial that smells of perfume\n40 | A gemstone that looks like a lump of coal when examined by anyone but you\n41 | A scrap of cloth from an old banner\n42 | A rank insignia from a lost legionnaire\n43 | A silver bell without a clapper\n44 | A mechanical canary inside a lamp\n45 | A miniature chest carved to look like it has numerous feet on the bottom\n46 | A dead sprite inside a clear glass bottle\n47 | A metal can that has no opening but sounds as if it is filled with liquid, sand, spiders, or broken glass (your choice)\n48 | A glass orb filled with water, in which swims a clockwork goldfish\n49 | A silver spoon with an M engraved on the handle\n50 | A whistle made from gold-colored wood\n51 | A dead scarab beetle the size of your hand\n52 | Two toy soldiers, one missing a head\n53 | A small box filled with different-sized buttons\n54 | A candle that can't be lit\n55 | A miniature cage with no door\n56 | An old key\n57 | An indecipherable treasure map\n58 | A hilt from a broken sword\n59 | A rabbit's foot\n60 | A glass eye\n61 | A cameo of a hideous person\n62 | A silver skull the size of a coin\n63 | An alabaster mask\n64 | A cone of sticky black incense that stinks\n65 | A nightcap that gives you pleasant dreams when you wear it\n66 | A single caltrop made from bone\n67 | A gold monocle frame without the lens\n68 | A 1-inch cube, each side a different color\n69 | A crystal doorknob\n70 | A packet filled with pink dust\n71 | A fragment of a beautiful song, written as musical notes on two pieces of parchment\n72 | A silver teardrop earring containing a real teardrop\n73 | An eggshell painted with scenes of misery in disturbing detail\n74 | A fan that, when unfolded, shows a sleepy cat\n75 | A set of bone pipes\n76 | A four-leaf clover pressed inside a book discussing manners and etiquette\n77 | A sheet of parchment upon which is drawn a mechanical contraption\n78 | An ornate scabbard that fits no blade you have found\n79 | An invitation to a party where a murder happened\n80 | A bronze pentacle with an etching of a rat's head in its center\n81 | A purple handkerchief embroidered with the name of an archmage\n82 | Half a floor plan for a temple, a castle, or another structure\n83 | A bit of folded cloth that, when unfolded, turns into a stylish cap\n84 | A receipt of deposit at a bank in a far-off city\n85 | A diary with seven missing pages\n86 | An empty silver snuffbox bearing the inscription \"dreams\" on its lid\n87 | An iron holy symbol devoted to an unknown god\n88 | A book about a legendary hero's rise and fall, with the last chapter missing\n89 | A vial of dragon blood\n90 | An ancient arrow of elven design\n91 | A needle that never bends\n92 | An ornate brooch of dwarven design\n93 | An empty wine bottle bearing a pretty label that says, \"The Wizard of Wines Winery, Red Dragon Crush, 331422-W\"\n94 | A mosaic tile with a multicolored, glazed surface\n95 | A petrified mouse\n96 | A black pirate flag adorned with a dragon's skull and crossbones\n97 | A tiny mechanical crab or spider that moves about when it's not being observed\n98 | A glass jar containing lard with a label that reads, \"Griffon Grease\"\n99 | A wooden box with a ceramic bottom that holds a living worm with a head on each end of its body\n00 | A metal urn containing the ashes of a hero",
+   "zh": "在创作角色时，你可以根据饰品表掷骰来获得一件微型饰品——一件带点神秘色彩的简单物品。DM有时候也会用到本表格，比如用来点缀地下城的房间或者用来装满某个生物的口袋。\n饰品\n1d100 | 饰品\n01 | 一只风干的地精手臂\n02 | 一块月光下微微发光的水晶\n03 | 一枚铸造于不知名地区的金质硬币\n04 | 一本用你不知道的语言编写的日记\n05 | 一枚不会失去光泽的黄铜戒指\n06 | 一枚用玻璃制成的老旧象棋棋子\n07 | 一对用指骨制成的骰子，每枚骰子在六点的那一面都画着骷髅头的图样\n08 | 一尊梦魇般生物的塑像，靠近它睡觉时会让人产生不安的梦境\n09 | 一束某人的头发\n10 | 某个你不明其所在的国度里一块地皮的地契\n11 | 一盎司重的方块，制作材料不明\n12 | 一只插满针的小布偶\n13 | 一颗来自未知野兽的牙齿\n14 | 一片不寻常的鳞片，可能来自于一条龙\n15 | 一根亮绿色的羽毛\n16 | 一张老旧的预言牌，其上的画像跟你很像\n17 | 一个内部充斥着旋转烟雾的玻璃球\n18 | 一枚1磅重，有着亮红外壳的蛋\n19 | 一根吹泡泡的管子\n20 | 一个玻璃罐，里头装着一块浮在腌汁里的肉\n21 | 一个侏儒制的小音乐盒，能放出一首你隐约记得儿时听过的歌曲\n22 | 一只洋洋得意的半身人的小木雕\n23 | 一个铭刻着奇怪符文的黄铜球\n24 | 一个多彩的石碟\n25 | 一个银质的渡鸦小徽章\n26 | 一只装有四十七枚类人生物牙齿的袋子，里面其中一枚是烂牙\n27 | 一块摸起来感觉温暖的黑曜石碎片\n28 | 一只龙骨爪，挂在一条简朴的皮质项链上\n29 | 一双旧袜子\n30 | 一本空白的书，其书页无法用墨水，粉笔，石墨或是任何其他物质书写\n31 | 一枚五角星形状的银徽章\n32 | 一把曾经为亲属所用的刀刃\n33 | 一个装满指甲屑的玻璃小瓶\n34 | 一个长方形的金属装置，其中一端有两个凸起的小金属棒，弄湿时还会冒出火花\n35 | 一只适合人类尺寸，饰有亮片的白色手套\n36 | 一件有一百个小兜的背心\n37 | 一个没什么重量的小石块\n38 | 一幅画着一只地精的素描\n39 | 一只小玻璃瓶，里面闻起来有香水的味道\n40 | 一枚宝石，除你以外的任何人都会将它看作一块煤\n41 | 一小块从一面老旧军旗上撕下的布\n42 | 一枚属于某个失踪军团成员的勋章\n43 | 一个没有铃舌的小银铃\n44 | 一只装在灯里的机械金丝雀\n45 | 一只底部刻成好像有无数只脚的小箱子\n46 | 一只死去的小仙灵装在一个透彻的玻璃瓶中\n47 | 一只未打开的金属罐，里面听起来像是装满了液体、沙子、蜘蛛或是碎玻璃（由你决定）\n48 | 一个充满水的玻璃球，里面有一只机械金鱼在游\n49 | 一把柄上刻有\"M\"字的银汤勺\n50 | 一只用金色木头制成的哨子\n51 | 一只跟你手差不多大的死亡圣甲虫\n52 | 两个玩具士兵，其中一个缺了头\n53 | 一个装满各种大小纽扣的小盒子\n54 | 一只无法被点亮的蜡烛\n55 | 一只没有门的小笼子\n56 | 一把老旧的钥匙\n57 | 一幅模糊不清的藏宝图\n58 | 一把破剑的剑柄\n59 | 一只兔子脚\n60 | 一只玻璃眼\n61 | 一枚刻有可怕人像的浮雕宝石\n62 | 一个硬币大小的银头骨\n63 | 一面雪花石膏面具\n64 | 一块锥形的黏黏的黑色熏香，气味十分糟糕\n65 | 一顶可以带给穿戴者美梦的睡帽\n66 | 一枚单独的骨质蒺藜\n67 | 一副没有镜片的金质单边眼睛框\n68 | 一个1寸大小的立方体，每面绘着不同的颜色\n69 | 一个水晶门把手\n70 | 一个装满粉色尘土的小袋子\n71 | 一首优美歌曲的乐谱片段，用音乐记号写在两张羊皮纸上\n72 | 一枚包含一滴真泪珠的银制泪滴耳环\n73 | 一只蛋壳，其上绘有令人不安的苦难场景\n74 | 一把打开时能看到一只睡猫的折扇\n75 | 一套骨烟斗\n76 | 一根四叶草，压在一本讨论规矩和礼仪的书中\n77 | 一张绘有复杂机械结构的羊皮纸\n78 | 一把华丽的剑鞘，但你至今尚未找到任何能装进去的剑\n79 | 一张属于某个曾经发生命案的聚会的邀请函\n80 | 一枚铜质五角星，其中央蚀刻着一个老鼠头\n81 | 一条紫色的方手帕，其上绣着一位大法师的名字\n82 | 一座庙宇、城堡或是其他建筑物的半张平面图\n83 | 一块叠起的布，展开时会变成一顶时尚的帽子\n84 | 一张存款收据，其属于某家遥远城市中的银行\n85 | 一本丢失了七页的日记\n86 | 一个空的银质鼻烟盒，它的盖子上刻着\"梦\"\n87 | 一枚属于某个不明神的铁质圣徽\n88 | 一本讲述某个传奇英雄兴起衰落的故事书，其中最后的章节丢失了。\n89 | 一小瓶龙血\n90 | 一支精灵设计的古箭\n91 | 一根永不会弯的针\n92 | 一枚矮人设计的华丽胸针\n93 | 一个空的红酒瓶，其上面有一枚漂亮的酒标写着：\" 美酒巫师庄园The Wizard of Wines Winery，卓越红龙汁Red Dragon Crush，331422—W\"\n94 | 一块多彩釉质表面的马赛克瓦\n95 | 一只被石化的老鼠\n96 | 一面装饰着龙的头骨和交叉骨头的黑色海盗旗\n97 | 一只不被观察就会活动的微型机械蟹或蜘蛛\n98 | 一只装有荤油的玻璃罐其标签上写着\" 狮鹫油Griffon Grease\"\n99 | 一只陶底木盒，里头装着一条两头都长着脑袋的活蠕虫\n00 | 一只装有英雄骨灰的金属瓮"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "vial|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Vial",
+   "zh": "小瓶"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 100,
+   "en": "1 GP",
+   "zh": "1 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Vial holds up to 4 ounces.",
+   "zh": "小瓶具有 4 盎司容量。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "waterskin|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "gear",
+  "type": {
+   "code": "G",
+   "en": "Adventuring Gear",
+   "zh": "冒险用品"
+  },
+  "name": {
+   "en": "Waterskin",
+   "zh": "水袋"
+  },
+  "weight": 5,
+  "cost": {
+   "cp": 20,
+   "en": "2 SP",
+   "zh": "2 银币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration.",
+   "zh": "水袋具有4品脱容量。如果你喝水不足，你会遭受脱水的危害（见规则详述）。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "camel|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Camel",
+   "zh": "骆驼"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "draft horse|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Draft Horse",
+   "zh": "驮用马"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "elephant|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Elephant",
+   "zh": "大象"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 20000,
+   "en": "200 GP",
+   "zh": "200 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "mastiff|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Mastiff",
+   "zh": "獒犬"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 2500,
+   "en": "25 GP",
+   "zh": "25 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "mule|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Mule",
+   "zh": "骡子"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 800,
+   "en": "8 GP",
+   "zh": "8 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "pony|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Pony",
+   "zh": "矮种马"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 3000,
+   "en": "30 GP",
+   "zh": "30 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "riding horse|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Riding Horse",
+   "zh": "乘用马"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 7500,
+   "en": "75 GP",
+   "zh": "75 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "warhorse|xphb",
+  "source": "XPHB",
+  "page": 229,
+  "srd52": true,
+  "kind": "mount",
+  "type": {
+   "code": "MNT",
+   "en": "Mount",
+   "zh": "乘骑"
+  },
+  "name": {
+   "en": "Warhorse",
+   "zh": "战马"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 40000,
+   "en": "400 GP",
+   "zh": "400 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "airship|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "AIR",
+   "en": "Vehicle (Air)",
+   "zh": "载具(飞行)"
+  },
+  "name": {
+   "en": "Airship",
+   "zh": "飞艇"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 4000000,
+   "en": "40000 GP",
+   "zh": "40000 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "carriage|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "VEH",
+   "en": "Vehicle (Land)",
+   "zh": "载具 (陆运)"
+  },
+  "name": {
+   "en": "Carriage",
+   "zh": "四轮客车"
+  },
+  "weight": 600,
+  "cost": {
+   "cp": 10000,
+   "en": "100 GP",
+   "zh": "100 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "cart|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "VEH",
+   "en": "Vehicle (Land)",
+   "zh": "载具 (陆运)"
+  },
+  "name": {
+   "en": "Cart",
+   "zh": "二轮货车"
+  },
+  "weight": 200,
+  "cost": {
+   "cp": 1500,
+   "en": "15 GP",
+   "zh": "15 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "chariot|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "VEH",
+   "en": "Vehicle (Land)",
+   "zh": "载具 (陆运)"
+  },
+  "name": {
+   "en": "Chariot",
+   "zh": "战车"
+  },
+  "weight": 100,
+  "cost": {
+   "cp": 25000,
+   "en": "250 GP",
+   "zh": "250 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "galley|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "SHP",
+   "en": "Vehicle (Water)",
+   "zh": "载具(水上)"
+  },
+  "name": {
+   "en": "Galley",
+   "zh": "桨帆船"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 3000000,
+   "en": "30000 GP",
+   "zh": "30000 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "keelboat|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "SHP",
+   "en": "Vehicle (Water)",
+   "zh": "载具(水上)"
+  },
+  "name": {
+   "en": "Keelboat",
+   "zh": "龙骨船"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 300000,
+   "en": "3000 GP",
+   "zh": "3000 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "longship|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "SHP",
+   "en": "Vehicle (Water)",
+   "zh": "载具(水上)"
+  },
+  "name": {
+   "en": "Longship",
+   "zh": "单帆长船"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 1000000,
+   "en": "10000 GP",
+   "zh": "10000 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "rowboat|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "SHP",
+   "en": "Vehicle (Water)",
+   "zh": "载具(水上)"
+  },
+  "name": {
+   "en": "Rowboat",
+   "zh": "划艇"
+  },
+  "weight": 100,
+  "cost": {
+   "cp": 5000,
+   "en": "50 GP",
+   "zh": "50 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "sailing ship|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "SHP",
+   "en": "Vehicle (Water)",
+   "zh": "载具(水上)"
+  },
+  "name": {
+   "en": "Sailing Ship",
+   "zh": "帆船"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 1000000,
+   "en": "10000 GP",
+   "zh": "10000 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "sled|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "VEH",
+   "en": "Vehicle (Land)",
+   "zh": "载具 (陆运)"
+  },
+  "name": {
+   "en": "Sled",
+   "zh": "雪橇"
+  },
+  "weight": 300,
+  "cost": {
+   "cp": 2000,
+   "en": "20 GP",
+   "zh": "20 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "wagon|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "VEH",
+   "en": "Vehicle (Land)",
+   "zh": "载具 (陆运)"
+  },
+  "name": {
+   "en": "Wagon",
+   "zh": "四轮货车"
+  },
+  "weight": 400,
+  "cost": {
+   "cp": 3500,
+   "en": "35 GP",
+   "zh": "35 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "warship|xphb",
+  "source": "XPHB",
+  "page": 230,
+  "srd52": true,
+  "kind": "vehicle",
+  "type": {
+   "code": "SHP",
+   "en": "Vehicle (Water)",
+   "zh": "载具(水上)"
+  },
+  "name": {
+   "en": "Warship",
+   "zh": "战舰"
+  },
+  "weight": null,
+  "cost": {
+   "cp": 2500000,
+   "en": "25000 GP",
+   "zh": "25000 金币"
+  },
+  "roll20Properties": "",
+  "roll20Modifiers": "",
+  "description": {
+   "en": "",
+   "zh": ""
+  },
+  "translator": "不全书"
+ }
+]

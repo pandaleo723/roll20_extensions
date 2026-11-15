@@ -1,0 +1,1795 @@
+[
+ {
+  "id": "dragonborn|xphb",
+  "source": "XPHB",
+  "page": 187,
+  "srd52": true,
+  "name": {
+   "en": "Dragonborn",
+   "zh": "龙裔"
+  },
+  "size": [
+   "M"
+  ],
+  "speed": 30,
+  "senses": {
+   "darkvision": 60
+  },
+  "resist": [
+   {
+    "choose": {
+     "from": [
+      "acid",
+      "lightning",
+      "fire",
+      "poison",
+      "cold"
+     ]
+    }
+   }
+  ],
+  "traits": [
+   {
+    "id": "draconic ancestry",
+    "name": {
+     "en": "Draconic Ancestry",
+     "zh": "龙族血统"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dragonborn",
+     "zh": "龙裔"
+    },
+    "description": {
+     "en": "Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.\nDraconic Ancestors\nDragon | Damage Type\nBlack | Acid\nBlue | Lightning\nBrass | Fire\nBronze | Lightning\nCopper | Acid\nGold | Fire\nGreen | Poison\nRed | Fire\nSilver | Cold\nWhite | Cold",
+     "zh": "你的血脉可以追溯到某种巨龙祖先。从龙族血统表格中选择一种龙。你选择的龙种将会影响你的吐息武器和伤害抗性特质，以及你的外表。\n龙族血统\n龙 | 伤害类型\n黑 | 强酸\n蓝 | 闪电\n黄铜 | 火焰\n青铜 | 闪电\n赤铜 | 强酸\n金 | 火焰\n绿 | 毒素\n红 | 火焰\n银 | 寒冷\n白 | 寒冷"
+    }
+   },
+   {
+    "id": "breath weapon",
+    "name": {
+     "en": "Breath Weapon",
+     "zh": "吐息武器"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dragonborn",
+     "zh": "龙裔"
+    },
+    "description": {
+     "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+     "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖15尺锥状区域或30尺长5尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8+你的体质调整值+你的熟练加值）。豁免失败的生物受到1d10伤害，伤害类型为你龙族血统特质所选龙种对应的类型。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时提升1d10：5级（2d10），11级（3d10）和17级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+    }
+   },
+   {
+    "id": "damage resistance",
+    "name": {
+     "en": "Damage Resistance",
+     "zh": "伤害抗性"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dragonborn",
+     "zh": "龙裔"
+    },
+    "description": {
+     "en": "You have Resistance to the damage type determined by your Draconic Ancestry trait.",
+     "zh": "根据你龙族血统特质所选龙种，你获得对应的伤害类型的伤害抗性。"
+    }
+   },
+   {
+    "id": "darkvision",
+    "name": {
+     "en": "Darkvision",
+     "zh": "黑暗视觉"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dragonborn",
+     "zh": "龙裔"
+    },
+    "description": {
+     "en": "You have Darkvision with a range of {darkvision} feet.",
+     "zh": "你拥有 {darkvision} 尺黑暗视觉。"
+    },
+    "params": {
+     "darkvision": {
+      "default": 60,
+      "unit": "feet"
+     }
+    }
+   },
+   {
+    "id": "draconic flight",
+    "name": {
+     "en": "Draconic Flight",
+     "zh": "龙族飞翼"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dragonborn",
+     "zh": "龙裔"
+    },
+    "description": {
+     "en": "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.",
+     "zh": "到达 5 级后，你可以引导体内龙之魔法的能力，让自己暂时获得飞行能力。以一个附赠动作，你的后背临时伸出两片灵体飞翼，持续 10 分钟，陷入失能状态时或你主动收起它时（无需动作）它将提前消失。飞翼存在期间，你获得飞行速度（等于你的速度）。你的翅膀看起来像是和你吐息武器相同的能量凝聚而成。使用此特质后，直到你完成一次长休为止你都不能再次使用它。"
+    }
+   }
+  ],
+  "lineages": [
+   {
+    "id": "dragonborn (black)|xphb",
+    "name": {
+     "en": "Black",
+     "zh": "黑"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "acid"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Black)",
+       "zh": "龙裔（黑）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Acid damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 强酸 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Black)",
+       "zh": "龙裔（黑）"
+      },
+      "description": {
+       "en": "You have Resistance to Acid damage.",
+       "zh": "你对强酸伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (blue)|xphb",
+    "name": {
+     "en": "Blue",
+     "zh": "蓝"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "lightning"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Blue)",
+       "zh": "龙裔（蓝）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Lightning damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 闪电 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Blue)",
+       "zh": "龙裔（蓝）"
+      },
+      "description": {
+       "en": "You have Resistance to Lightning damage.",
+       "zh": "你对闪电伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (brass)|xphb",
+    "name": {
+     "en": "Brass",
+     "zh": "黄铜"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "fire"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Brass)",
+       "zh": "龙裔（黄铜）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Fire damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 火焰 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Brass)",
+       "zh": "龙裔（黄铜）"
+      },
+      "description": {
+       "en": "You have Resistance to Fire damage.",
+       "zh": "你对火焰伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (bronze)|xphb",
+    "name": {
+     "en": "Bronze",
+     "zh": "青铜"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "lightning"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Bronze)",
+       "zh": "龙裔（青铜）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Lightning damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 闪电 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Bronze)",
+       "zh": "龙裔（青铜）"
+      },
+      "description": {
+       "en": "You have Resistance to Lightning damage.",
+       "zh": "你对闪电伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (copper)|xphb",
+    "name": {
+     "en": "Copper",
+     "zh": "赤铜"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "acid"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Copper)",
+       "zh": "龙裔（赤铜）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Acid damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 强酸 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Copper)",
+       "zh": "龙裔（赤铜）"
+      },
+      "description": {
+       "en": "You have Resistance to Acid damage.",
+       "zh": "你对强酸伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (gold)|xphb",
+    "name": {
+     "en": "Gold",
+     "zh": "金"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "fire"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Gold)",
+       "zh": "龙裔（金）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Fire damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 火焰 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Gold)",
+       "zh": "龙裔（金）"
+      },
+      "description": {
+       "en": "You have Resistance to Fire damage.",
+       "zh": "你对火焰伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (green)|xphb",
+    "name": {
+     "en": "Green",
+     "zh": "绿"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "poison"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Green)",
+       "zh": "龙裔（绿）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Poison damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 毒素 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Green)",
+       "zh": "龙裔（绿）"
+      },
+      "description": {
+       "en": "You have Resistance to Poison damage.",
+       "zh": "你对毒素伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (red)|xphb",
+    "name": {
+     "en": "Red",
+     "zh": "红"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "fire"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Red)",
+       "zh": "龙裔（红）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Fire damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 火焰 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Red)",
+       "zh": "龙裔（红）"
+      },
+      "description": {
+       "en": "You have Resistance to Fire damage.",
+       "zh": "你对火焰伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (silver)|xphb",
+    "name": {
+     "en": "Silver",
+     "zh": "银"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "cold"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Silver)",
+       "zh": "龙裔（银）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Cold damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 寒冷 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (Silver)",
+       "zh": "龙裔（银）"
+      },
+      "description": {
+       "en": "You have Resistance to Cold damage.",
+       "zh": "你对寒冷伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   },
+   {
+    "id": "dragonborn (white)|xphb",
+    "name": {
+     "en": "White",
+     "zh": "白"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "cold"
+    ],
+    "traits": [
+     {
+      "id": "breath weapon",
+      "name": {
+       "en": "Breath Weapon",
+       "zh": "吐息武器"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (White)",
+       "zh": "龙裔（白）"
+      },
+      "description": {
+       "en": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 Cold damage. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+       "zh": "每当你在自己回合内进行攻击动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺锥状区域或 30 尺长 5 尺宽的线状区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（DC 8 + 你的体质调整值 + 你的熟练加值）。豁免失败的生物受到1d10 寒冷 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加1d10：5 级（2d10），11 级（3d10）和 17 级（4d10）。\n你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后，你重获全部已消耗的使用次数。"
+      }
+     },
+     {
+      "id": "damage resistance",
+      "name": {
+       "en": "Damage Resistance",
+       "zh": "伤害抗性"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Dragonborn (White)",
+       "zh": "龙裔（白）"
+      },
+      "description": {
+       "en": "You have Resistance to Cold damage.",
+       "zh": "你对寒冷伤害具有抗性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Draconic Ancestry"
+    ]
+   }
+  ],
+  "translator": "不全书"
+ },
+ {
+  "id": "dwarf|xphb",
+  "source": "XPHB",
+  "page": 188,
+  "srd52": true,
+  "name": {
+   "en": "Dwarf",
+   "zh": "矮人"
+  },
+  "size": [
+   "M"
+  ],
+  "speed": 30,
+  "senses": {
+   "darkvision": 120
+  },
+  "resist": [
+   "poison"
+  ],
+  "traits": [
+   {
+    "id": "darkvision",
+    "name": {
+     "en": "Darkvision",
+     "zh": "黑暗视觉"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dwarf",
+     "zh": "矮人"
+    },
+    "description": {
+     "en": "You have Darkvision with a range of {darkvision} feet.",
+     "zh": "你拥有 {darkvision} 尺黑暗视觉。"
+    },
+    "params": {
+     "darkvision": {
+      "default": 120,
+      "unit": "feet"
+     }
+    }
+   },
+   {
+    "id": "dwarven resilience",
+    "name": {
+     "en": "Dwarven Resilience",
+     "zh": "矮人体魄"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dwarf",
+     "zh": "矮人"
+    },
+    "description": {
+     "en": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.",
+     "zh": "你具有毒素伤害的抗性。此外，你为避免/结束中毒状态所做的豁免检定具有优势。"
+    }
+   },
+   {
+    "id": "dwarven toughness",
+    "name": {
+     "en": "Dwarven Toughness",
+     "zh": "矮人刚毅"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dwarf",
+     "zh": "矮人"
+    },
+    "description": {
+     "en": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.",
+     "zh": "你的生命值上限加 1，且此后每次升级时再加 1。"
+    }
+   },
+   {
+    "id": "stonecunning",
+    "name": {
+     "en": "Stonecunning",
+     "zh": "石中精妙"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Dwarf",
+     "zh": "矮人"
+    },
+    "description": {
+     "en": "As a Bonus Action, you gain Tremorsense with a range of {tremorsense} feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.\nYou can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+     "zh": "以一个附赠动作，你获得{tremorsense}尺震颤感知，持续 10 分钟。你必须位于岩石表面上或是触碰着岩石的表面才能使用此震颤感知，不过其可以是天然的岩石，也可以是加工过的岩石。\n你可以使用此附赠动作的次数等于你的熟练加值，完成长休后你重获全部已消耗的使用次数。"
+    },
+    "params": {
+     "tremorsense": {
+      "default": 60,
+      "unit": "feet"
+     }
+    }
+   }
+  ],
+  "lineages": [],
+  "translator": "不全书"
+ },
+ {
+  "id": "elf|xphb",
+  "source": "XPHB",
+  "page": 189,
+  "srd52": true,
+  "name": {
+   "en": "Elf",
+   "zh": "精灵"
+  },
+  "size": [
+   "M"
+  ],
+  "speed": 30,
+  "senses": {
+   "darkvision": 60
+  },
+  "resist": [],
+  "traits": [
+   {
+    "id": "darkvision",
+    "name": {
+     "en": "Darkvision",
+     "zh": "黑暗视觉"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Elf",
+     "zh": "精灵"
+    },
+    "description": {
+     "en": "You have Darkvision with a range of {darkvision} feet.",
+     "zh": "你拥有 {darkvision} 尺黑暗视觉。"
+    },
+    "params": {
+     "darkvision": {
+      "default": 60,
+      "unit": "feet"
+     }
+    }
+   },
+   {
+    "id": "elven lineage",
+    "name": {
+     "en": "Elven Lineage",
+     "zh": "精灵血系"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Elf",
+     "zh": "精灵"
+    },
+    "description": {
+     "en": "You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.\nWhen you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).\nElven Lineages\nLineage | Level 1 | Level 3 | Level 5\nDrow | The range of your Darkvision increases to {darkvision} feet. You also know the Dancing Lights cantrip. | Faerie Fire | Darkness\nHigh Elf | You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list. | Detect Magic | Misty Step\nWood Elf | Your Speed increases to 35 feet. You also know the Druidcraft cantrip. | Longstrider | Pass without Trace",
+     "zh": "你属于一支精灵血系，并因此获得了超自然能力。从精灵血系表格中选择其一。你获得该血系的 1 级好处。\n当你到达 3 级和 5 级时，你分别习得一道表格上更高级的法术；你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。\n精灵血系\n血统 | 1环 | 3环 | 5环\n卓尔 | 你的黑暗视觉提升至 {darkvision} 尺。你习得戏法舞光术。 | 妖火 | 黑暗术\n高等精灵 | 你知晓戏法魔法伎俩。每当你完成长休时，你可以将它替换为另一道法师法术列表中的戏法。 | 侦测魔法 | 迷踪步\n木精灵 | 你的速度提升至 35 尺。你知晓戏法德鲁伊伎俩。 | 大步奔行 | 行动无踪"
+    },
+    "params": {
+     "darkvision": {
+      "default": 120,
+      "unit": "feet"
+     }
+    }
+   },
+   {
+    "id": "fey ancestry",
+    "name": {
+     "en": "Fey Ancestry",
+     "zh": "妖精血统"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Elf",
+     "zh": "精灵"
+    },
+    "description": {
+     "en": "You have Advantage on saving throws you make to avoid or end the Charmed condition.",
+     "zh": "你在进行避免或结束魅惑状态的豁免时具有优势。"
+    }
+   },
+   {
+    "id": "keen senses",
+    "name": {
+     "en": "Keen Senses",
+     "zh": "敏锐感官"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Elf",
+     "zh": "精灵"
+    },
+    "description": {
+     "en": "You have proficiency in the Insight, Perception, or Survival skill.",
+     "zh": "你具有洞悉、察觉或求生之一技能的熟练。"
+    }
+   },
+   {
+    "id": "trance",
+    "name": {
+     "en": "Trance",
+     "zh": "出神"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Elf",
+     "zh": "精灵"
+    },
+    "description": {
+     "en": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
+     "zh": "你不需要睡觉，魔法也无法使你陷入睡眠。利用出神冥想，你可以仅用 4 小时完成长休，且在这期间保持意识清醒。"
+    }
+   }
+  ],
+  "lineages": [
+   {
+    "id": "elf; drow lineage|xphb",
+    "name": {
+     "en": "Drow Lineage",
+     "zh": "卓尔血统"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 120
+    },
+    "resist": [],
+    "traits": [
+     {
+      "id": "darkvision",
+      "name": {
+       "en": "Darkvision",
+       "zh": "黑暗视觉"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Elf (Drow Lineage)",
+       "zh": "精灵（卓尔血统）"
+      },
+      "description": {
+       "en": "You have Darkvision with a range of {darkvision} feet.",
+       "zh": "你拥有 {darkvision} 尺黑暗视觉。"
+      },
+      "params": {
+       "darkvision": {
+        "default": 120,
+        "unit": "feet"
+       }
+      }
+     },
+     {
+      "id": "elven lineage (drow)",
+      "name": {
+       "en": "Elven Lineage (Drow)",
+       "zh": "精灵血系 (卓尔)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Elf (Drow Lineage)",
+       "zh": "精灵（卓尔血统）"
+      },
+      "description": {
+       "en": "You are part of a lineage that grants you supernatural abilities. The range of your Darkvision increases to {darkvision} feet. You also know the Dancing Lights cantrip.\nWhen you reach character level 3, you learn the Faerie Fire spell. When you reach character level 5, you also learn the Darkness spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+       "zh": "你属于一支精灵血系，并因此获得了超自然能力。你的黑暗视觉提升至 {darkvision} 尺。你习得戏法舞光术。\n当你到达 3 级时，你习得法术妖火。当你到达 5 级时，你习得法术黑暗术。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+      },
+      "params": {
+       "darkvision": {
+        "default": 120,
+        "unit": "feet"
+       }
+      }
+     }
+    ],
+    "removedTraits": [
+     "Elven Lineage"
+    ]
+   },
+   {
+    "id": "elf; high elf lineage|xphb",
+    "name": {
+     "en": "High Elf Lineage",
+     "zh": "高等精灵血系"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [],
+    "traits": [
+     {
+      "id": "elven lineage (high elf)",
+      "name": {
+       "en": "Elven Lineage (High Elf)",
+       "zh": "精灵血系 (高等精灵)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Elf (High Elf Lineage)",
+       "zh": "精灵（高等精灵血系）"
+      },
+      "description": {
+       "en": "You are part of a lineage that grants you supernatural abilities. You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.\nWhen you reach character level 3, you learn the Detect Magic spell. When you reach character level 5, you also learn the Misty Step spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+       "zh": "你属于一支精灵血系，并因此获得了超自然能力。你知晓戏法魔法伎俩。每当你完成长休时，你可以将它替换为另一道法师法术列表中的戏法。\n当你到达 3 级时，你习得法术侦测魔法。当你到达 5 级时，你习得法术迷踪步。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Elven Lineage"
+    ]
+   },
+   {
+    "id": "elf; wood elf lineage|xphb",
+    "name": {
+     "en": "Wood Elf Lineage",
+     "zh": "木精灵血系"
+    },
+    "speed": 35,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [],
+    "traits": [
+     {
+      "id": "elven lineage (wood elf)",
+      "name": {
+       "en": "Elven Lineage (Wood Elf)",
+       "zh": "精灵血系 (木精灵)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Elf (Wood Elf Lineage)",
+       "zh": "精灵（木精灵血系）"
+      },
+      "description": {
+       "en": "You are part of a lineage that grants you supernatural abilities. Your Speed increases to 35 feet. You also know the Druidcraft cantrip.\nWhen you reach character level 3, you learn the Longstrider spell. When you reach character level 5, you also learn the Pass without Trace spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).",
+       "zh": "你的速度提升至 35 尺。你知晓戏法德鲁伊伎俩。\n当你到达 3 级时，你习得法术大步奔行。当你到达 5 级时，你习得法术行动无踪。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n当你选择血系时，选择智力、感知、或魅力之一，该属性即是你用此特质施展法术时的施法属性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Elven Lineage"
+    ]
+   }
+  ],
+  "translator": "不全书"
+ },
+ {
+  "id": "gnome|xphb",
+  "source": "XPHB",
+  "page": 191,
+  "srd52": true,
+  "name": {
+   "en": "Gnome",
+   "zh": "侏儒"
+  },
+  "size": [
+   "S"
+  ],
+  "speed": 30,
+  "senses": {
+   "darkvision": 60
+  },
+  "resist": [],
+  "traits": [
+   {
+    "id": "darkvision",
+    "name": {
+     "en": "Darkvision",
+     "zh": "黑暗视觉"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Gnome",
+     "zh": "侏儒"
+    },
+    "description": {
+     "en": "You have Darkvision with a range of {darkvision} feet.",
+     "zh": "你拥有 {darkvision} 尺黑暗视觉。"
+    },
+    "params": {
+     "darkvision": {
+      "default": 60,
+      "unit": "feet"
+     }
+    }
+   },
+   {
+    "id": "gnomish cunning",
+    "name": {
+     "en": "Gnomish Cunning",
+     "zh": "侏儒狡黠"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Gnome",
+     "zh": "侏儒"
+    },
+    "description": {
+     "en": "You have Advantage on Intelligence, Wisdom, and Charisma saving throws.",
+     "zh": "你进行的智力、感知、魅力豁免检定均具有优势。"
+    }
+   },
+   {
+    "id": "gnomish lineage",
+    "name": {
+     "en": "Gnomish Lineage",
+     "zh": "侏儒血系"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Gnome",
+     "zh": "侏儒"
+    },
+    "description": {
+     "en": "You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):\n• Forest Gnome You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.\n• Rock Gnome You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.",
+     "zh": "你属于一支侏儒血系，并因此获得了超自然能力。选择以下选项之一；无论你选择哪一个，智力、感知、魅力是你使用此特性施展法术的施法能力（在选择血系时选择）：\n• 森林侏儒 你知晓次级幻象戏法。你也始终准备着动物交谈法术，你可以不消耗法术位施展此法术，次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。你也可以用任何你拥有的法术位施展那道法术。\n• 岩石侏儒 你知晓修复术和魔法伎俩这两道戏法。此外，你可以花费 10 分钟时间，通过施展魔法伎俩法术来创造一个微型发条装置（AC 为 5，HP 为 1），比如一件玩具、一个打火机、一个音乐盒。当你创造这个设备时，你可以从魔法伎俩戏法中选择一个效果来决定它的功能；你与其他生物可以使用附赠动作触碰该装置来激活它，此时该装置就会产生对应的效果。如果选择的效果存在选项，则在创建时选择其中一项应用。例如，如果你选择了法术中的那个点燃与熄灭的效果，你就需要决定设备是用来点火还是熄火的——一台设备无法同时做到两个功能。你同时最多拥有三台这样的装置，每一个都会在被创造出来的 8 小时后解体消失。你也可以用操作动作，触摸你的一台设备将其拆除。"
+    }
+   }
+  ],
+  "lineages": [
+   {
+    "id": "gnome; forest gnome lineage|xphb",
+    "name": {
+     "en": "Forest Gnome Lineage",
+     "zh": "森林侏儒血系"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [],
+    "traits": [
+     {
+      "id": "gnomish lineage (forest gnome)",
+      "name": {
+       "en": "Gnomish Lineage (Forest Gnome)",
+       "zh": "侏儒血系 (森林侏儒)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Gnome (Forest Gnome Lineage)",
+       "zh": "侏儒（森林侏儒血系）"
+      },
+      "description": {
+       "en": "You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.",
+       "zh": "你知晓次级幻象戏法。你也始终准备着动物交谈法术，你可以不消耗法术位施展此法术，次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。你也可以用任何你拥有的法术位施展那道法术。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Gnomish Lineage"
+    ]
+   },
+   {
+    "id": "gnome; rock gnome lineage|xphb",
+    "name": {
+     "en": "Rock Gnome Lineage",
+     "zh": "岩侏儒血系"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [],
+    "traits": [
+     {
+      "id": "gnomish lineage (rock gnome)",
+      "name": {
+       "en": "Gnomish Lineage (Rock Gnome)",
+       "zh": "侏儒血系 (岩侏儒)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Gnome (Rock Gnome Lineage)",
+       "zh": "侏儒（岩侏儒血系）"
+      },
+      "description": {
+       "en": "You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.",
+       "zh": "你知晓修复术和魔法伎俩这两道戏法。此外，你可以花费 10 分钟时间，通过施展魔法伎俩法术来创造一个微型发条装置（AC 为 5，HP 为 1），比如一件玩具、一个打火机、一个音乐盒。当你创造这个设备时，你可以从魔法伎俩戏法中选择一个效果来决定它的功能；你与其他生物可以使用附赠动作触碰该装置来激活它，此时该装置就会产生对应的效果。如果选择的效果存在选项，则在创建时选择其中一项应用。例如，如果你选择了法术中的那个点燃与熄灭的效果，你就需要决定设备是用来点火还是熄火的——一台设备无法同时做到两个功能。你同时最多拥有三台这样的装置，每一个都会在被创造出来的 8 小时后解体消失。你也可以用操作动作，触摸你的一台设备将其拆除。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Gnomish Lineage"
+    ]
+   }
+  ],
+  "translator": "不全书"
+ },
+ {
+  "id": "goliath|xphb",
+  "source": "XPHB",
+  "page": 192,
+  "srd52": true,
+  "name": {
+   "en": "Goliath",
+   "zh": "歌利亚"
+  },
+  "size": [
+   "M"
+  ],
+  "speed": 35,
+  "senses": {},
+  "resist": [],
+  "traits": [
+   {
+    "id": "giant ancestry",
+    "name": {
+     "en": "Giant Ancestry",
+     "zh": "巨人先祖"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Goliath",
+     "zh": "歌利亚"
+    },
+    "description": {
+     "en": "You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n• Cloud's Jaunt (Cloud Giant) As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.\n• Fire's Burn (Fire Giant) When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.\n• Frost's Chill (Frost Giant) When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.\n• Hill's Tumble (Hill Giant) When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.\n• Stone's Endurance (Stone Giant) When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.\n• Storm's Thunder (Storm Giant) When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.",
+     "zh": "你是巨人的后裔。选择以下好处之一——它们是来自你祖先的超自然恩惠；你可以使用所选恩惠的次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。\n• 云之远迹（云巨人） 以一个附赠动作，你可以魔法性地传送到 30 尺内一处你可见的未占据空间中。\n• 火之燃烧（火巨人） 当你以攻击检定击中目标并对其造成伤害时，你可以对该目标额外造成1d10火焰伤害。\n• 霜之刺骨（霜巨人） 当你以攻击检定击中目标并对其造成伤害时，你可以对该目标额外造成1d6寒冷伤害，并其速度降低 10 尺，持续至你的下一回合开始。\n• 山之翻撞（山丘巨人） 当你以攻击检定击中一个体型不超过大型的生物并对其造成伤害时，你可以令其陷入倒地状态。\n• 石之坚韧（石巨人） 当你受到伤害时，你可以用反应掷一枚1d12。此次所受伤害减少掷骰结果 + 你的体质调整值点。\n• 岚之暴鸣（风暴巨人） 当你被你60尺内的生物造成伤害时，你可以使用反应对该生物造成1d8雷鸣伤害。"
+    }
+   },
+   {
+    "id": "large form",
+    "name": {
+     "en": "Large Form",
+     "zh": "大型形态"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Goliath",
+     "zh": "歌利亚"
+    },
+    "description": {
+     "en": "Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.",
+     "zh": "从第 5 级开始，你可以用附赠动作将自己体型变为大型（只要你所处的空间大小足够）。转变持续 10 分钟，或者直到你主动结束（无需动作）。在这段时间内，你进行的力量检定具有优势，你的速度增加 10 尺。使用此特质后，直到你完成一次长休为止都不能再次使用。"
+    }
+   },
+   {
+    "id": "powerful build",
+    "name": {
+     "en": "Powerful Build",
+     "zh": "强力构筑"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Goliath",
+     "zh": "歌利亚"
+    },
+    "description": {
+     "en": "You have Advantage on any ability check you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.",
+     "zh": "你为让自己结束受擒状态所进行的属性检定具有优势。此外，计算自己的载重时，你视为大一级的体型。"
+    }
+   }
+  ],
+  "lineages": [
+   {
+    "id": "goliath; cloud giant ancestry|xphb",
+    "name": {
+     "en": "Cloud Giant Ancestry",
+     "zh": "云巨人先祖"
+    },
+    "speed": 35,
+    "senses": {},
+    "resist": [],
+    "traits": [
+     {
+      "id": "giant ancestry (cloud)",
+      "name": {
+       "en": "Giant Ancestry (Cloud)",
+       "zh": "巨人先祖（云巨人）"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Goliath (Cloud Giant Ancestry)",
+       "zh": "歌利亚（云巨人先祖）"
+      },
+      "description": {
+       "en": "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n• Cloud's Jaunt As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.",
+       "zh": "你是巨人的后裔。你祖先的赋予了你一个超自然恩惠；你可以使用所选恩惠的次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。\n• 云之远迹 以一个附赠动作，你可以魔法性地传送到 30 尺内一处你可见的未占据空间中。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Giant Ancestry"
+    ]
+   },
+   {
+    "id": "goliath; fire giant ancestry|xphb",
+    "name": {
+     "en": "Fire Giant Ancestry",
+     "zh": "火巨人先祖"
+    },
+    "speed": 35,
+    "senses": {},
+    "resist": [],
+    "traits": [
+     {
+      "id": "giant ancestry (fire)",
+      "name": {
+       "en": "Giant Ancestry (Fire)",
+       "zh": "巨人先祖（火巨人）"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Goliath (Fire Giant Ancestry)",
+       "zh": "歌利亚（火巨人先祖）"
+      },
+      "description": {
+       "en": "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n• Fire's Burn When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.",
+       "zh": "你是巨人的后裔。你祖先的赋予了你一个超自然恩惠；你可以使用所选恩惠的次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。\n• 火之燃烧 当你以攻击检定击中目标并对其造成伤害时，你可以对该目标额外造成1d10火焰伤害。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Giant Ancestry"
+    ]
+   },
+   {
+    "id": "goliath; frost giant ancestry|xphb",
+    "name": {
+     "en": "Frost Giant Ancestry",
+     "zh": "霜巨人先祖"
+    },
+    "speed": 35,
+    "senses": {},
+    "resist": [],
+    "traits": [
+     {
+      "id": "giant ancestry (frost)",
+      "name": {
+       "en": "Giant Ancestry (Frost)",
+       "zh": "巨人先祖 （霜巨人）"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Goliath (Frost Giant Ancestry)",
+       "zh": "歌利亚（霜巨人先祖）"
+      },
+      "description": {
+       "en": "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n• Frost's Chill When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.",
+       "zh": "你是巨人的后裔。你祖先的赋予了你一个超自然恩惠；你可以使用所选恩惠的次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。\n• 霜之刺骨 当你以攻击检定击中目标并对其造成伤害时，你可以对该目标额外造成1d6寒冷伤害，并其速度降低 10 尺，持续至你的下一回合开始。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Giant Ancestry"
+    ]
+   },
+   {
+    "id": "goliath; hill giant ancestry|xphb",
+    "name": {
+     "en": "Hill Giant Ancestry",
+     "zh": "山丘巨人先祖"
+    },
+    "speed": 35,
+    "senses": {},
+    "resist": [],
+    "traits": [
+     {
+      "id": "giant ancestry (hill)",
+      "name": {
+       "en": "Giant Ancestry (Hill)",
+       "zh": "巨人先祖（山丘巨人）"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Goliath (Hill Giant Ancestry)",
+       "zh": "歌利亚（山丘巨人先祖）"
+      },
+      "description": {
+       "en": "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n• Hill's Tumble When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.",
+       "zh": "你是巨人的后裔。你祖先的赋予了你一个超自然恩惠；你可以使用所选恩惠的次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。\n• 山之翻撞 当你以攻击检定击中一个体型不超过大型的生物并对其造成伤害时，你可以令其陷入倒地状态。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Giant Ancestry"
+    ]
+   },
+   {
+    "id": "goliath; stone giant ancestry|xphb",
+    "name": {
+     "en": "Stone Giant Ancestry",
+     "zh": "石巨人先祖"
+    },
+    "speed": 35,
+    "senses": {},
+    "resist": [],
+    "traits": [
+     {
+      "id": "giant ancestry (stone)",
+      "name": {
+       "en": "Giant Ancestry (Stone)",
+       "zh": "巨人先祖（石巨人）"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Goliath (Stone Giant Ancestry)",
+       "zh": "歌利亚（石巨人先祖）"
+      },
+      "description": {
+       "en": "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n• Stone's Endurance When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.",
+       "zh": "你是巨人的后裔。你祖先的赋予了你一个超自然恩惠；你可以使用所选恩惠的次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。\n• 石之坚韧 当你受到伤害时，你可以用反应掷一枚1d12。此次所受伤害减少掷骰结果 + 你的体质调整值点。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Giant Ancestry"
+    ]
+   },
+   {
+    "id": "goliath; storm giant ancestry|xphb",
+    "name": {
+     "en": "Storm Giant Ancestry",
+     "zh": "风暴巨人先祖"
+    },
+    "speed": 35,
+    "senses": {},
+    "resist": [],
+    "traits": [
+     {
+      "id": "giant ancestry (storm)",
+      "name": {
+       "en": "Giant Ancestry (Storm)",
+       "zh": "巨人先祖（风暴巨人）"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Goliath (Storm Giant Ancestry)",
+       "zh": "歌利亚（风暴巨人先祖）"
+      },
+      "description": {
+       "en": "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n• Storm's Thunder When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.",
+       "zh": "你是巨人的后裔。你祖先的赋予了你一个超自然恩惠；你可以使用所选恩惠的次数等于你的熟练加值，完成长休后，你重获全部已消耗的使用次数。\n• 岚之暴鸣 当你被你60尺内的生物造成伤害时，你可以使用反应对该生物造成1d8雷鸣伤害。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Giant Ancestry"
+    ]
+   }
+  ],
+  "translator": "不全书"
+ },
+ {
+  "id": "halfling|xphb",
+  "source": "XPHB",
+  "page": 193,
+  "srd52": true,
+  "name": {
+   "en": "Halfling",
+   "zh": "半身人"
+  },
+  "size": [
+   "S"
+  ],
+  "speed": 30,
+  "senses": {},
+  "resist": [],
+  "traits": [
+   {
+    "id": "brave",
+    "name": {
+     "en": "Brave",
+     "zh": "勇气"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Halfling",
+     "zh": "半身人"
+    },
+    "description": {
+     "en": "You have Advantage on saving throws you make to avoid or end the Frightened condition.",
+     "zh": "你在避免或结束恐慌状态进行的豁免时具有优势。"
+    }
+   },
+   {
+    "id": "halfling nimbleness",
+    "name": {
+     "en": "Halfling Nimbleness",
+     "zh": "半身人灵巧"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Halfling",
+     "zh": "半身人"
+    },
+    "description": {
+     "en": "You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.",
+     "zh": "你可以穿越任何体型比你大的生物所在空间，但你不能在其内停下。"
+    }
+   },
+   {
+    "id": "luck",
+    "name": {
+     "en": "Luck",
+     "zh": "幸运"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Halfling",
+     "zh": "半身人"
+    },
+    "description": {
+     "en": "When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.",
+     "zh": "当你在D20 检定中的d20掷出 1 时，你可以重新掷骰，但你必须使用重骰的结果。"
+    }
+   },
+   {
+    "id": "naturally stealthy",
+    "name": {
+     "en": "Naturally Stealthy",
+     "zh": "天生善匿"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Halfling",
+     "zh": "半身人"
+    },
+    "description": {
+     "en": "You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.",
+     "zh": "在有比你体型至少比你大 1 级的生物遮蔽你的情况下，你也可以执行躲藏动作。"
+    }
+   }
+  ],
+  "lineages": [],
+  "translator": "不全书"
+ },
+ {
+  "id": "human|xphb",
+  "source": "XPHB",
+  "page": 194,
+  "srd52": true,
+  "name": {
+   "en": "Human",
+   "zh": "人类"
+  },
+  "size": [
+   "S",
+   "M"
+  ],
+  "speed": 30,
+  "senses": {},
+  "resist": [],
+  "traits": [
+   {
+    "id": "resourceful",
+    "name": {
+     "en": "Resourceful",
+     "zh": "适应力"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Human",
+     "zh": "人类"
+    },
+    "description": {
+     "en": "You gain Heroic Inspiration whenever you finish a Long Rest.",
+     "zh": "你获得英雄激励（每当你完成长休时）。"
+    }
+   },
+   {
+    "id": "skillful",
+    "name": {
+     "en": "Skillful",
+     "zh": "娴熟"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Human",
+     "zh": "人类"
+    },
+    "description": {
+     "en": "You gain proficiency in one skill of your choice.",
+     "zh": "你自选一个技能并获得其熟练。"
+    }
+   },
+   {
+    "id": "versatile",
+    "name": {
+     "en": "Versatile",
+     "zh": "多用"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Human",
+     "zh": "人类"
+    },
+    "description": {
+     "en": "You gain an Origin feat of your choice.",
+     "zh": "你获得一项自选的起源专长。"
+    }
+   }
+  ],
+  "lineages": [],
+  "translator": "不全书"
+ },
+ {
+  "id": "orc|xphb",
+  "source": "XPHB",
+  "page": 195,
+  "srd52": true,
+  "name": {
+   "en": "Orc",
+   "zh": "兽人"
+  },
+  "size": [
+   "M"
+  ],
+  "speed": 30,
+  "senses": {
+   "darkvision": 120
+  },
+  "resist": [],
+  "traits": [
+   {
+    "id": "adrenaline rush",
+    "name": {
+     "en": "Adrenaline Rush",
+     "zh": "激昂冲锋"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Orc",
+     "zh": "兽人"
+    },
+    "description": {
+     "en": "You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.\nYou can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.",
+     "zh": "你能用以一个附赠动作执行疾走动作。而当你这么做时，你还会获得等同于你熟练加值的临时生命值。\n你可以使用此特质次数等于你的熟练加值，完成短或长休时，你重获全部已消耗的使用次数。"
+    }
+   },
+   {
+    "id": "darkvision",
+    "name": {
+     "en": "Darkvision",
+     "zh": "黑暗视觉"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Orc",
+     "zh": "兽人"
+    },
+    "description": {
+     "en": "You have Darkvision with a range of {darkvision} feet.",
+     "zh": "你拥有 {darkvision} 尺黑暗视觉。"
+    },
+    "params": {
+     "darkvision": {
+      "default": 120,
+      "unit": "feet"
+     }
+    }
+   },
+   {
+    "id": "relentless endurance",
+    "name": {
+     "en": "Relentless Endurance",
+     "zh": "坚韧不屈"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Orc",
+     "zh": "兽人"
+    },
+    "description": {
+     "en": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.",
+     "zh": "当你生命值降至 0 而没有立即死亡时，可以改为使生命值降至 1。此特质一经使用，直至完成长休你都无法再次使用。"
+    }
+   }
+  ],
+  "lineages": [],
+  "translator": "不全书"
+ },
+ {
+  "id": "tiefling|xphb",
+  "source": "XPHB",
+  "page": 197,
+  "srd52": true,
+  "name": {
+   "en": "Tiefling",
+   "zh": "提夫林"
+  },
+  "size": [
+   "S",
+   "M"
+  ],
+  "speed": 30,
+  "senses": {
+   "darkvision": 60
+  },
+  "resist": [
+   {
+    "choose": {
+     "from": [
+      "poison",
+      "necrotic",
+      "fire"
+     ]
+    }
+   }
+  ],
+  "traits": [
+   {
+    "id": "darkvision",
+    "name": {
+     "en": "Darkvision",
+     "zh": "黑暗视觉"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Tiefling",
+     "zh": "提夫林"
+    },
+    "description": {
+     "en": "You have Darkvision with a range of {darkvision} feet.",
+     "zh": "你拥有 {darkvision} 尺黑暗视觉。"
+    },
+    "params": {
+     "darkvision": {
+      "default": 60,
+      "unit": "feet"
+     }
+    }
+   },
+   {
+    "id": "fiendish legacy",
+    "name": {
+     "en": "Fiendish Legacy",
+     "zh": "邪魔遗赠"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Tiefling",
+     "zh": "提夫林"
+    },
+    "description": {
+     "en": "You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.\nWhen you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).\nFiendish Legacies\nLegacy | Level 1 | Level 3 | Level 5\nAbyssal | You have Resistance to Poison damage. You also know the Poison Spray cantrip. | Ray of Sickness | Hold Person\nChthonic | You have Resistance to Necrotic damage. You also know the Chill Touch cantrip. | False Life | Ray of Enfeeblement\nInfernal | You have Resistance to Fire damage. You also know the Fire Bolt cantrip. | Hellish Rebuke | Darkness",
+     "zh": "你承载着一份给予了你超自然能力的邪魔遗赠。从邪魔遗赠表格中选择其一。你获得该遗赠的 1 级好处。\n当你到达 3 级和 5 级时，你分别学会一道表格上更高级的法术；你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n邪魔遗赠\n遗赠 | 1环 | 3环 | 5环\n深渊语 | 你获得对毒素伤害的抗性。你习得戏法毒气喷涌。 | 致病射线 | 定身类人\n幽冥 | 你获得对暗蚀伤害的抗性。你习得戏法颤栗之触。 | 虚假生命 | 衰弱射线\n炼狱语 | 你获得对火焰伤害的抗性。你习得戏法火焰箭。 | 炼狱叱喝 | 黑暗术"
+    }
+   },
+   {
+    "id": "otherworldly presence",
+    "name": {
+     "en": "Otherworldly Presence",
+     "zh": "异界存在"
+    },
+    "traitSource": "racial",
+    "sourceType": {
+     "en": "Tiefling",
+     "zh": "提夫林"
+    },
+    "description": {
+     "en": "You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy Trait.",
+     "zh": "你习得戏法奇术。用此特质施展它时，这道法术使用与你的邪魔遗赠特性使用相同的施法属性。"
+    }
+   }
+  ],
+  "lineages": [
+   {
+    "id": "tiefling; abyssal legacy|xphb",
+    "name": {
+     "en": "Abyssal Legacy",
+     "zh": "深渊遗赠"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 120
+    },
+    "resist": [
+     "poison"
+    ],
+    "traits": [
+     {
+      "id": "fiendish legacy (abyssal)",
+      "name": {
+       "en": "Fiendish Legacy (Abyssal)",
+       "zh": "邪魔遗赠 (深渊)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Tiefling (Abyssal Legacy)",
+       "zh": "提夫林（深渊遗赠）"
+      },
+      "description": {
+       "en": "You are the recipient of a legacy that grants you supernatural abilities. You have Resistance to Poison damage. You also know the Poison Spray cantrip.\nWhen you reach character level 3, you learn the Ray of Sickness spell. When you reach character level 5, you also learn the Hold Person spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).",
+       "zh": "你承载着一份给予了你超自然能力的遗赠。你获得对毒素伤害的抗性。你习得戏法毒气喷涌。\n当你到达 3 级时，你习得法术致病射线。当你到达 5 级时，你习得法术定身类人。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n选择遗赠时，从智力、感知、魅力中选择一项属性，该属性是你用此特质施展法术时的施法属性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Fiendish Legacy"
+    ]
+   },
+   {
+    "id": "tiefling; chthonic legacy|xphb",
+    "name": {
+     "en": "Chthonic Legacy",
+     "zh": "幽冥遗赠"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "necrotic"
+    ],
+    "traits": [
+     {
+      "id": "fiendish legacy (chthonic)",
+      "name": {
+       "en": "Fiendish Legacy (Chthonic)",
+       "zh": "邪魔遗赠 (幽冥)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Tiefling (Chthonic Legacy)",
+       "zh": "提夫林（幽冥遗赠）"
+      },
+      "description": {
+       "en": "You are the recipient of a legacy that grants you supernatural abilities. You have Resistance to Necrotic damage. You also know the Chill Touch cantrip.\nWhen you reach character level 3, you learn the False Life spell. When you reach character level 5, you also learn the Ray of Enfeeblement spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).",
+       "zh": "你承载着一份给予了你超自然能力的遗赠。获得对暗蚀伤害的抗性。你习得戏法颤栗之触。\n当你到达 3 级时，你习得法术虚假生命。当你到达 5 级时，你习得法术衰弱射线。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n选择遗赠时，从智力、感知、魅力中选择一项属性，该属性是你用此特质施展法术时的施法属性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Fiendish Legacy"
+    ]
+   },
+   {
+    "id": "tiefling; infernal legacy|xphb",
+    "name": {
+     "en": "Infernal Legacy",
+     "zh": "炼狱遗赠"
+    },
+    "speed": 30,
+    "senses": {
+     "darkvision": 60
+    },
+    "resist": [
+     "fire"
+    ],
+    "traits": [
+     {
+      "id": "fiendish legacy (infernal)",
+      "name": {
+       "en": "Fiendish Legacy (Infernal)",
+       "zh": "邪魔遗赠 (炼狱)"
+      },
+      "traitSource": "racial",
+      "sourceType": {
+       "en": "Tiefling (Infernal Legacy)",
+       "zh": "提夫林（炼狱遗赠）"
+      },
+      "description": {
+       "en": "You are the recipient of a legacy that grants you supernatural abilities. You have Resistance to Fire damage. You also know the Fire Bolt cantrip.\nWhen you reach character level 3, you learn the Hellish Rebuke spell. When you reach character level 5, you also learn the Darkness spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).",
+       "zh": "你承载着一份给予了你超自然能力的遗赠。你获得对火焰伤害的抗性。你习得戏法火焰箭。\n当你到达3级时，你习得法术炼狱叱喝。当你到达5级时，你习得法术黑暗术。你时刻准备着这道习得的法术，且可以不消耗法术位施展此法术一次，当你完成一次长休时，你重获施展该道法术的能力。你也可以用任何你拥有的相应环阶法术位施展该道法术。\n选择遗赠时，从智力、感知、魅力中选择一项属性，该属性是你用此特质施展法术时的施法属性。"
+      }
+     }
+    ],
+    "removedTraits": [
+     "Fiendish Legacy"
+    ]
+   }
+  ],
+  "translator": "不全书"
+ }
+]

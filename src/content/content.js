@@ -26,7 +26,9 @@ const sheetTimer = setInterval(() => {
   if (isSheetFrame()) {
     clearInterval(sheetTimer);
     console.log(R20F.LOG_PREFIX, "sheet frame summary:", describeFrame());
+    R20F.watchSettings(() => R20F.relabelButtons()); // language change in the popup -> relabel
     R20F.watchSections();
+    console.log(R20F.LOG_PREFIX, "detected classes:", R20F.detectClasses());
   } else if (++sheetChecks >= 60) {
     clearInterval(sheetTimer);
   }

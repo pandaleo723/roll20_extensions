@@ -1,0 +1,186 @@
+[
+ {
+  "id": "acolyte|xphb",
+  "source": "XPHB",
+  "page": 178,
+  "srd52": true,
+  "name": {
+   "en": "Acolyte",
+   "zh": "侍僧"
+  },
+  "abilityScores": [
+   "int",
+   "wis",
+   "cha"
+  ],
+  "feat": {
+   "id": "magic initiate|xphb",
+   "variantId": "magic initiate; cleric|xphb",
+   "name": {
+    "en": "Magic Initiate (Cleric)",
+    "zh": "魔法学徒（牧师）"
+   },
+   "srd52": true
+  },
+  "skills": [
+   "insight",
+   "religion"
+  ],
+  "tools": {
+   "en": "Calligrapher's Supplies",
+   "zh": "书法工具"
+  },
+  "equipment": {
+   "en": "Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP",
+   "zh": "选择 A 或 B：(A) 书法工具、祈祷书、圣徽、羊皮纸 (10 张)、法袍、8 GP；或 (B) 50 GP"
+  },
+  "traitSource": "background",
+  "sourceType": {
+   "en": "Acolyte",
+   "zh": "侍僧"
+  },
+  "description": {
+   "en": "• Ability Scores: Intelligence, Wisdom, Charisma\n• Feat: Magic Initiate (Cleric)\n• Skill Proficiencies: Insight, Religion\n• Tool Proficiency: Calligrapher's Supplies\n• Equipment: Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP",
+   "zh": "• 属性值： 智力，感知，魅力\n• 专长： 魔法学徒（牧师）\n• 技能熟练项： 洞悉, 宗教\n• 工具熟练项： 书法工具\n• 装备： 选择 A 或 B：(A) 书法工具、祈祷书、圣徽、羊皮纸 (10 张)、法袍、8 GP；或 (B) 50 GP"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "criminal|xphb",
+  "source": "XPHB",
+  "page": 180,
+  "srd52": true,
+  "name": {
+   "en": "Criminal",
+   "zh": "罪犯"
+  },
+  "abilityScores": [
+   "dex",
+   "con",
+   "int"
+  ],
+  "feat": {
+   "id": "alert|xphb",
+   "variantId": "",
+   "name": {
+    "en": "Alert",
+    "zh": "警觉"
+   },
+   "srd52": true
+  },
+  "skills": [
+   "sleight of hand",
+   "stealth"
+  ],
+  "tools": {
+   "en": "Thieves' Tools",
+   "zh": "盗贼工具"
+  },
+  "equipment": {
+   "en": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+   "zh": "选择 A 或 B：(A) 2把匕首、盗贼工具、撬棍、2个小包、旅行服装、16 GP；或 (B) 50 GP"
+  },
+  "traitSource": "background",
+  "sourceType": {
+   "en": "Criminal",
+   "zh": "罪犯"
+  },
+  "description": {
+   "en": "• Ability Scores: Dexterity, Constitution, Intelligence\n• Feat: Alert\n• Skill Proficiencies: Sleight of Hand, Stealth\n• Tool Proficiency: Thieves' Tools\n• Equipment: Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+   "zh": "• 属性值： 敏捷，体质，智力\n• 专长： 警觉\n• 技能熟练项： 巧手, 隐匿\n• 工具熟练项： 盗贼工具\n• 装备： 选择 A 或 B：(A) 2把匕首、盗贼工具、撬棍、2个小包、旅行服装、16 GP；或 (B) 50 GP"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "sage|xphb",
+  "source": "XPHB",
+  "page": 183,
+  "srd52": true,
+  "name": {
+   "en": "Sage",
+   "zh": "智者"
+  },
+  "abilityScores": [
+   "con",
+   "int",
+   "wis"
+  ],
+  "feat": {
+   "id": "magic initiate|xphb",
+   "variantId": "magic initiate; wizard|xphb",
+   "name": {
+    "en": "Magic Initiate (Wizard)",
+    "zh": "魔法学徒（法师）"
+   },
+   "srd52": true
+  },
+  "skills": [
+   "arcana",
+   "history"
+  ],
+  "tools": {
+   "en": "Calligrapher's Supplies",
+   "zh": "书法工具"
+  },
+  "equipment": {
+   "en": "Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP",
+   "zh": "选择 A 或 B：(A) 长棍、书法工具、书籍（历史）、羊皮纸 (8 张)、法袍、8 GP；或 (B) 50 GP"
+  },
+  "traitSource": "background",
+  "sourceType": {
+   "en": "Sage",
+   "zh": "智者"
+  },
+  "description": {
+   "en": "• Ability Scores: Constitution, Intelligence, Wisdom\n• Feat: Magic Initiate (Wizard)\n• Skill Proficiencies: Arcana, History\n• Tool Proficiency: Calligrapher's Supplies\n• Equipment: Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP",
+   "zh": "• 属性值： 体质，智力，感知\n• 专长： 魔法学徒 （法师）\n• 技能熟练项： 奥秘, 历史\n• 工具熟练项： 书法工具\n• 装备： 选择 A 或 B：(A) 长棍、书法工具、书籍（历史）、羊皮纸 (8 张)、法袍、8 GP；或 (B) 50 GP"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "soldier|xphb",
+  "source": "XPHB",
+  "page": 185,
+  "srd52": true,
+  "name": {
+   "en": "Soldier",
+   "zh": "士兵"
+  },
+  "abilityScores": [
+   "str",
+   "dex",
+   "con"
+  ],
+  "feat": {
+   "id": "savage attacker|xphb",
+   "variantId": "",
+   "name": {
+    "en": "Savage Attacker",
+    "zh": "凶蛮打手"
+   },
+   "srd52": true
+  },
+  "skills": [
+   "athletics",
+   "intimidation"
+  ],
+  "tools": {
+   "en": "Choose one kind of Gaming Set",
+   "zh": "自选一套赌具"
+  },
+  "equipment": {
+   "en": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP",
+   "zh": "选择 A 或 B：(A) 矛、短弓、20支箭、赌具（同上所选）、医疗包、箭袋、旅行服装、14 GP；或 (B) 50 GP"
+  },
+  "traitSource": "background",
+  "sourceType": {
+   "en": "Soldier",
+   "zh": "士兵"
+  },
+  "description": {
+   "en": "• Ability Scores: Strength, Dexterity, Constitution\n• Feat: Savage Attacker\n• Skill Proficiencies: Athletics, Intimidation\n• Tool Proficiency: Choose one kind of Gaming Set\n• Equipment: Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP",
+   "zh": "• 属性值： 力量，敏捷，体质\n• 专长： 凶蛮打手\n• 技能熟练项： 运动, 威吓\n• 工具熟练项： 自选一套赌具\n• 装备： 选择 A 或 B：(A) 矛、短弓、20支箭、赌具（同上所选）、医疗包、箭袋、旅行服装、14 GP；或 (B) 50 GP"
+  },
+  "translator": "不全书"
+ }
+]

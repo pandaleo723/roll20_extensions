@@ -61,6 +61,13 @@ function resolveValue(el, value) {
 
 const currentValue = (el) => (el.type === "checkbox" ? el.checked : el.value);
 
+/** What the field shows when nothing is saved: the template's selected/first option, checked state or value. */
+function defaultValue(el) {
+  if (el.type === "checkbox") return el.defaultChecked;
+  if (el.tagName === "SELECT") return (el.querySelector("option[selected]") || el.options[0])?.value;
+  return el.defaultValue;
+}
+
 function setValue(el, v) {
   if (el.type === "checkbox") el.checked = v;
   else el.value = v;
@@ -98,7 +105,12 @@ R20F.fillFields = async function (root, data, onProgress) {
   // Set every copy of the field right before firing; Roll20 needs one change event per attribute.
   // Returns false when the field already shows the target value (nothing to save).
   const apply = ({ els, target }) => {
-    if (els.every((el) => currentValue(el) === target)) return false;
+    // Skip only when the field shows the target AND that can't just be its unsaved default:
+    // a new row's dropdown shows its first option (e.g. abjuration) without Roll20 having it saved.
+    const alreadySaved =
+      els.every((el) => currentValue(el) === target) &&
+      (target !== defaultValue(els[0]) || (target === "" && els[0].tagName !== "SELECT"));
+    if (alreadySaved) return false;
     els.forEach((el) => setValue(el, target));
     return true;
   };

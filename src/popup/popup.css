@@ -10,9 +10,58 @@ h1 {
   font-size: 16px;
   margin: 0 0 4px;
 }
+h2 {
+  font-size: 14px;
+  margin: 12px 0 8px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
 .hint {
   margin: 0 0 10px;
   color: #666;
+}
+.hint.small {
+  font-size: 12px;
+  margin-top: -2px;
+}
+label.check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  margin: 6px 0 4px;
+  cursor: pointer;
+}
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 0 0 6px;
+  padding: 4px 10px 6px;
+}
+fieldset:disabled {
+  opacity: 0.45;
+}
+legend {
+  font-weight: 600;
+  padding: 0 4px;
+}
+.class-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+}
+.class-grid label.check {
+  margin: 2px 0;
+}
+details {
+  margin-top: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+summary {
+  cursor: pointer;
+  color: #666;
+  margin-bottom: 8px;
 }
 label {
   display: block;

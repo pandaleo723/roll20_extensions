@@ -5,6 +5,11 @@
   "page": 239,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -71,6 +76,11 @@
   "page": 249,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -137,6 +147,12 @@
   "page": 259,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -203,6 +219,9 @@
   "page": 266,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -269,6 +288,9 @@
   "page": 267,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Warlock"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -335,6 +357,12 @@
   "page": 267,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -401,6 +429,11 @@
   "page": 274,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -467,6 +500,11 @@
   "page": 282,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -533,6 +571,13 @@
   "page": 292,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -599,6 +644,13 @@
   "page": 293,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -665,6 +717,13 @@
   "page": 297,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -731,6 +790,13 @@
   "page": 298,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -797,6 +863,12 @@
   "page": 298,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -863,6 +935,13 @@
   "page": 306,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Druid",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -929,6 +1008,13 @@
   "page": 307,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -995,6 +1081,9 @@
   "page": 308,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -1061,6 +1150,11 @@
   "page": 311,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -1127,6 +1221,11 @@
   "page": 312,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -1193,6 +1292,9 @@
   "page": 313,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Cleric"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -1259,6 +1361,9 @@
   "page": 316,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -1325,6 +1430,11 @@
   "page": 316,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -1391,6 +1501,9 @@
   "page": 318,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Sorcerer"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -1457,6 +1570,11 @@
   "page": 318,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -1523,6 +1641,10 @@
   "page": 320,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Bard",
+   "Druid"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -1589,6 +1711,9 @@
   "page": 333,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Cleric"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -1655,6 +1780,13 @@
   "page": 336,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -1721,6 +1853,9 @@
   "page": 337,
   "srd52": true,
   "level": 0,
+  "classes": [
+   "Bard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -1787,6 +1922,11 @@
   "page": 239,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Ranger",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": true,
   "concentration": false,
@@ -1853,6 +1993,11 @@
   "page": 239,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Ranger"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -1919,6 +2064,11 @@
   "page": 245,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Warlock"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -1985,6 +2135,10 @@
   "page": 247,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -2051,6 +2205,10 @@
   "page": 248,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -2120,6 +2278,13 @@
   "page": 249,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -2186,6 +2351,10 @@
   "page": 249,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -2255,6 +2424,11 @@
   "page": 251,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -2321,6 +2495,11 @@
   "page": 251,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Paladin"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -2387,6 +2566,12 @@
   "page": 252,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -2453,6 +2638,10 @@
   "page": 258,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric",
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -2519,6 +2708,14 @@
   "page": 259,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -2588,6 +2785,10 @@
   "page": 261,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -2654,6 +2855,17 @@
   "page": 262,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": true,
@@ -2705,8 +2917,8 @@
    "zh": ""
   },
   "description": {
-   "en": "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's 7.\nThe spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.",
-   "zh": "在法术持续时间内，你感受到距你 30 尺内的魔法效应。若你感知到了此类效应，则你可以用一个魔法动作以看到任何带有此魔法的可见生物或物件周围环绕着微弱的灵光，且若此魔法属于被法术创造的效应，则你可分辨出其所属的7。\n此法术会被 1 尺厚的岩石、泥土或木头，1 寸厚的金属，或薄薄一层铅阻隔。"
+   "en": "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic.\nThe spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.",
+   "zh": "在法术持续时间内，你感受到距你 30 尺内的魔法效应。若你感知到了此类效应，则你可以用一个魔法动作以看到任何带有此魔法的可见生物或物件周围环绕着微弱的灵光，且若此魔法属于被法术创造的效应，则你可分辨出其所属的魔法学派。\n此法术会被 1 尺厚的岩石、泥土或木头，1 寸厚的金属，或薄薄一层铅阻隔。"
   },
   "higherLevels": {
    "en": "",
@@ -2720,6 +2932,12 @@
   "page": 262,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": true,
@@ -2786,6 +3004,12 @@
   "page": 262,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -2852,6 +3076,9 @@
   "page": 264,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -2921,6 +3148,9 @@
   "page": 265,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Paladin"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -2987,6 +3217,9 @@
   "page": 265,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Paladin"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -3056,6 +3289,9 @@
   "page": 268,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Ranger"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -3125,6 +3361,10 @@
   "page": 268,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -3191,6 +3431,12 @@
   "page": 270,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -3257,6 +3503,11 @@
   "page": 271,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Druid"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -3323,6 +3574,11 @@
   "page": 271,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -3389,6 +3645,12 @@
   "page": 271,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -3455,6 +3717,9 @@
   "page": 272,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": true,
   "concentration": false,
@@ -3521,6 +3786,12 @@
   "page": 276,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -3587,6 +3858,10 @@
   "page": 280,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -3653,6 +3928,11 @@
   "page": 280,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -3719,6 +3999,9 @@
   "page": 282,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -3788,6 +4071,11 @@
   "page": 284,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -3857,6 +4145,9 @@
   "page": 284,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Warlock"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -3926,6 +4217,10 @@
   "page": 285,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Paladin"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -3992,6 +4287,9 @@
   "page": 285,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Warlock"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -4058,6 +4356,9 @@
   "page": 287,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Ranger"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -4124,6 +4425,11 @@
   "page": 287,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -4193,6 +4499,11 @@
   "page": 287,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -4259,6 +4570,11 @@
   "page": 288,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": true,
   "concentration": false,
@@ -4325,6 +4641,9 @@
   "page": 288,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -4394,6 +4713,13 @@
   "page": 290,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -4460,6 +4786,13 @@
   "page": 293,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Druid",
+   "Ranger",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -4526,6 +4859,10 @@
   "page": 293,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -4592,6 +4929,10 @@
   "page": 295,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -4658,6 +4999,13 @@
   "page": 309,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -4724,6 +5072,12 @@
   "page": 310,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid",
+   "Paladin"
+  ],
   "school": "transmutation",
   "ritual": true,
   "concentration": false,
@@ -4790,6 +5144,10 @@
   "page": 311,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -4859,6 +5217,10 @@
   "page": 313,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Artificer",
+   "Cleric"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -4925,6 +5287,9 @@
   "page": 314,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Paladin"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -4994,6 +5359,10 @@
   "page": 316,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -5060,6 +5429,10 @@
   "page": 316,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -5126,6 +5499,11 @@
   "page": 317,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -5192,6 +5570,11 @@
   "page": 317,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -5258,6 +5641,12 @@
   "page": 318,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Ranger",
+   "Warlock"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -5324,6 +5713,11 @@
   "page": 331,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -5390,6 +5784,9 @@
   "page": 332,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": true,
   "concentration": false,
@@ -5456,6 +5853,12 @@
   "page": 334,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -5525,6 +5928,11 @@
   "page": 336,
   "srd52": true,
   "level": 1,
+  "classes": [
+   "Bard",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": true,
   "concentration": false,
@@ -5591,6 +5999,14 @@
   "page": 239,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -5657,6 +6073,11 @@
   "page": 239,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -5723,6 +6144,11 @@
   "page": 240,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Ranger"
+  ],
   "school": "enchantment",
   "ritual": true,
   "concentration": false,
@@ -5789,6 +6215,10 @@
   "page": 242,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -5855,6 +6285,11 @@
   "page": 244,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -5921,6 +6356,10 @@
   "page": 245,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -5987,6 +6426,12 @@
   "page": 248,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -6053,6 +6498,11 @@
   "page": 248,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -6119,6 +6569,10 @@
   "page": 249,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Cleric"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -6185,6 +6639,12 @@
   "page": 256,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -6251,6 +6711,11 @@
   "page": 260,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -6317,6 +6782,13 @@
   "page": 260,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -6383,6 +6855,11 @@
   "page": 262,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -6449,6 +6926,11 @@
   "page": 266,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -6518,6 +7000,15 @@
   "page": 268,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -6584,6 +7075,13 @@
   "page": 268,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -6650,6 +7148,10 @@
   "page": 269,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Warlock"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -6716,6 +7218,9 @@
   "page": 272,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Paladin"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -6767,8 +7272,8 @@
    "zh": ""
   },
   "description": {
-   "en": "You summon an otherworldly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the Otherworldly Steed stat block. If you already have a steed from this spell, the steed is replaced by the new one.\nThe steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed's creature type—Celestial, Fey, or Fiend—which determines certain traits in the stat block.\nCombat.\nThe steed is an ally to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on 1). If you have the Incapacitated condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you.\nDisappearance of the Steed.\nThe steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one.",
-   "zh": "你召唤某个异界存在作为忠诚坐骑，坐骑会出现在施法范围内你选择的未占据空间中。此生物使用异界坐骑的数据。如果你已经有一只以此法术获得的坐骑，则其会被新坐骑替代。\n坐骑看起来像一匹大型的可骑乘动物（由你选择），比如一匹马，一头骆驼，一只恐狼或一头赤鹿。你在施展此法术时从下述三种生物类型中选择坐骑的生物类型：天族、妖精、邪魔，其数据中的特定特质由坐骑的生物类型决定。\n战斗.\n坐骑是你和你盟友的盟友。战斗时，它共用你的先攻，并在你骑乘它期间视同受控坐骑（如1规则中所定义）。如果你具有失能状态，则坐骑会在你的回合之后立刻进行自己的回合并独立行动，集中精力保护你。\n坐骑的消失.\n坐骑在其降至0生命值或你死亡时会消失。当它消失时，它会将自己穿着或携带的任何物品留下。如果你再次施展此法术，你决定是重新召唤消失的那头坐骑还是召唤一头不同的。"
+   "en": "You summon an otherworldly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the Otherworldly Steed stat block. If you already have a steed from this spell, the steed is replaced by the new one.\nThe steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed's creature type—Celestial, Fey, or Fiend—which determines certain traits in the stat block.\nCombat.\nThe steed is an ally to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on mounted combat). If you have the Incapacitated condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you.\nDisappearance of the Steed.\nThe steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one.",
+   "zh": "你召唤某个异界存在作为忠诚坐骑，坐骑会出现在施法范围内你选择的未占据空间中。此生物使用异界坐骑的数据。如果你已经有一只以此法术获得的坐骑，则其会被新坐骑替代。\n坐骑看起来像一匹大型的可骑乘动物（由你选择），比如一匹马，一头骆驼，一只恐狼或一头赤鹿。你在施展此法术时从下述三种生物类型中选择坐骑的生物类型：天族、妖精、邪魔，其数据中的特定特质由坐骑的生物类型决定。\n战斗.\n坐骑是你和你盟友的盟友。战斗时，它共用你的先攻，并在你骑乘它期间视同受控坐骑（如骑乘战斗规则中所定义）。如果你具有失能状态，则坐骑会在你的回合之后立刻进行自己的回合并独立行动，集中精力保护你。\n坐骑的消失.\n坐骑在其降至0生命值或你死亡时会消失。当它消失时，它会将自己穿着或携带的任何物品留下。如果你再次施展此法术，你决定是重新召唤消失的那头坐骑还是召唤一头不同的。"
   },
   "higherLevels": {
    "en": "Using a Higher-Level Spell Slot.\nUse the spell slot's level for the spell's level in the stat block.",
@@ -6782,6 +7287,11 @@
   "page": 273,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Ranger"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -6848,6 +7358,10 @@
   "page": 275,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Druid",
+   "Sorcerer"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -6917,6 +7431,11 @@
   "page": 275,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -6986,6 +7505,11 @@
   "page": 278,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Cleric",
+   "Paladin",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": true,
   "concentration": false,
@@ -7052,6 +7576,12 @@
   "page": 282,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -7118,6 +7648,11 @@
   "page": 284,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -7187,6 +7722,14 @@
   "page": 286,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -7253,6 +7796,13 @@
   "page": 289,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -7319,6 +7869,11 @@
   "page": 290,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -7385,6 +7940,14 @@
   "page": 291,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -7451,6 +8014,11 @@
   "page": 291,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -7517,6 +8085,11 @@
   "page": 292,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Ranger"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -7583,6 +8156,14 @@
   "page": 293,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -7649,6 +8230,11 @@
   "page": 295,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": true,
   "concentration": false,
@@ -7715,6 +8301,13 @@
   "page": 295,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Paladin",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -7781,6 +8374,9 @@
   "page": 297,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -7850,6 +8446,11 @@
   "page": 298,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -7919,6 +8520,12 @@
   "page": 299,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -7985,6 +8592,11 @@
   "page": 299,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -8051,6 +8663,9 @@
   "page": 300,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Druid"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -8120,6 +8735,9 @@
   "page": 302,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -8186,6 +8804,10 @@
   "page": 303,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -8252,6 +8874,11 @@
   "page": 304,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -8318,6 +8945,10 @@
   "page": 307,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -8387,6 +9018,13 @@
   "page": 310,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -8453,6 +9091,10 @@
   "page": 311,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": true,
@@ -8519,6 +9161,10 @@
   "page": 312,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -8585,6 +9231,10 @@
   "page": 313,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -8651,6 +9301,12 @@
   "page": 314,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -8717,6 +9373,11 @@
   "page": 316,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -8786,6 +9447,9 @@
   "page": 316,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Paladin"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -8855,6 +9519,11 @@
   "page": 316,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Ranger"
+  ],
   "school": "illusion",
   "ritual": true,
   "concentration": true,
@@ -8921,6 +9590,12 @@
   "page": 319,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -8987,6 +9662,10 @@
   "page": 319,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -9053,6 +9732,9 @@
   "page": 319,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Cleric"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -9122,6 +9804,12 @@
   "page": 321,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -9188,6 +9876,10 @@
   "page": 340,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -9254,6 +9946,11 @@
   "page": 340,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -9320,6 +10017,11 @@
   "page": 343,
   "srd52": true,
   "level": 2,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Paladin"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -9386,6 +10088,10 @@
   "page": 240,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Cleric",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -9452,6 +10158,9 @@
   "page": 245,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Cleric"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -9518,6 +10227,11 @@
   "page": 246,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": true,
@@ -9584,6 +10298,11 @@
   "page": 248,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -9650,6 +10369,9 @@
   "page": 248,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -9719,6 +10441,12 @@
   "page": 250,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -9785,6 +10513,10 @@
   "page": 254,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -9854,6 +10586,11 @@
   "page": 258,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -9920,6 +10657,11 @@
   "page": 258,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Paladin"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -9986,6 +10728,13 @@
   "page": 260,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger",
+   "Sorcerer"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -10052,6 +10801,17 @@
   "page": 264,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -10118,6 +10878,12 @@
   "page": 271,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -10184,6 +10950,10 @@
   "page": 274,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -10253,6 +11023,12 @@
   "page": 276,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -10319,6 +11095,11 @@
   "page": 277,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -10385,6 +11166,12 @@
   "page": 279,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -10454,6 +11241,11 @@
   "page": 284,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -10520,6 +11312,12 @@
   "page": 287,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -10586,6 +11384,10 @@
   "page": 291,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": true,
   "concentration": false,
@@ -10652,6 +11454,10 @@
   "page": 292,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -10721,6 +11527,12 @@
   "page": 293,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Cleric",
+   "Paladin",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -10787,6 +11599,12 @@
   "page": 295,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -10853,6 +11671,10 @@
   "page": 296,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Cleric"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -10922,6 +11744,11 @@
   "page": 296,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Ranger"
+  ],
   "school": "transmutation",
   "ritual": true,
   "concentration": false,
@@ -10988,6 +11815,11 @@
   "page": 302,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Ranger",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -11054,6 +11886,9 @@
   "page": 304,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": true,
   "concentration": false,
@@ -11120,6 +11955,11 @@
   "page": 305,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Ranger"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -11186,6 +12026,14 @@
   "page": 309,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -11252,6 +12100,12 @@
   "page": 312,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Cleric",
+   "Paladin",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -11318,6 +12172,13 @@
   "page": 312,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -11384,6 +12245,11 @@
   "page": 314,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -11450,6 +12316,11 @@
   "page": 317,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -11516,6 +12387,11 @@
   "page": 318,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -11582,6 +12458,11 @@
   "page": 318,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -11648,6 +12529,11 @@
   "page": 319,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Ranger"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -11714,6 +12600,9 @@
   "page": 319,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Cleric"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -11783,6 +12672,11 @@
   "page": 321,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -11849,6 +12743,13 @@
   "page": 334,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -11915,6 +12816,11 @@
   "page": 337,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": true,
@@ -11984,6 +12890,13 @@
   "page": 340,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": true,
   "concentration": false,
@@ -12050,6 +12963,13 @@
   "page": 340,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid",
+   "Ranger",
+   "Sorcerer"
+  ],
   "school": "transmutation",
   "ritual": true,
   "concentration": false,
@@ -12116,6 +13036,10 @@
   "page": 341,
   "srd52": true,
   "level": 3,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -12182,6 +13106,10 @@
   "page": 242,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -12248,6 +13176,10 @@
   "page": 244,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -12314,6 +13246,13 @@
   "page": 245,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Cleric",
+   "Paladin",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -12380,6 +13319,12 @@
   "page": 247,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -12449,6 +13394,13 @@
   "page": 249,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -12515,6 +13467,9 @@
   "page": 252,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -12581,6 +13536,12 @@
   "page": 253,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -12647,6 +13608,10 @@
   "page": 255,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -12716,6 +13681,10 @@
   "page": 255,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -12785,6 +13754,11 @@
   "page": 256,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -12851,6 +13825,10 @@
   "page": 261,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -12917,6 +13895,12 @@
   "page": 262,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -12983,6 +13967,11 @@
   "page": 264,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -13049,6 +14038,11 @@
   "page": 265,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid",
+   "Ranger",
+   "Sorcerer"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -13115,6 +14109,9 @@
   "page": 270,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -13181,6 +14178,10 @@
   "page": 271,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -13247,6 +14248,11 @@
   "page": 274,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -13313,6 +14319,13 @@
   "page": 277,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Ranger"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -13379,6 +14392,9 @@
   "page": 279,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -13445,6 +14461,11 @@
   "page": 281,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -13511,6 +14532,9 @@
   "page": 281,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Cleric"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -13577,6 +14601,12 @@
   "page": 283,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -13643,6 +14673,11 @@
   "page": 287,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -13712,6 +14747,10 @@
   "page": 290,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -13778,6 +14817,14 @@
   "page": 292,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -13844,6 +14891,10 @@
   "page": 300,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -13910,6 +14961,10 @@
   "page": 301,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -13976,6 +15031,10 @@
   "page": 303,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -14042,6 +15101,10 @@
   "page": 304,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -14111,6 +15174,12 @@
   "page": 306,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -14177,6 +15246,12 @@
   "page": 321,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Cleric",
+   "Druid",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -14243,6 +15318,13 @@
   "page": 321,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Artificer",
+   "Druid",
+   "Ranger",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -14309,6 +15391,10 @@
   "page": 337,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -14378,6 +15464,11 @@
   "page": 338,
   "srd52": true,
   "level": 4,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -14447,6 +15538,12 @@
   "page": 240,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -14513,6 +15610,9 @@
   "page": 241,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Druid"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -14579,6 +15679,10 @@
   "page": 244,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -14645,6 +15749,11 @@
   "page": 246,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -14714,6 +15823,10 @@
   "page": 251,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -14783,6 +15896,9 @@
   "page": 251,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Cleric"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -14849,6 +15965,10 @@
   "page": 252,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -14915,6 +16035,11 @@
   "page": 253,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -14984,6 +16109,10 @@
   "page": 254,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Druid",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -15053,6 +16182,10 @@
   "page": 255,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -15119,6 +16252,10 @@
   "page": 256,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Cleric",
+   "Druid"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -15185,6 +16322,11 @@
   "page": 259,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Artificer",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -15251,6 +16393,10 @@
   "page": 263,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Cleric",
+   "Paladin"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -15317,6 +16463,11 @@
   "page": 266,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -15383,6 +16534,11 @@
   "page": 266,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -15449,6 +16605,9 @@
   "page": 275,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Cleric"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -15518,6 +16677,13 @@
   "page": 278,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -15584,6 +16750,14 @@
   "page": 281,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Artificer",
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Paladin",
+   "Ranger"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -15650,6 +16824,9 @@
   "page": 283,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Cleric"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -15716,6 +16893,12 @@
   "page": 285,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -15782,6 +16965,11 @@
   "page": 289,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Sorcerer"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -15851,6 +17039,11 @@
   "page": 290,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -15917,6 +17110,11 @@
   "page": 296,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -15986,6 +17184,11 @@
   "page": 299,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -16052,6 +17255,10 @@
   "page": 299,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -16118,6 +17325,9 @@
   "page": 304,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -16184,6 +17394,13 @@
   "page": 305,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -16250,6 +17467,11 @@
   "page": 310,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Paladin"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -16316,6 +17538,10 @@
   "page": 311,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": true,
   "concentration": false,
@@ -16382,6 +17608,9 @@
   "page": 311,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Druid"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -16448,6 +17677,13 @@
   "page": 313,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -16514,6 +17750,11 @@
   "page": 314,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -16580,6 +17821,9 @@
   "page": 324,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -16646,6 +17890,10 @@
   "page": 331,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -16712,6 +17960,12 @@
   "page": 332,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -16778,6 +18032,10 @@
   "page": 335,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Druid",
+   "Ranger"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -16844,6 +18102,9 @@
   "page": 338,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -16910,6 +18171,12 @@
   "page": 339,
   "srd52": true,
   "level": 5,
+  "classes": [
+   "Artificer",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -16976,6 +18243,9 @@
   "page": 247,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -17042,6 +18312,10 @@
   "page": 249,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -17108,6 +18382,11 @@
   "page": 250,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -17177,6 +18456,9 @@
   "page": 255,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -17246,6 +18528,9 @@
   "page": 256,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -17312,6 +18597,11 @@
   "page": 258,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -17378,6 +18668,10 @@
   "page": 263,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -17447,6 +18741,9 @@
   "page": 266,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": true,
   "concentration": false,
@@ -17513,6 +18810,12 @@
   "page": 270,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": true,
@@ -17579,6 +18882,11 @@
   "page": 273,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": true,
@@ -17645,6 +18953,11 @@
   "page": 275,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -17711,6 +19024,9 @@
   "page": 276,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric"
+  ],
   "school": "abjuration",
   "ritual": true,
   "concentration": false,
@@ -17777,6 +19093,10 @@
   "page": 279,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -17843,6 +19163,10 @@
   "page": 282,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -17909,6 +19233,9 @@
   "page": 283,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -17975,6 +19302,10 @@
   "page": 284,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric",
+   "Druid"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -18041,6 +19372,11 @@
   "page": 284,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -18107,6 +19443,9 @@
   "page": 294,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -18173,6 +19512,11 @@
   "page": 296,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -18239,6 +19583,11 @@
   "page": 302,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -18305,6 +19654,10 @@
   "page": 302,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -18374,6 +19727,10 @@
   "page": 303,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -18440,6 +19797,9 @@
   "page": 304,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -18506,6 +19866,10 @@
   "page": 309,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -18572,6 +19936,12 @@
   "page": 329,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -18638,6 +20008,9 @@
   "page": 334,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -18704,6 +20077,13 @@
   "page": 336,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -18770,6 +20150,9 @@
   "page": 339,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -18839,6 +20222,9 @@
   "page": 339,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -18908,6 +20294,9 @@
   "page": 341,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -18974,6 +20363,9 @@
   "page": 343,
   "srd52": true,
   "level": 6,
+  "classes": [
+   "Cleric"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -19040,6 +20432,9 @@
   "page": 254,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Cleric"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -19109,6 +20504,10 @@
   "page": 261,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -19178,6 +20577,9 @@
   "page": 265,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Cleric"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -19244,6 +20646,13 @@
   "page": 269,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -19310,6 +20719,11 @@
   "page": 273,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -19376,6 +20790,11 @@
   "page": 275,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Sorcerer"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -19442,6 +20861,11 @@
   "page": 276,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -19508,6 +20932,11 @@
   "page": 299,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -19574,6 +21003,10 @@
   "page": 300,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -19640,6 +21073,10 @@
   "page": 302,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": true,
@@ -19706,6 +21143,13 @@
   "page": 305,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -19772,6 +21216,11 @@
   "page": 307,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -19838,6 +21287,10 @@
   "page": 309,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -19904,6 +21357,11 @@
   "page": 311,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -19970,6 +21428,10 @@
   "page": 312,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Cleric"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -20036,6 +21498,11 @@
   "page": 312,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -20102,6 +21569,9 @@
   "page": 315,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -20168,6 +21638,9 @@
   "page": 317,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": false,
@@ -20234,6 +21707,12 @@
   "page": 329,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Cleric",
+   "Druid",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -20300,6 +21779,11 @@
   "page": 331,
   "srd52": true,
   "level": 7,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -20366,6 +21850,9 @@
   "page": 240,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Druid"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -20432,6 +21919,10 @@
   "page": 241,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Cleric",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -20498,6 +21989,11 @@
   "page": 242,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -20564,6 +22060,12 @@
   "page": 245,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -20630,6 +22132,9 @@
   "page": 251,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -20696,6 +22201,11 @@
   "page": 257,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -20762,6 +22272,11 @@
   "page": 261,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,
@@ -20828,6 +22343,12 @@
   "page": 265,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": true,
@@ -20894,6 +22415,11 @@
   "page": 267,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Sorcerer"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -20960,6 +22486,10 @@
   "page": 279,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Bard",
+   "Warlock"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -21026,6 +22556,9 @@
   "page": 286,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Cleric"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": true,
@@ -21092,6 +22625,11 @@
   "page": 288,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -21158,6 +22696,9 @@
   "page": 296,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -21224,6 +22765,10 @@
   "page": 298,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -21290,6 +22835,12 @@
   "page": 306,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -21356,6 +22907,12 @@
   "page": 329,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Cleric",
+   "Druid",
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -21422,6 +22979,9 @@
   "page": 336,
   "srd52": true,
   "level": 8,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -21488,6 +23048,11 @@
   "page": 243,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Cleric",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -21554,6 +23119,12 @@
   "page": 276,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Bard",
+   "Druid",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "divination",
   "ritual": false,
   "concentration": false,
@@ -21620,6 +23191,12 @@
   "page": 277,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Cleric",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -21686,6 +23263,10 @@
   "page": 288,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Warlock",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -21752,6 +23333,9 @@
   "page": 296,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Cleric"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -21818,6 +23402,10 @@
   "page": 298,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "evocation",
   "ritual": false,
   "concentration": false,
@@ -21884,6 +23472,10 @@
   "page": 306,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Bard",
+   "Cleric"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -21950,6 +23542,12 @@
   "page": 306,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Bard",
+   "Sorcerer",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "enchantment",
   "ritual": false,
   "concentration": false,
@@ -22016,6 +23614,10 @@
   "page": 308,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Bard",
+   "Wizard"
+  ],
   "school": "abjuration",
   "ritual": false,
   "concentration": false,
@@ -22082,6 +23684,10 @@
   "page": 315,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Druid",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -22148,6 +23754,9 @@
   "page": 321,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Druid"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": true,
@@ -22214,6 +23823,10 @@
   "page": 334,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": false,
@@ -22280,6 +23893,11 @@
   "page": 335,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Bard",
+   "Warlock",
+   "Wizard"
+  ],
   "school": "transmutation",
   "ritual": false,
   "concentration": true,
@@ -22346,6 +23964,10 @@
   "page": 336,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Cleric",
+   "Druid"
+  ],
   "school": "necromancy",
   "ritual": false,
   "concentration": false,
@@ -22412,6 +24034,10 @@
   "page": 341,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Warlock",
+   "Wizard"
+  ],
   "school": "illusion",
   "ritual": false,
   "concentration": true,
@@ -22478,6 +24104,10 @@
   "page": 341,
   "srd52": true,
   "level": 9,
+  "classes": [
+   "Sorcerer",
+   "Wizard"
+  ],
   "school": "conjuration",
   "ritual": false,
   "concentration": false,

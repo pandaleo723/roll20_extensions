@@ -1,32 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8" />
     <title>Roll20 Sheet Filler</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
+    <!-- Text in [data-i18n] elements comes from R20F.UI_STRINGS (src/shared/settings.js). -->
     <h1>Roll20 Sheet Filler</h1>
-    <label for="lang">Spell language / 法术语言</label>
+    <p class="hint" data-i18n="popupHint"></p>
+
+    <h2 data-i18n="settings"></h2>
+
+    <label for="lang" data-i18n="language"></label>
     <select id="lang">
       <option value="zh">中文</option>
       <option value="en">English</option>
     </select>
-    <p class="hint">Use the 📖 buttons in the sheet's Cantrips section to pick a spell.</p>
 
-    <hr />
-    <p class="hint">Or fill whole-sheet fields: paste JSON below, then click Fill.</p>
+    <label class="check">
+      <input type="checkbox" id="showAltName" />
+      <span data-i18n="showAltName"></span>
+    </label>
 
-    <label for="data">Character data (JSON)</label>
-    <textarea id="data" spellcheck="false"></textarea>
+    <label class="check">
+      <input type="checkbox" id="autoClass" />
+      <span data-i18n="autoClass"></span>
+    </label>
+    <p class="hint small" data-i18n="autoClassHint"></p>
 
-    <div class="buttons">
-      <button id="fill">Fill sheet</button>
-      <button id="sample" class="secondary">Load sample</button>
-    </div>
+    <fieldset id="classBox">
+      <legend data-i18n="manualClass"></legend>
+      <div id="classes" class="class-grid"></div>
+      <p class="hint small" data-i18n="manualClassHint"></p>
+    </fieldset>
 
-    <pre id="status"></pre>
+    <p id="saved" class="hint small"></p>
 
+    <details>
+      <summary data-i18n="jsonFill"></summary>
+      <p class="hint" data-i18n="jsonHint"></p>
+      <label for="data" data-i18n="jsonLabel"></label>
+      <textarea id="data" spellcheck="false"></textarea>
+      <div class="buttons">
+        <button id="fill" data-i18n="fill"></button>
+        <button id="sample" class="secondary" data-i18n="sample"></button>
+      </div>
+      <pre id="status"></pre>
+    </details>
+
+    <script src="../shared/settings.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>

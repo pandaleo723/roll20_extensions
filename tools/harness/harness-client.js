@@ -8,12 +8,20 @@
     Object.assign(store, JSON.parse(localStorage.getItem("harness-sync") || "{}"));
   } catch {}
   let spellsPromise;
+  const storageListeners = [];
   window.chrome = {
     storage: {
+      onChanged: { addListener: (fn) => storageListeners.push(fn) },
       sync: {
-        get: async (key) => (key ? { [key]: store[key] } : { ...store }),
+        get: async (keys) => {
+          if (keys == null) return { ...store };
+          const list = Array.isArray(keys) ? keys : [keys];
+          return Object.fromEntries(list.filter((k) => k in store).map((k) => [k, store[k]]));
+        },
         set: async (obj) => {
+          const changes = Object.fromEntries(Object.entries(obj).map(([k, v]) => [k, { oldValue: store[k], newValue: v }]));
           Object.assign(store, obj);
+          storageListeners.forEach((fn) => fn(changes, "sync"));
           try {
             localStorage.setItem("harness-sync", JSON.stringify(store));
           } catch {}

@@ -1,0 +1,531 @@
+[
+ {
+  "id": "boon of combat prowess|xphb",
+  "source": "XPHB",
+  "page": 210,
+  "srd52": true,
+  "category": "epicBoon",
+  "categoryCode": "EB",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 19+",
+   "zh": "19 级+"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Boon of Combat Prowess",
+   "zh": "英勇战斗之恩惠"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Epic Boon Feat",
+   "zh": "传奇恩惠专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nPeerless Aim.\nWhen you miss with an attack roll, you can hit instead. Once you use this benefit, you can't use it again until the start of your next turn.",
+   "zh": "你获得以下增益。\n无双锁定.\n当你的一次攻击检定失手时，你可以将其改为命中。该增益一经使用，下个你的回合开始后你才能再次使用它。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "boon of dimensional travel|xphb",
+  "source": "XPHB",
+  "page": 210,
+  "srd52": true,
+  "category": "epicBoon",
+  "categoryCode": "EB",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 19+",
+   "zh": "19 级+"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Boon of Dimensional Travel",
+   "zh": "次元旅行之恩惠"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Epic Boon Feat",
+   "zh": "传奇恩惠专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nBlink Steps.\nImmediately after you take the Attack action or the Magic action, you can teleport up to 30 feet to an unoccupied space you can see.",
+   "zh": "你获得以下增益。\n闪烁步.\n当你执行攻击动作或魔法动作后，你可以立即传送至多 30 尺的距离到一处你可见的未占据空间内。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "boon of fate|xphb",
+  "source": "XPHB",
+  "page": 210,
+  "srd52": true,
+  "category": "epicBoon",
+  "categoryCode": "EB",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 19+",
+   "zh": "19 级+"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Boon of Fate",
+   "zh": "扭曲命运之恩惠"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Epic Boon Feat",
+   "zh": "传奇恩惠专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nImprove Fate.\nWhen you or another creature within 60 feet of you succeeds on or fails a D20 Test, you can roll 2d4 and apply the total rolled as a bonus or penalty to the d20 roll. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest.",
+   "zh": "你获得以下增益。\n时来运转.\n当你或位于你 60 尺内的另一名生物的D20 检定中成功时或失败时，你可以投掷2d4，并将掷骰结果作为加值或减值附加到d20掷骰中。该增益一经使用，直至你投掷先攻、完成短或完成长休你都无法再次使用。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "boon of irresistible offense|xphb",
+  "source": "XPHB",
+  "page": 211,
+  "srd52": true,
+  "category": "epicBoon",
+  "categoryCode": "EB",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 19+",
+   "zh": "19 级+"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Boon of Irresistible Offense",
+   "zh": "无敌攻势之恩惠"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Epic Boon Feat",
+   "zh": "传奇恩惠专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nOvercome Defenses.\nThe Bludgeoning, Piercing, and Slashing damage you deal always ignores Resistance.\nOverwhelming Strike.\nWhen you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. The extra damage's type is the same as the attack's type.",
+   "zh": "你获得以下增益。\n摧坚破甲.\n你造成的钝击、挥砍与穿刺伤害始终无视抗性。\n无阻打击.\n当你为一次攻击检定投掷的d20骰出了20时，你可以对目标造成额外伤害，你造成的额外伤害等于你以此专长提升的属性的属性值，伤害类型与这次攻击的伤害类型相同。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "boon of spell recall|xphb",
+  "source": "XPHB",
+  "page": 211,
+  "srd52": true,
+  "category": "epicBoon",
+  "categoryCode": "EB",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 19+; Spellcasting or Pact Magic Feature",
+   "zh": "19 级+；施法或契约魔法特性"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Boon of Spell Recall",
+   "zh": "法术溯回之恩惠"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Epic Boon Feat",
+   "zh": "传奇恩惠专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nFree Casting.\nWhenever you cast a spell with a level 1-4 spell slot, roll 1d4. If the number you roll is the same as the slot's level, the slot isn't expended.",
+   "zh": "你获得以下增益。\n免费施法.\n每当你使用一环到四环的法术位施展法术时，投掷1d4。若掷骰结果与你消耗的法术位环阶一致，则该法术位不会被消耗。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "boon of the night spirit|xphb",
+  "source": "XPHB",
+  "page": 211,
+  "srd52": true,
+  "category": "epicBoon",
+  "categoryCode": "EB",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 19+",
+   "zh": "19 级+"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Boon of the Night Spirit",
+   "zh": "暗夜精魂之恩惠"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Epic Boon Feat",
+   "zh": "传奇恩惠专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nMerge with Shadows.\nWhile within Dim Light or Darkness, you can give yourself the Invisible condition as a Bonus Action. The condition ends on you immediately after you take an action, a Bonus Action, or a Reaction.\nShadowy Form.\nWhile within Dim Light or Darkness, you have Resistance to all damage except Psychic and Radiant.",
+   "zh": "你获得以下增益。\n融身入影.\n身处微光光照或黑暗期间，你可以用附赠动作令你获得隐形状态。隐形状态将在你执行动作/附赠动作/反应后立即结束。\n幽影化身.\n身处微光光照或黑暗期间，你具有除心灵和光耀伤害外所有伤害的抗性。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "boon of truesight|xphb",
+  "source": "XPHB",
+  "page": 211,
+  "srd52": true,
+  "category": "epicBoon",
+  "categoryCode": "EB",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 19+",
+   "zh": "19 级+"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Boon of Truesight",
+   "zh": "真实视觉之恩惠"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Epic Boon Feat",
+   "zh": "传奇恩惠专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nTruesight.\nYou have Truesight with a range of {truesight} feet.",
+   "zh": "你获得以下增益。\n真实视觉.\n你获得{truesight}尺真实视觉。"
+  },
+  "params": {
+   "truesight": {
+    "default": 60,
+    "unit": "feet"
+   }
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "archery|xphb",
+  "source": "XPHB",
+  "page": 209,
+  "srd52": true,
+  "category": "fightingStyle",
+  "categoryCode": "FS",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Fighting Style Feature",
+   "zh": "战斗风格特性"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Archery",
+   "zh": "箭术"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Fighting Style Feat",
+   "zh": "战斗风格专长"
+  },
+  "description": {
+   "en": "You gain a +2 bonus to attack rolls you make with Ranged weapons.",
+   "zh": "你使用远程武器进行的攻击检定获得 +2 加值。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "defense|xphb",
+  "source": "XPHB",
+  "page": 209,
+  "srd52": true,
+  "category": "fightingStyle",
+  "categoryCode": "FS",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Fighting Style Feature",
+   "zh": "战斗风格特性"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Defense",
+   "zh": "防御"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Fighting Style Feat",
+   "zh": "战斗风格专长"
+  },
+  "description": {
+   "en": "While you're wearing Light, Medium, or Heavy armor, you gain a +1 bonus to Armor Class.",
+   "zh": "着装轻甲、中甲或重甲期间，你的护甲等级获得 +1 加值。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "great weapon fighting|xphb",
+  "source": "XPHB",
+  "page": 209,
+  "srd52": true,
+  "category": "fightingStyle",
+  "categoryCode": "FS",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Fighting Style Feature",
+   "zh": "战斗风格特性"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Great Weapon Fighting",
+   "zh": "巨武器战斗"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Fighting Style Feat",
+   "zh": "战斗风格专长"
+  },
+  "description": {
+   "en": "When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.",
+   "zh": "当你用双手持握的一把近战武器发动了一次攻击并为其进行伤害掷骰时，若该武器具有双手或多用词条，那么你便可以将伤害骰投出的 1 和 2 都视为 3。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "two-weapon fighting|xphb",
+  "source": "XPHB",
+  "page": 210,
+  "srd52": true,
+  "category": "fightingStyle",
+  "categoryCode": "FS",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Fighting Style Feature",
+   "zh": "战斗风格特性"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Two-Weapon Fighting",
+   "zh": "双武器战斗"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Fighting Style Feat",
+   "zh": "战斗风格专长"
+  },
+  "description": {
+   "en": "When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.",
+   "zh": "当你因使用具有轻型词条的武器而得以发动额外的攻击时，若此次额外的攻击的伤害本来无法加入你的属性调整值，你可以加入你的属性调整值。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "ability score improvement|xphb",
+  "source": "XPHB",
+  "page": 202,
+  "srd52": true,
+  "category": "general",
+  "categoryCode": "G",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 4+",
+   "zh": "4 级+"
+  },
+  "repeatable": true,
+  "name": {
+   "en": "Ability Score Improvement",
+   "zh": "属性值提升"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "General Feat",
+   "zh": "通用专长"
+  },
+  "description": {
+   "en": "Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20.\nRepeatable.\nYou can take this feat more than once.",
+   "zh": "你选择的一项属性提升 2，或者你选择的两项属性各提升 1。你无法依靠本专长令某个属性值超出 20。\n复选.\n你可以多次选择这个专长。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "grappler|xphb",
+  "source": "XPHB",
+  "page": 204,
+  "srd52": true,
+  "category": "general",
+  "categoryCode": "G",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "Level 4+; Strength or Dexterity 13+",
+   "zh": "4 级+；力量或敏捷 13+"
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Grappler",
+   "zh": "擒抱者"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "General Feat",
+   "zh": "通用专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nPunch and Grab.\nWhen you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.\nAttack Advantage.\nYou have Advantage on attack rolls against a creature Grappled by you.\nFast Wrestler.\nYou don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.",
+   "zh": "你获得以下增益。\n连擒带打.\n你的回合中，当你用攻击动作中的一次徒手打击命中了一个生物，你可以同时进行擒抱和造成伤害两个选项。你每回合只能使用这个增益一次。\n优势攻击.\n你攻击受擒于你的生物时进行的攻击检定具有优势。\n高速拖行.\n你无需为移动受擒于你的生物而花费额外的移动力，前提是这名生物的体型与你相同或更小。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "alert|xphb",
+  "source": "XPHB",
+  "page": 200,
+  "srd52": true,
+  "category": "origin",
+  "categoryCode": "O",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "",
+   "zh": ""
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Alert",
+   "zh": "警觉"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Origin Feat",
+   "zh": "起源专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nInitiative Proficiency.\nWhen you roll Initiative, you can add your Proficiency Bonus to the roll.\nInitiative Swap.\nImmediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.",
+   "zh": "你获得以下增益。\n先攻熟练.\n当你投掷先攻时，你可以将你的熟练加值加入结果中。\n先攻互换.\n当你掷完先攻，你可以立即与处于同一场战斗中的一名自愿的盟友交换先攻。如果你或那个盟友正处于失能状态，则不能进行先攻交换。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "magic initiate|xphb",
+  "source": "XPHB",
+  "page": 201,
+  "srd52": true,
+  "category": "origin",
+  "categoryCode": "O",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "",
+   "zh": ""
+  },
+  "repeatable": true,
+  "name": {
+   "en": "Magic Initiate",
+   "zh": "魔法学徒"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Origin Feat",
+   "zh": "起源专长"
+  },
+  "description": {
+   "en": "You gain the following benefits.\nTwo Cantrips.\nYou learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).\nLevel 1 Spell.\nChoose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.\nSpell Change.\nWhenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.\nRepeatable.\nYou can take this feat more than once, but you must choose a different spell list each time.",
+   "zh": "你获得以下增益。\n两道戏法.\n从牧师法术列表、德鲁伊法术列表、法师法术列表中选择一个列表，你从该法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。\n一环法术.\n你从前面所选的法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成长休后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。\n改变法术.\n每当你获得一级新等级，你都能将通过本专长习得的一道法术替换为同法术列表中同环阶的另一道法术。\n复选.\n你可多次选择本专长，但是你每次都必须选择一个不同的法术列表。"
+  },
+  "variants": [
+   {
+    "id": "magic initiate; cleric|xphb",
+    "variant": {
+     "en": "Cleric",
+     "zh": "牧师"
+    },
+    "name": {
+     "en": "Magic Initiate (Cleric)",
+     "zh": "魔法学徒（牧师）"
+    },
+    "description": {
+     "en": "You gain the following benefits.\nTwo Cantrips.\nYou learn two cantrips of your choice from the Cleric spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).\nLevel 1 Spell.\nChoose a level 1 spell from the Cleric spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.\nSpell Change.\nWhenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.\nRepeatable.\nYou can take this feat more than once, but you must choose a different spell list each time.",
+     "zh": "你获得以下增益。\n两道戏法.\n从牧师法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。\n一环法术.\n你从牧师法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成长休后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。\n改变法术.\n每当你获得一级新等级，你都能将通过本专长习得的一道法术替换为同法术列表中同环阶的另一道法术。\n复选.\n你可多次选择本专长，但是你每次都必须选择一个不同的法术列表。"
+    }
+   },
+   {
+    "id": "magic initiate; druid|xphb",
+    "variant": {
+     "en": "Druid",
+     "zh": "德鲁伊"
+    },
+    "name": {
+     "en": "Magic Initiate (Druid)",
+     "zh": "魔法学徒（德鲁伊）"
+    },
+    "description": {
+     "en": "You gain the following benefits.\nTwo Cantrips.\nYou learn two cantrips of your choice from the Druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).\nLevel 1 Spell.\nChoose a level 1 spell from the Druid spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.\nSpell Change.\nWhenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.\nRepeatable.\nYou can take this feat more than once, but you must choose a different spell list each time.",
+     "zh": "你获得以下增益。\n两道戏法.\n从德鲁伊法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。\n一环法术.\n你从德鲁伊法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成长休后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。\n改变法术.\n每当你获得一级新等级，你都能将通过本专长习得的一道法术替换为同法术列表中同环阶的另一道法术。\n复选.\n你可多次选择本专长，但是你每次都必须选择一个不同的法术列表。"
+    }
+   },
+   {
+    "id": "magic initiate; wizard|xphb",
+    "variant": {
+     "en": "Wizard",
+     "zh": "法师"
+    },
+    "name": {
+     "en": "Magic Initiate (Wizard)",
+     "zh": "魔法学徒（法师）"
+    },
+    "description": {
+     "en": "You gain the following benefits.\nTwo Cantrips.\nYou learn two cantrips of your choice from the Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).\nLevel 1 Spell.\nChoose a level 1 spell from the Wizard spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.\nSpell Change.\nWhenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.\nRepeatable.\nYou can take this feat more than once, but you must choose a different spell list each time.",
+     "zh": "你获得以下增益。\n两道戏法.\n从法师法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。\n一环法术.\n你从法师法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成长休后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。\n改变法术.\n每当你获得一级新等级，你都能将通过本专长习得的一道法术替换为同法术列表中同环阶的另一道法术。\n复选.\n你可多次选择本专长，但是你每次都必须选择一个不同的法术列表。"
+    }
+   }
+  ],
+  "translator": "不全书"
+ },
+ {
+  "id": "savage attacker|xphb",
+  "source": "XPHB",
+  "page": 201,
+  "srd52": true,
+  "category": "origin",
+  "categoryCode": "O",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "",
+   "zh": ""
+  },
+  "repeatable": false,
+  "name": {
+   "en": "Savage Attacker",
+   "zh": "凶蛮打手"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Origin Feat",
+   "zh": "起源专长"
+  },
+  "description": {
+   "en": "You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.",
+   "zh": "你专门训练过如何做出更具破坏性的进攻。每回合一次，当你使用武器命中目标时，你可以掷两次武器的伤害骰，并自选其中一次应用在目标上。"
+  },
+  "translator": "不全书"
+ },
+ {
+  "id": "skilled|xphb",
+  "source": "XPHB",
+  "page": 201,
+  "srd52": true,
+  "category": "origin",
+  "categoryCode": "O",
+  "classOnly": "",
+  "prerequisite": {
+   "en": "",
+   "zh": ""
+  },
+  "repeatable": true,
+  "name": {
+   "en": "Skilled",
+   "zh": "熟习"
+  },
+  "traitSource": "feat",
+  "sourceType": {
+   "en": "Origin Feat",
+   "zh": "起源专长"
+  },
+  "description": {
+   "en": "You gain proficiency in any combination of three skills or tools of your choice.\nRepeatable.\nYou can take this feat more than once.",
+   "zh": "你获得共计三项自选的技能和工具熟练。\n复选.\n你可以多次选择这个专长。"
+  },
+  "translator": "不全书"
+ }
+]

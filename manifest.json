@@ -3,7 +3,9 @@
   "name": "Roll20 Sheet Filler",
   "version": "0.2.0",
   "description": "Fill a D&D character sheet on Roll20 from a spell list or JSON data.",
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
   "background": {
     "service_worker": "src/background/background.js"
   },
@@ -13,8 +15,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://app.roll20.net/*"],
+      "matches": [
+        "https://app.roll20.net/*"
+      ],
       "js": [
+        "src/shared/settings.js",
         "src/content/fields.js",
         "src/content/spells.js",
         "src/content/picker.js",
@@ -27,8 +32,11 @@
       "run_at": "document_idle"
     },
     {
-      "matches": ["https://storage.googleapis.com/roll20-cdn/*"],
+      "matches": [
+        "https://storage.googleapis.com/roll20-cdn/*"
+      ],
       "js": [
+        "src/shared/settings.js",
         "src/content/fields.js",
         "src/content/spells.js",
         "src/content/picker.js",

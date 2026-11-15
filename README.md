@@ -15,16 +15,22 @@ src/content/picker.js       In-sheet searchable picker overlay (shadow DOM)
 src/content/sections.js     Adds 📖 buttons to supported repeating sections
 src/content/content.js      Entry point; popup "Fill sheet" handler
 src/popup/                  Toolbar popup: language setting + JSON fill
-scripts/build-data.js       Builds data/ from 5etools-cn
-data/srd/                   SRD 5.2 spell data (committed, shipped)
+scripts/build-all.js        Builds everything in data/ from 5etools-cn
+scripts/build-data.js       … spells           (data/*/spells.json)
+scripts/build-items.js      … equipment        (data/*/items.json)
+scripts/build-traits.js     … feats, backgrounds, species, class features
+scripts/lib/5etools.js      Shared helpers: fetch, 5etools markup -> plain text, output split
+data/srd/                   SRD 5.2 data (committed, shipped)
 data/local/                 Full PHB 2024 data (git-ignored, personal use)
 ```
 
 ## Setup
 
 ```bash
-node scripts/build-data.js
+node scripts/build-all.js     # all data; or run one builder, e.g. node scripts/build-items.js
 ```
+
+See [data/README.md](data/README.md) for the files and their record formats.
 
 Then in Chrome: `chrome://extensions` → **Developer mode** → **Load unpacked** → pick this folder.
 After editing code: reload the extension card, then refresh the Roll20 tab.

@@ -13,83 +13,15 @@
  * 5etools markup ({@damage 1d10}, {@condition 目盲|XPHB}...) is converted to plain text.
  */
 
-const fs = require("fs");
-const path = require("path");
+const { stripTags, renderEntries, DAMAGE_TYPES_ZH, plural, fetchJson, write, runMain } = require("./lib/5etools");
 
-const REPO_RAW = "https://raw.githubusercontent.com/tjliqy/5etools-cn/cn2.0";
 const SPELL_FILE = "spells/spells-xphb.json";
-const ROOT = path.join(__dirname, "..");
-
-// ---------- 5etools markup -> plain text ----------
-
-const DISPLAY_IN_THIRD_PART = new Set([
-  "spell", "creature", "item", "condition", "hazard", "action", "sense", "skill",
-  "status", "variantrule", "race", "book", "class", "feat", "background",
-]);
-
-function stripTags(text) {
-  let prev;
-  do {
-    prev = text;
-    text = text.replace(/\{@(\w+) ([^{}]*)\}/g, (_, tag, body) => {
-      const parts = body.split("|");
-      switch (tag) {
-        case "dc": return `DC ${parts[0]}`;
-        case "hit": return `+${parts[0]}`.replace("+-", "-");
-        case "chance": return `${parts[0]}%`;
-        case "scaledamage":
-        case "scaledice": return parts[parts.length - 1];
-        default:
-          return DISPLAY_IN_THIRD_PART.has(tag) ? parts[2] || parts[0] : parts[0];
-      }
-    });
-  } while (text !== prev);
-  return text;
-}
-
-/** Render a 5etools "entries" array to plain text with line breaks. */
-function renderEntries(entries) {
-  const out = [];
-  const walk = (e) => {
-    if (e == null) return;
-    if (typeof e === "string") return out.push(stripTags(e));
-    if (Array.isArray(e)) return e.forEach(walk);
-    switch (e.type) {
-      case "list":
-        (e.items || []).forEach((it) => {
-          if (typeof it === "string") out.push(`• ${stripTags(it)}`);
-          else out.push(`• ${it.name ? stripTags(it.name) + " " : ""}${renderEntries(it.entries || [it.entry])}`);
-        });
-        return;
-      case "item":
-        return out.push(`• ${e.name ? stripTags(e.name) + " " : ""}${renderEntries(e.entries || [e.entry])}`);
-      case "table":
-        if (e.caption) out.push(stripTags(e.caption));
-        if (e.colLabels) out.push(e.colLabels.map(stripTags).join(" | "));
-        (e.rows || []).forEach((row) =>
-          out.push(row.map((c) => (typeof c === "string" ? stripTags(c) : renderEntries([c]))).join(" | "))
-        );
-        return;
-      default: // "entries", "inset", ...
-        if (e.name) out.push(`${stripTags(e.name)}.`);
-        walk(e.entries);
-    }
-  };
-  walk(entries);
-  return out.join("\n");
-}
 
 // ---------- structured fields -> display strings ----------
 
 const SCHOOLS = {
   A: "abjuration", C: "conjuration", D: "divination", E: "enchantment",
   V: "evocation", I: "illusion", N: "necromancy", T: "transmutation",
-};
-
-const DAMAGE_TYPES_ZH = {
-  acid: "强酸", bludgeoning: "钝击", cold: "寒冷", fire: "火焰", force: "力场",
-  lightning: "闪电", necrotic: "黯蚀", piercing: "穿刺", poison: "毒素",
-  psychic: "心灵", radiant: "光耀", slashing: "挥砍", thunder: "雷鸣",
 };
 
 const UNITS = {
@@ -101,8 +33,6 @@ const UNITS = {
   round: { en: "round", zh: "轮" },
   day: { en: "day", zh: "天" },
 };
-
-const plural = (n, word) => (n === 1 ? word : `${word}s`);
 
 function formatTime(enTime, zhTime) {
   const t = enTime[0];
@@ -270,7 +200,17 @@ function saveSuccessInfo(spell) {
 
 // ---------- build ----------
 
-function buildSpell(en, zh) {
+/**
+ * Classes whose spell list has the spell, e.g. ["Sorcerer", "Wizard", "Artificer"], from 5etools'
+ * generated lookup (all class sources, e.g. XPHB + EFA for the Artificer). Names match the values
+ * of Roll20's attr_class.
+ */
+function spellClasses(lookup, en) {
+  const bySource = lookup?.[en.source.toLowerCase()]?.[en.name.toLowerCase()]?.class || {};
+  return [...new Set(Object.values(bySource).flatMap((o) => Object.keys(o)))].sort();
+}
+
+function buildSpell(en, zh, lookup) {
   const dmg = damageInfo(en);
   return {
     id: `${en.name}|${en.source}`.toLowerCase(),
@@ -278,6 +218,7 @@ function buildSpell(en, zh) {
     page: en.page,
     srd52: Boolean(en.srd52),
     level: en.level,
+    classes: spellClasses(lookup, en),
     school: SCHOOLS[en.school] || en.school,
     ritual: Boolean(en.meta?.ritual),
     concentration: en.duration.some((d) => d.concentration),
@@ -323,38 +264,27 @@ function buildSpell(en, zh) {
   };
 }
 
-async function fetchJson(relPath) {
-  const res = await fetch(`${REPO_RAW}/${relPath}`);
-  if (!res.ok) throw new Error(`${res.status} fetching ${relPath}`);
-  return res.json();
-}
-
-function write(relPath, data) {
-  const file = path.join(ROOT, relPath);
-  fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, JSON.stringify(data, null, 1) + "\n");
-  console.log(`wrote ${relPath} (${data.length} spells)`);
-}
-
 async function main() {
-  const [enFile, zhFile] = await Promise.all([
+  const [enFile, zhFile, classLookup] = await Promise.all([
     fetchJson(`data-bak/${SPELL_FILE}`),
     fetchJson(`data/${SPELL_FILE}`),
+    // English copy: keyed by English spell name, English class names
+    fetchJson("data-bak/generated/gendata-spell-source-lookup.json"),
   ]);
   const zhByName = new Map(zhFile.spell.map((s) => [s.ENG_name, s]));
 
   const spells = enFile.spell.map((en) => {
     const zh = zhByName.get(en.name);
     if (!zh) console.warn(`no Chinese entry for ${en.name}`);
-    return buildSpell(en, zh);
+    return buildSpell(en, zh, classLookup);
   });
+  const noClass = spells.filter((s) => !s.classes.length).map((s) => s.name.en);
+  if (noClass.length) console.warn(`no class list for: ${noClass.join(", ")}`);
   spells.sort((a, b) => a.level - b.level || a.name.en.localeCompare(b.name.en));
 
-  write("data/srd/spells.json", spells.filter((s) => s.srd52));
-  write("data/local/spells.json", spells);
+  write("data/srd/spells.json", spells.filter((s) => s.srd52), "spells");
+  write("data/local/spells.json", spells, "spells");
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+module.exports = { main };
+runMain(module, main);

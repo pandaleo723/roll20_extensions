@@ -30,12 +30,64 @@ chrome.storage.local.get(STORAGE_KEY).then((stored) => {
   dataEl.value = stored[STORAGE_KEY] ?? "";
 });
 
-// Spell language, shared with the in-sheet picker.
+// ---- Settings (shared with the in-sheet picker via chrome.storage.sync) ----
 const langEl = document.getElementById("lang");
-chrome.storage.sync.get("lang").then(({ lang }) => {
-  langEl.value = lang === "en" ? "en" : "zh";
+const altEl = document.getElementById("showAltName");
+const autoEl = document.getElementById("autoClass");
+const classBox = document.getElementById("classBox");
+const classesEl = document.getElementById("classes");
+const savedEl = document.getElementById("saved");
+
+let savedTimer;
+async function save(patch) {
+  await R20F.saveSettings(patch);
+  savedEl.textContent = R20F.ui(langEl.value).saved;
+  clearTimeout(savedTimer);
+  savedTimer = setTimeout(() => (savedEl.textContent = ""), 1500);
+}
+
+function selectedClasses() {
+  return [...classesEl.querySelectorAll("input:checked")].map((cb) => cb.value);
+}
+
+/** Show every label in the chosen language only. */
+function applyLanguage(lang) {
+  const ui = R20F.ui(lang);
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach((el) => (el.textContent = ui[el.dataset.i18n] ?? ""));
+  classesEl.querySelectorAll("[data-class]").forEach((el) => (el.textContent = R20F.CLASS_NAMES[el.dataset.class][lang]));
+}
+
+R20F.getSettings().then((s) => {
+  langEl.value = s.lang === "en" ? "en" : "zh";
+  altEl.checked = s.showAltName;
+  autoEl.checked = s.autoClass;
+  classesEl.replaceChildren(
+    ...R20F.SPELL_CLASSES.map((c) => {
+      const label = document.createElement("label");
+      label.className = "check";
+      const cb = Object.assign(document.createElement("input"), { type: "checkbox", value: c });
+      cb.checked = s.classFilter.includes(c);
+      cb.addEventListener("change", () => save({ classFilter: selectedClasses() }));
+      const name = document.createElement("span");
+      name.dataset.class = c;
+      label.append(cb, name);
+      return label;
+    })
+  );
+  classBox.disabled = s.autoClass;
+  applyLanguage(langEl.value);
 });
-langEl.addEventListener("change", () => chrome.storage.sync.set({ lang: langEl.value }));
+
+langEl.addEventListener("change", () => {
+  applyLanguage(langEl.value);
+  save({ lang: langEl.value });
+});
+altEl.addEventListener("change", () => save({ showAltName: altEl.checked }));
+autoEl.addEventListener("change", () => {
+  classBox.disabled = autoEl.checked;
+  save({ autoClass: autoEl.checked });
+});
 
 document.getElementById("sample").addEventListener("click", () => {
   dataEl.value = JSON.stringify(SAMPLE, null, 2);
