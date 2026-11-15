@@ -121,7 +121,7 @@ R20U.getSettings().then((s) => {
       return label;
     })
   );
-  classBox.disabled = s.autoClass;
+  classBox.hidden = s.autoClass; // manual filter only matters when auto-detect is off
   applyLanguage(langEl.value);
 });
 
@@ -131,8 +131,14 @@ langEl.addEventListener("change", () => {
 });
 altEl.addEventListener("change", () => save({ showAltName: altEl.checked }));
 autoEl.addEventListener("change", () => {
-  classBox.disabled = autoEl.checked;
+  classBox.hidden = autoEl.checked;
   save({ autoClass: autoEl.checked });
+});
+
+// Popup -> options page (the same page in a tab; manifest "options_ui"). Hidden there by CSS.
+document.getElementById("openOptions").addEventListener("click", () => {
+  chrome.runtime.openOptionsPage();
+  window.close();
 });
 
 document.getElementById("sample").addEventListener("click", () => {

@@ -6,13 +6,25 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <!-- Text in [data-i18n] elements comes from R20U.UI_STRINGS (src/shared/settings.js). -->
-    <h1>Roll20 Utils Extension</h1>
-    <p class="hint" data-i18n="popupHint"></p>
+    <!--
+      This page is both the toolbar popup and the options page (manifest "options_ui", opened
+      in a tab). Narrow (popup): one column. Wide (tab): two columns, see popup.css.
+      Text in [data-i18n] elements comes from R20U.UI_STRINGS (src/shared/settings.js).
+    -->
+    <header class="page-head">
+      <div class="title-row">
+        <h1>Roll20 Utils Extension</h1>
+        <!-- Popup only (hidden in the wide options tab): opens the options page -->
+        <button type="button" id="openOptions" class="link-btn" data-i18n="allSettings"></button>
+      </div>
+      <p class="hint" data-i18n="popupHint"></p>
 
-    <!-- Beta notice; text and links filled by popup.js (R20U.UI_STRINGS.beta*) -->
-    <div class="beta" id="beta"></div>
+      <!-- Beta notice; text and links filled by popup.js (R20U.UI_STRINGS.beta*) -->
+      <div class="beta" id="beta"></div>
+    </header>
 
+    <div class="layout">
+    <div class="col col-general">
     <h2 data-i18n="settings"></h2>
 
     <label for="lang" data-i18n="language"></label>
@@ -25,7 +37,9 @@
       <input type="checkbox" id="showAltName" />
       <span data-i18n="showAltName"></span>
     </label>
+    </div>
 
+    <div class="col col-modules">
     <h2 data-i18n="modulesTitle"></h2>
 
     <!-- One card per module (R20U.MODULES); name/description/switch filled by popup.js. -->
@@ -42,11 +56,12 @@
         </label>
         <p class="hint small" data-i18n="autoClassHint"></p>
 
-        <fieldset id="classBox">
-          <legend data-i18n="manualClass"></legend>
+        <!-- Manual class filter: hidden while auto-detect is on; click the heading to fold it -->
+        <details id="classBox" class="class-box" open>
+          <summary data-i18n="manualClass"></summary>
           <div id="classes" class="class-grid"></div>
           <p class="hint small" data-i18n="manualClassHint"></p>
-        </fieldset>
+        </details>
       </div>
     </section>
 
@@ -65,6 +80,8 @@
       </label>
       <p class="hint small module-desc"></p>
     </section>
+    </div>
+    </div>
 
     <p id="saved" class="hint small"></p>
 

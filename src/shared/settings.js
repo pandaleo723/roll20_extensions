@@ -99,6 +99,7 @@ R20U.UI_STRINGS = {
       `已加入 ${added} 项` + (updated ? `，更新 ${updated} 项` : "") + (skipped ? `，跳过 ${skipped} 项（已存在）` : ""),
     // popup
     popupHint: "Roll20 小工具：开启的模块会在角色卡上加入 📖 按钮。",
+    allSettings: "全部设定 ↗",
     betaTitle: "测试版 (Beta)",
     betaText: "目前为测试版本，可能仍有问题。",
     betaIssues: "回报问题 / 建议新功能",
@@ -137,6 +138,7 @@ R20U.UI_STRINGS = {
     traitsAdded: ({ added, updated, skipped }) =>
       `Added ${added}` + (updated ? `, updated ${updated}` : "") + (skipped ? `, skipped ${skipped} (already there)` : ""),
     popupHint: "Roll20 helpers: enabled modules add 📖 buttons to the character sheet.",
+    allSettings: "All settings ↗",
     betaTitle: "Beta",
     betaText: "This is a beta version and may still have issues.",
     betaIssues: "Report an issue / request a feature",
