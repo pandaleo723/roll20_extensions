@@ -150,10 +150,42 @@
     }
   }
 
-  // ---- side bar showing saved values ----------------------------------------
+  // ---- side bar showing saved values (hidden by default; toggle top-right) ----
+  const LOG_KEY = "harness-log-shown";
+  const logShown = () => {
+    try {
+      return localStorage.getItem(LOG_KEY) === "1";
+    } catch {
+      return false;
+    }
+  };
+  function applyLogVisibility(show) {
+    document.body.classList.toggle("harness-log-hidden", !show);
+    const toggle = document.getElementById("harness-log-toggle");
+    if (toggle) toggle.textContent = show ? "Hide log ▸" : "◂ Save log";
+  }
+  function setupLogToggle() {
+    const toggle = Object.assign(document.createElement("button"), { id: "harness-log-toggle", type: "button" });
+    toggle.onclick = () => {
+      const show = document.body.classList.contains("harness-log-hidden");
+      try {
+        localStorage.setItem(LOG_KEY, show ? "1" : "0");
+      } catch {
+        // storage blocked: the toggle still works for this page
+      }
+      applyLogVisibility(show);
+    };
+    document.body.append(toggle);
+    applyLogVisibility(logShown());
+  }
+
   function renderBar() {
     const bar = document.getElementById("harness-bar");
     if (!bar) return;
+    const toggle = document.getElementById("harness-log-toggle");
+    if (toggle && document.body.classList.contains("harness-log-hidden")) {
+      toggle.textContent = `◂ Save log (${Object.keys(__saved).length})`;
+    }
     bar.innerHTML = `<b>Roll20 would save</b> <small>(${Object.keys(__saved).length} attrs, ${__changesFired} change events)</small>
       <button id="harness-clear">clear</button><ol></ol>`;
     bar.querySelector("ol").append(
@@ -169,5 +201,6 @@
 
   // This script is placed after the sheet markup, so the DOM is already there.
   ensureRepeating();
+  setupLogToggle();
   renderBar();
 })();

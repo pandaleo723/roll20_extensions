@@ -26,3 +26,32 @@ body {
   margin-left: 6px;
   font: inherit;
 }
+#harness-bar b {
+  display: inline-block;
+  margin-top: 26px; /* room for the toggle above */
+}
+
+/* Save log hidden (default): no side bar, no page margin; only the toggle shows. */
+body.harness-log-hidden {
+  margin-right: 0;
+}
+body.harness-log-hidden #harness-bar {
+  display: none;
+}
+#harness-log-toggle {
+  position: fixed;
+  top: 6px;
+  right: 8px;
+  z-index: 2147483001;
+  padding: 2px 8px;
+  font: 12px Consolas, monospace;
+  color: #ddd;
+  background: #1e1e1e;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+#harness-log-toggle:hover {
+  opacity: 1;
+}

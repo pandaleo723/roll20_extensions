@@ -121,20 +121,12 @@ const BUTTON_CSS = `
     width: 22px; height: 22px; padding: 0; border-radius: 50%; text-align: center;
     font: italic 700 13px/20px Georgia, serif;
   }
-  /* Compact bar (small sections like the inventory): one bordered box at the section's text
-     size, holding the 📖 text button and a smaller ⓘ circle. */
-  .r20u-rowbar.compact {
-    display: flex; align-items: center; gap: 4px; width: max-content; height: 18px;
-    padding: 0 3px 0 0; border: 1px solid #b5121b; border-radius: 4px; background: #fff;
-    box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  }
-  .r20u-rowbar.compact .r20u-btn { margin: 0; border: 0; box-shadow: none; background: transparent; }
-  .r20u-rowbar.compact .r20u-row { font-size: 10px; line-height: 18px; padding: 0 4px 0 6px; border-radius: 3px 0 0 3px; }
-  .r20u-rowbar.compact .r20u-row:hover { background: #fbeaea; }
-  .r20u-rowbar.compact .r20u-info {
-    width: 12px; height: 12px; border: 1px solid #b5121b; font-size: 9px; line-height: 11px;
-  }
-  .r20u-rowbar.compact .r20u-info:hover { background: #b5121b; color: #fff; }
+  /* Compact bar (small sections like the inventory): smaller buttons at the section's text size,
+     the 📖 button and the ⓘ circle with the same visible height (18px incl. border). */
+  .r20u-rowbar.compact { display: flex; align-items: center; gap: 4px; }
+  .r20u-rowbar.compact .r20u-btn { margin: 0; box-sizing: border-box; height: 18px; }
+  .r20u-rowbar.compact .r20u-row { font-size: 10px; line-height: 16px; padding: 0 6px; }
+  .r20u-rowbar.compact .r20u-info { width: 18px; font-size: 10px; line-height: 16px; }
   .r20u-btn.r20u-add { margin: 0 0 0 6px; padding: 2px 6px; vertical-align: middle; }
   @media print { .r20u-btn { display: none !important; } }
 `;

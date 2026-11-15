@@ -25,7 +25,8 @@ It runs the real content scripts (in manifest order), emulates Roll20's 500 ms s
 node tools/harness/serve.js
 ```
 
-Open http://localhost:5179/ and pick a fixture. Use the 📖 buttons as on Roll20.
+Open http://localhost:5179/ and pick a fixture. Use the 📖 buttons as on Roll20. The "Save log"
+button (top right) shows or hides the list of saved values; it is hidden by default.
 In the desktop app's browser pane you can also start it as the `sheet-harness` preview.
 
 In the page console, `__saved` holds what Roll20 would store, keyed
