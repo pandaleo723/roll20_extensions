@@ -241,7 +241,7 @@ async function main() {
   const order = ["weapon", "armor", "shield", "ammunition", "focus", "tool", "gear", "mount", "vehicle", "other"];
   out.sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind) || a.name.en.localeCompare(b.name.en));
 
-  // Report what was left out, so the user can decide about the 2024 DMG.
+  // Report what was left out (e.g. 2024 DMG items), for reference when widening the scope.
   const xdmg = items.en.item.filter((i) => i.source === "XDMG");
   console.log(`skipped XDMG items: ${xdmg.length} (${xdmg.filter((i) => i.srd52).length} srd52)`);
 

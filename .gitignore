@@ -27,3 +27,7 @@ data/local/
 
 # Saved Roll20 sheets for the local harness (Roll20 markup + character data)
 test/fixtures/
+
+# Local planning / discussion notes (kept out of the public repo)
+docs/
+notes/
