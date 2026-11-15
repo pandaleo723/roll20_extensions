@@ -1,11 +1,11 @@
 // Settings + labels shared by the popup and the content scripts (both load this file).
 
-var R20F = (globalThis.R20F ??= {});
+var R20U = (globalThis.R20U ??= {});
 
 /** Spellcasting classes in the spell data; values match Roll20's attr_class options. */
-R20F.SPELL_CLASSES = ["Artificer", "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Warlock", "Wizard"];
+R20U.SPELL_CLASSES = ["Artificer", "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Warlock", "Wizard"];
 
-R20F.CLASS_NAMES = {
+R20U.CLASS_NAMES = {
   Artificer: { zh: "奇械师", en: "Artificer" },
   Bard: { zh: "吟游诗人", en: "Bard" },
   Cleric: { zh: "牧师", en: "Cleric" },
@@ -17,7 +17,7 @@ R20F.CLASS_NAMES = {
   Wizard: { zh: "法师", en: "Wizard" },
 };
 
-R20F.SCHOOL_NAMES = {
+R20U.SCHOOL_NAMES = {
   abjuration: { zh: "防护系", en: "Abjuration" },
   conjuration: { zh: "咒法系", en: "Conjuration" },
   divination: { zh: "预言系", en: "Divination" },
@@ -28,7 +28,7 @@ R20F.SCHOOL_NAMES = {
   transmutation: { zh: "变化系", en: "Transmutation" },
 };
 
-R20F.ABILITY_NAMES = {
+R20U.ABILITY_NAMES = {
   Strength: { zh: "力量", en: "Strength" },
   Dexterity: { zh: "敏捷", en: "Dexterity" },
   Constitution: { zh: "体质", en: "Constitution" },
@@ -37,25 +37,39 @@ R20F.ABILITY_NAMES = {
   Charisma: { zh: "魅力", en: "Charisma" },
 };
 
-R20F.DEFAULT_SETTINGS = {
-  lang: "zh", // language of the UI and of the spell text: "zh" | "en"
-  showAltName: true, // in the spell list, also show the name in the other language
-  autoClass: true, // filter the spell list by the class(es) detected on the sheet
-  classFilter: [], // classes to filter by when autoClass is off ([] = all classes)
+/**
+ * Helper modules, shown in the popup with an on/off switch. Content-script code for each lives in
+ * src/modules/<id>/ and registers itself with R20U.registerModule (src/content/sheet.js).
+ */
+R20U.MODULES = [
+  {
+    id: "spells",
+    name: { zh: "法术选择器", en: "Spell picker" },
+    desc: { zh: "在角色卡法术栏加入 📖 按钮，从列表选择并填入法术。", en: "📖 buttons in the sheet's spell sections: pick a spell from a list and fill the row." },
+  },
+];
+
+R20U.DEFAULT_SETTINGS = {
+  lang: "zh", // language of the UI and of the game text: "zh" | "en"
+  showAltName: true, // in picker lists, also show the name in the other language
+  modules: { spells: true }, // module id -> enabled (missing = enabled)
+  autoClass: true, // spells: filter the list by the class(es) detected on the sheet
+  classFilter: [], // spells: classes to filter by when autoClass is off ([] = all classes)
 };
 
 /** UI text for the sheet buttons, messages and popup (single language, per settings.lang). */
-R20F.UI_STRINGS = {
+R20U.UI_STRINGS = {
   zh: {
     pickFromList: "📖 从列表选择法术",
     addFromList: "从列表新增法术",
     waitFill: "请等待目前的填入完成",
     noData: "没有载入法术资料 — 请执行 scripts/build-data.js",
     // popup
-    popupHint: "使用角色卡法术栏中的 📖 按钮选择法术。",
-    settings: "设定",
+    popupHint: "Roll20 小工具：开启的模块会在角色卡上加入 📖 按钮。",
+    settings: "通用设定",
+    modulesTitle: "模块",
     language: "语言",
-    showAltName: "法术列表同时显示英文名称",
+    showAltName: "列表同时显示英文名称",
     autoClass: "自动侦测角色职业并筛选",
     autoClassHint: "开启时，法术列表会按角色卡上的职业（含兼职）筛选。",
     manualClass: "手动职业筛选",
@@ -72,10 +86,11 @@ R20F.UI_STRINGS = {
     addFromList: "Add a spell from the list",
     waitFill: "Please wait for the current fill to finish",
     noData: "No spell data loaded — run scripts/build-data.js",
-    popupHint: "Use the 📖 buttons in the sheet's spell sections to pick a spell.",
-    settings: "Settings",
+    popupHint: "Roll20 helpers: enabled modules add 📖 buttons to the character sheet.",
+    settings: "General",
+    modulesTitle: "Modules",
     language: "Language",
-    showAltName: "Also show Chinese names in the spell list",
+    showAltName: "Also show Chinese names in lists",
     autoClass: "Auto-detect class & filter",
     autoClassHint: "On: the spell list is filtered by the class(es) on the sheet, incl. multiclass.",
     manualClass: "Manual class filter",
@@ -90,41 +105,41 @@ R20F.UI_STRINGS = {
 };
 
 /** UI strings for a language ("zh" by default). */
-R20F.ui = (lang) => R20F.UI_STRINGS[lang === "en" ? "en" : "zh"];
+R20U.ui = (lang) => R20U.UI_STRINGS[lang === "en" ? "en" : "zh"];
 
 /**
  * Live settings for long-running pages (content scripts): loaded once, then kept in sync with
  * chrome.storage changes made in the popup. `listener(settings)` runs on every change.
  */
-R20F.settings = { ...R20F.DEFAULT_SETTINGS };
-R20F.watchSettings = function (listener) {
-  R20F.getSettings().then((s) => {
-    Object.assign(R20F.settings, s);
-    listener?.(R20F.settings);
+R20U.settings = { ...R20U.DEFAULT_SETTINGS };
+R20U.watchSettings = function (listener) {
+  R20U.getSettings().then((s) => {
+    Object.assign(R20U.settings, s);
+    listener?.(R20U.settings);
   });
   try {
     chrome.storage.onChanged.addListener((changes, area) => {
       if (area !== "sync") return;
       for (const [k, { newValue }] of Object.entries(changes)) {
-        if (k in R20F.DEFAULT_SETTINGS) R20F.settings[k] = newValue ?? R20F.DEFAULT_SETTINGS[k];
+        if (k in R20U.DEFAULT_SETTINGS) R20U.settings[k] = newValue ?? R20U.DEFAULT_SETTINGS[k];
       }
-      listener?.(R20F.settings);
+      listener?.(R20U.settings);
     });
   } catch {
     // no chrome.storage (e.g. the extension was reloaded under an open tab)
   }
 };
 
-R20F.getSettings = async function () {
+R20U.getSettings = async function () {
   try {
-    const stored = await chrome.storage.sync.get(Object.keys(R20F.DEFAULT_SETTINGS));
-    return { ...R20F.DEFAULT_SETTINGS, ...stored };
+    const stored = await chrome.storage.sync.get(Object.keys(R20U.DEFAULT_SETTINGS));
+    return { ...R20U.DEFAULT_SETTINGS, ...stored };
   } catch {
-    return { ...R20F.DEFAULT_SETTINGS };
+    return { ...R20U.DEFAULT_SETTINGS };
   }
 };
 
-R20F.saveSettings = async function (patch) {
+R20U.saveSettings = async function (patch) {
   try {
     await chrome.storage.sync.set(patch);
   } catch {

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Roll20 Sheet Filler",
-  "version": "0.2.0",
-  "description": "Fill a D&D character sheet on Roll20 from a spell list or JSON data.",
+  "name": "Roll20 Utils Extension",
+  "version": "0.3.0",
+  "description": "Helpers for Roll20: fill D&D 5e character sheets from searchable spell lists (Chinese / English), with more tools to come.",
   "permissions": [
     "storage"
   ],
@@ -10,7 +10,7 @@
     "service_worker": "src/background/background.js"
   },
   "action": {
-    "default_title": "Roll20 Sheet Filler",
+    "default_title": "Roll20 Utils Extension",
     "default_popup": "src/popup/popup.html"
   },
   "content_scripts": [
@@ -21,9 +21,11 @@
       "js": [
         "src/shared/settings.js",
         "src/content/fields.js",
-        "src/content/spells.js",
+        "src/content/sheet.js",
         "src/content/picker.js",
-        "src/content/sections.js",
+        "src/modules/spells/fill.js",
+        "src/modules/spells/view.js",
+        "src/modules/spells/module.js",
         "src/content/content.js"
       ],
       "all_frames": true,
@@ -38,9 +40,11 @@
       "js": [
         "src/shared/settings.js",
         "src/content/fields.js",
-        "src/content/spells.js",
+        "src/content/sheet.js",
         "src/content/picker.js",
-        "src/content/sections.js",
+        "src/modules/spells/fill.js",
+        "src/modules/spells/view.js",
+        "src/modules/spells/module.js",
         "src/content/content.js"
       ],
       "all_frames": true,

@@ -2,12 +2,12 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8" />
-    <title>Roll20 Sheet Filler</title>
+    <title>Roll20 Utils Extension</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <!-- Text in [data-i18n] elements comes from R20F.UI_STRINGS (src/shared/settings.js). -->
-    <h1>Roll20 Sheet Filler</h1>
+    <!-- Text in [data-i18n] elements comes from R20U.UI_STRINGS (src/shared/settings.js). -->
+    <h1>Roll20 Utils Extension</h1>
     <p class="hint" data-i18n="popupHint"></p>
 
     <h2 data-i18n="settings"></h2>
@@ -23,17 +23,29 @@
       <span data-i18n="showAltName"></span>
     </label>
 
-    <label class="check">
-      <input type="checkbox" id="autoClass" />
-      <span data-i18n="autoClass"></span>
-    </label>
-    <p class="hint small" data-i18n="autoClassHint"></p>
+    <h2 data-i18n="modulesTitle"></h2>
 
-    <fieldset id="classBox">
-      <legend data-i18n="manualClass"></legend>
-      <div id="classes" class="class-grid"></div>
-      <p class="hint small" data-i18n="manualClassHint"></p>
-    </fieldset>
+    <!-- One card per module (R20U.MODULES); name/description/switch filled by popup.js. -->
+    <section class="module" data-module="spells">
+      <label class="module-head">
+        <input type="checkbox" class="module-toggle" />
+        <span class="module-name"></span>
+      </label>
+      <p class="hint small module-desc"></p>
+      <div class="module-settings">
+        <label class="check">
+          <input type="checkbox" id="autoClass" />
+          <span data-i18n="autoClass"></span>
+        </label>
+        <p class="hint small" data-i18n="autoClassHint"></p>
+
+        <fieldset id="classBox">
+          <legend data-i18n="manualClass"></legend>
+          <div id="classes" class="class-grid"></div>
+          <p class="hint small" data-i18n="manualClassHint"></p>
+        </fieldset>
+      </div>
+    </section>
 
     <p id="saved" class="hint small"></p>
 

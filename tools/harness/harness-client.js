@@ -7,7 +7,7 @@
   try {
     Object.assign(store, JSON.parse(localStorage.getItem("harness-sync") || "{}"));
   } catch {}
-  let spellsPromise;
+  const dataCache = {};
   const storageListeners = [];
   window.chrome = {
     storage: {
@@ -30,10 +30,12 @@
     },
     runtime: {
       sendMessage: async (m) => {
-        if (m?.type !== "GET_SPELLS") return undefined;
-        spellsPromise ??= fetch("/harness/spells").then((r) => r.json());
-        const spells = await spellsPromise;
-        return m.level == null ? spells : spells.filter((s) => s.level === m.level);
+        // Same contract as src/background/background.js: { type: "GET_DATA", kind, where }
+        if (m?.type !== "GET_DATA") return undefined;
+        dataCache[m.kind] ??= fetch(`/harness/data/${m.kind}`).then((r) => r.json());
+        const entries = await dataCache[m.kind];
+        const where = Object.entries(m.where || {});
+        return where.length ? entries.filter((e) => where.every(([k, v]) => e[k] === v)) : entries;
       },
       onMessage: { addListener() {} },
     },

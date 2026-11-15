@@ -1,9 +1,9 @@
 // Shared helpers for reading/writing Roll20 legacy sheet fields.
 // Content script files share one scope, so everything hangs off a single namespace.
 
-var R20F = (globalThis.R20F ??= {});
+var R20U = (globalThis.R20U ??= {});
 
-R20F.LOG_PREFIX = "[Roll20 Sheet Filler]";
+R20U.LOG_PREFIX = "[Roll20 Utils]";
 
 /*
  * How Roll20 saves edits (from legacy-sheet-server bundle):
@@ -29,7 +29,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
  * (visible input + hidden mirror, PC/NPC views...). Hidden mirrors are skipped when a real
  * input exists, so e.g. a checkbox isn't overwritten through its hidden copy.
  */
-R20F.editableFields = function (root, attrName) {
+R20U.editableFields = function (root, attrName) {
   const all = [
     ...root.querySelectorAll(
       `input[name="attr_${attrName}"], select[name="attr_${attrName}"], textarea[name="attr_${attrName}"]`
@@ -50,7 +50,7 @@ function resolveValue(el, value) {
       opts.find((o) => o.value === String(value)) ||
       opts.find((o) => o.value.trim().toLowerCase() === want || o.text.trim().toLowerCase() === want);
     if (!opt) {
-      console.warn(R20F.LOG_PREFIX, `no option "${value}" in ${el.name}; options:`,
+      console.warn(R20U.LOG_PREFIX, `no option "${value}" in ${el.name}; options:`,
         opts.map((o) => `${o.value}=${o.text.trim()}`));
       return null;
     }
@@ -85,14 +85,14 @@ function fireChange(el) {
  *                                     (put fields that trigger sheet workers last)
  * @param {(done: number, total: number) => void} [onProgress]
  */
-R20F.fillFields = async function (root, data, onProgress) {
+R20U.fillFields = async function (root, data, onProgress) {
   const filled = [];
   const missing = [];
   const instant = []; // checkbox jobs
   const paced = []; // text / select / textarea jobs
 
   for (const [attrName, value] of data) {
-    const els = R20F.editableFields(root, attrName).filter((el) => el.type !== "radio");
+    const els = R20U.editableFields(root, attrName).filter((el) => el.type !== "radio");
     const target = els.length ? resolveValue(els[0], value) : null;
     if (target === null) {
       missing.push(attrName);
@@ -137,5 +137,5 @@ R20F.fillFields = async function (root, data, onProgress) {
 };
 
 /** How many of these attributes exist in `root` (cheap, synchronous). */
-R20F.countFields = (root, attrNames) =>
-  attrNames.filter((n) => R20F.editableFields(root, n).length).length;
+R20U.countFields = (root, attrNames) =>
+  attrNames.filter((n) => R20U.editableFields(root, n).length).length;

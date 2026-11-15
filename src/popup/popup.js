@@ -40,8 +40,8 @@ const savedEl = document.getElementById("saved");
 
 let savedTimer;
 async function save(patch) {
-  await R20F.saveSettings(patch);
-  savedEl.textContent = R20F.ui(langEl.value).saved;
+  await R20U.saveSettings(patch);
+  savedEl.textContent = R20U.ui(langEl.value).saved;
   clearTimeout(savedTimer);
   savedTimer = setTimeout(() => (savedEl.textContent = ""), 1500);
 }
@@ -52,18 +52,43 @@ function selectedClasses() {
 
 /** Show every label in the chosen language only. */
 function applyLanguage(lang) {
-  const ui = R20F.ui(lang);
+  const ui = R20U.ui(lang);
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach((el) => (el.textContent = ui[el.dataset.i18n] ?? ""));
-  classesEl.querySelectorAll("[data-class]").forEach((el) => (el.textContent = R20F.CLASS_NAMES[el.dataset.class][lang]));
+  classesEl.querySelectorAll("[data-class]").forEach((el) => (el.textContent = R20U.CLASS_NAMES[el.dataset.class][lang]));
+  for (const mod of R20U.MODULES) {
+    const card = document.querySelector(`.module[data-module="${mod.id}"]`);
+    if (!card) continue;
+    card.querySelector(".module-name").textContent = mod.name[lang];
+    card.querySelector(".module-desc").textContent = mod.desc[lang];
+  }
 }
 
-R20F.getSettings().then((s) => {
+/** Module cards: the switch enables/disables the module; its settings fade when it's off. */
+function setupModules(s) {
+  for (const mod of R20U.MODULES) {
+    const card = document.querySelector(`.module[data-module="${mod.id}"]`);
+    if (!card) continue;
+    const toggle = card.querySelector(".module-toggle");
+    const settingsBox = card.querySelector(".module-settings");
+    const sync = () => settingsBox?.classList.toggle("off", !toggle.checked);
+    toggle.checked = s.modules?.[mod.id] !== false;
+    sync();
+    toggle.addEventListener("change", async () => {
+      sync();
+      const { modules = {} } = await R20U.getSettings();
+      save({ modules: { ...modules, [mod.id]: toggle.checked } });
+    });
+  }
+}
+
+R20U.getSettings().then((s) => {
   langEl.value = s.lang === "en" ? "en" : "zh";
   altEl.checked = s.showAltName;
   autoEl.checked = s.autoClass;
+  setupModules(s);
   classesEl.replaceChildren(
-    ...R20F.SPELL_CLASSES.map((c) => {
+    ...R20U.SPELL_CLASSES.map((c) => {
       const label = document.createElement("label");
       label.className = "check";
       const cb = Object.assign(document.createElement("input"), { type: "checkbox", value: c });

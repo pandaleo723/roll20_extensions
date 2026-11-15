@@ -32,6 +32,25 @@ label.check {
   margin: 6px 0 4px;
   cursor: pointer;
 }
+.module {
+  border: 1px solid #e3d3d3;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background: #fffafa;
+}
+.module-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin: 0 0 2px;
+  cursor: pointer;
+}
+.module-settings.off {
+  opacity: 0.4;
+  pointer-events: none;
+}
 fieldset {
   border: 1px solid #ddd;
   border-radius: 6px;

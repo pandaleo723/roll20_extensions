@@ -31,9 +31,10 @@ function contentScripts() {
   return manifest.content_scripts[0].js;
 }
 
-function loadSpells() {
+/** Same merge as the background worker: data/srd/<kind>.json, then data/local/<kind>.json. */
+function loadKind(kind) {
   const byId = new Map();
-  for (const f of ["data/srd/spells.json", "data/local/spells.json"]) {
+  for (const f of [`data/srd/${kind}.json`, `data/local/${kind}.json`]) {
     const file = path.join(ROOT, f);
     if (!fs.existsSync(file)) continue;
     for (const s of JSON.parse(fs.readFileSync(file, "utf8"))) byId.set(s.id, s);
@@ -49,8 +50,8 @@ function buildPage(fixtureName) {
 
   body = body
     .replace(/<script[\s\S]*?<\/script>/gi, "") // Roll20's own scripts
-    .replace(/<div id="r20f-host"[^>]*>\s*<\/div>/g, "") // leftovers from the extension
-    .replace(/<button[^>]*class="r20f-btn[^"]*"[^>]*>[\s\S]*?<\/button>/g, "");
+    .replace(/<div id="r20[fu]-host"[^>]*>\s*<\/div>/g, "") // leftovers from the extension
+    .replace(/<button[^>]*class="r20[fu]-btn[^"]*"[^>]*>[\s\S]*?<\/button>/g, "");
 
   const styles = (head.match(/<style[^>]*>[\s\S]*?<\/style>|<link[^>]*>/gi) || []).join("\n");
   const scripts = contentScripts().map((s) => `<script src="/${s}"></script>`).join("\n");
@@ -86,7 +87,8 @@ http
         const name = path.basename(url.searchParams.get("fixture") || "roll20-sheet.html");
         return send(200, TYPES[".html"], buildPage(name));
       }
-      if (url.pathname === "/harness/spells") return send(200, TYPES[".json"], JSON.stringify(loadSpells()));
+      const dataMatch = url.pathname.match(/^\/harness\/data\/([a-z][a-z-]*)$/);
+      if (dataMatch) return send(200, TYPES[".json"], JSON.stringify(loadKind(dataMatch[1])));
 
       const file = path.join(ROOT, decodeURIComponent(url.pathname));
       if (!file.startsWith(ROOT)) return send(403, "text/plain", "forbidden");

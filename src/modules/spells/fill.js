@@ -1,18 +1,18 @@
-// Maps a spell from data/*/spells.json onto the fields of a Roll20
+// Spells module: maps a spell from data/*/spells.json onto the fields of a Roll20
 // "D&D 5E by Roll20" repeating spell row (repeating_spell-cantrip, -1, -2, ...).
 //
 // Every field we manage is always written, with an empty/"none" value when the spell doesn't
 // use it, so replacing e.g. Fireball with Blade Ward leaves no stale damage behind.
 // Fields that already hold the right value are skipped by fillFields (no time cost).
 
-var R20F = (globalThis.R20F ??= {});
+var R20U = (globalThis.R20U ??= {});
 
 /**
  * Returns [attrName, value] pairs, in fill order.
  * @param {object} spell
  * @param {"zh"|"en"} lang
  */
-R20F.spellToRowFields = function (spell, lang) {
+R20U.spellToRowFields = function (spell, lang) {
   const t = (localized) => localized?.[lang] || localized?.en || "";
   const isHeal = Boolean(spell.healing);
   // ATTACK only for spells that roll something (damage, healing, attack roll);

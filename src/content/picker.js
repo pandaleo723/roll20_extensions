@@ -1,7 +1,9 @@
-// In-sheet picker overlay: a searchable list shown inside the sheet iframe.
-// Rendered in a shadow root so the sheet's CSS doesn't leak in (or ours out).
+// Generic in-sheet picker overlay: a searchable list shown inside the sheet iframe, used by every
+// module (spells, items, features, ...). Rendered in a shadow root so the sheet's CSS doesn't
+// leak in (or ours out). Modules supply how a row and its details look; the picker handles
+// search, filter chips, ⓘ details, [Current]/[Chosen] marks, duplicate confirmation, keyboard.
 
-var R20F = (globalThis.R20F ??= {});
+var R20U = (globalThis.R20U ??= {});
 
 const PICKER_CSS = `
   :host { all: initial; }
@@ -12,6 +14,7 @@ const PICKER_CSS = `
     font: 13px/1.4 system-ui, "Microsoft JhengHei", "PingFang TC", sans-serif;
   }
   .panel {
+    position: relative;
     margin-top: 40px; width: min(480px, calc(100vw - 32px)); max-height: calc(100vh - 80px);
     display: flex; flex-direction: column;
     background: #fff; color: #222; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,.3);
@@ -24,22 +27,16 @@ const PICKER_CSS = `
   button[data-alt] { min-width: 34px; }
   input { margin: 10px 12px 6px; padding: 6px 8px; font: inherit; border: 1px solid #ccc; border-radius: 4px; }
   .chips { display: flex; flex-wrap: wrap; gap: 4px; padding: 0 12px 8px; border-bottom: 1px solid #eee; }
+  .chips:empty { display: none; }
   .chips button { font-size: 12px; padding: 1px 7px; border-radius: 10px; }
   .chips .hint { color: #888; font-size: 12px; align-self: center; margin-left: 2px; }
   ul { list-style: none; margin: 0; padding: 0 0 8px; overflow-y: auto; position: relative; /* li.offsetTop is relative to the list */ }
   li { padding: 6px 12px; cursor: pointer; border-top: 1px solid #f2f2f2; }
   li:hover, li.focus { background: #fbeaea; }
   .line1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .line2 { white-space: normal; } /* full range text, wraps if long */
+  .line2 { white-space: normal; color: #666; font-size: 12px; }
   .name { font-weight: 600; }
   .alt { color: #888; margin-left: 6px; }
-  .sep { color: #888; margin: 0 6px; }
-  .school { margin-left: 8px; font-style: italic; }
-  .comps { margin-left: 10px; }
-  .tag { margin-left: 8px; font-size: 12px; color: #b5121b; }
-  .tag.ritual { font-style: italic; }
-  .tag.conc { font-weight: 700; }
-  .line2 { color: #666; font-size: 12px; }
   .empty { padding: 16px 12px; color: #888; }
   .head { display: flex; align-items: center; gap: 8px; }
   .main { flex: 1; min-width: 0; }
@@ -52,12 +49,11 @@ const PICKER_CSS = `
   /* [Chosen]: already in another row -> greyed but still pickable */
   li.chosen .main { opacity: .45; }
   li.chosen:hover .main { opacity: .7; }
-  /* [Current]: the spell in the row being edited -> orange, pinned on top */
+  /* [Current]: the entry in the row being edited -> orange, pinned on top */
   li.current { background: #fff4e5; box-shadow: inset 3px 0 0 #e8820c; }
   .badge { display: inline-block; margin-right: 6px; padding: 0 6px; border-radius: 8px; font-size: 11px; line-height: 16px; vertical-align: 1px; }
   .badge.current { background: #e8820c; color: #fff; }
   .badge.chosen { background: #9a9a9a; color: #fff; }
-  .panel { position: relative; }
   .confirm {
     position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; gap: 8px;
     padding: 10px 12px; background: #fff8e1; border-top: 1px solid #f0d58c; box-shadow: 0 -4px 12px rgba(0,0,0,.08);
@@ -69,7 +65,6 @@ const PICKER_CSS = `
   .details dt { color: #888; }
   .details dd { margin: 0; }
   .details .desc { margin: 0 0 6px; white-space: pre-line; font-size: 12.5px; line-height: 1.5; }
-  .details .higher { color: #444; }
   .details .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; }
   .details .src { color: #999; font-size: 11px; }
   .details button.use { background: #b5121b; border-color: #b5121b; color: #fff; }
@@ -80,22 +75,22 @@ const PICKER_CSS = `
   }
 `;
 
-const UI_TEXT = {
-  zh: { search: "搜索名称…", empty: "没有符合的法术", close: "关闭", all: "全部", ritual: "仪式", conc: "专注",
-        heal: "治疗", detected: "（已侦测）", current: "当前", chosen: "已选",
-        dupWarn: (n) => `「${n}」已在此法术列表中。仍要再加入一次吗？`, dupYes: "仍然选择", dupNo: "取消",
-        altToggle: "显示英文名称" },
-  en: { search: "Search by name…", empty: "No matching spells", close: "Close", all: "All", ritual: "ritual", conc: "Conc",
-        heal: "healing", detected: "(detected)", current: "Current", chosen: "Chosen",
-        dupWarn: (n) => `"${n}" is already in this spell list. Add it again anyway?`, dupYes: "Choose anyway", dupNo: "Cancel",
-        altToggle: "Show Chinese names" },
+/** Generic picker text; each module adds its own (list name, empty text, "use" label). */
+const PICKER_TEXT = {
+  zh: { search: "搜索名称…", close: "关闭", all: "全部", detected: "（已侦测）", current: "当前", chosen: "已选",
+        dupYes: "仍然选择", dupNo: "取消", info: "查看详情", altToggle: "显示英文名称" },
+  en: { search: "Search by name…", close: "Close", all: "All", detected: "(detected)", current: "Current", chosen: "Chosen",
+        dupYes: "Choose anyway", dupNo: "Cancel", info: "Show details", altToggle: "Show Chinese names" },
 };
 
+/** `<span class=...>text</span>`; shared with module renderers. */
+R20U.span = (className, textContent) => Object.assign(document.createElement("span"), { className, textContent });
+
 function shadowHost() {
-  let host = document.getElementById("r20f-host");
+  let host = document.getElementById("r20u-host");
   if (!host) {
     host = document.createElement("div");
-    host.id = "r20f-host";
+    host.id = "r20u-host";
     document.body.appendChild(host);
     const root = host.attachShadow({ mode: "open" });
     const style = document.createElement("style");
@@ -105,8 +100,17 @@ function shadowHost() {
   return host.shadowRoot;
 }
 
+/** Add a module's picker CSS once. */
+function ensureModuleCss(root, id, css) {
+  if (!css || root.querySelector(`style[data-module="${id}"]`)) return;
+  const style = document.createElement("style");
+  style.dataset.module = id;
+  style.textContent = css;
+  root.appendChild(style);
+}
+
 /** Show a message at the bottom of the sheet. ms = 0 keeps it until removed; returns the element. */
-R20F.toast = function (text, ms = 2500) {
+R20U.toast = function (text, ms = 2500) {
   const root = shadowHost();
   root.querySelectorAll(".toast").forEach((t) => t.remove());
   const el = document.createElement("div");
@@ -117,135 +121,46 @@ R20F.toast = function (text, ms = 2500) {
   return el;
 };
 
-/** "1 action" / "1 动作" without a reaction's long trigger text. */
-const shortTime = (text) => text.split(/[，,]/)[0];
-
-/** Component labels; Chinese as on the 5etools-cn site (声音 / 姿势 / 材料), one character each. */
-const COMPONENT_LABELS = { zh: { v: "声", s: "姿", m: "材" }, en: { v: "V", s: "S", m: "M" } };
-
-const span = (className, textContent) => Object.assign(document.createElement("span"), { className, textContent });
-
-/**
- * Layout:
- *   Name_Main_Lang Name_sub_lang school(italic)  ritual Conc
- *   castingTime · range · damage damageType  [components]
- * ritual is italic, Conc bold; both at the end of line 1 to keep line 2 short.
- */
-const DETAIL_TEXT = {
-  zh: { time: "施法时间", range: "距离", comps: "成分", duration: "持续时间", save: "豁免", classes: "职业",
-        source: "来源", conc: "专注，", use: "使用此法术", compsFull: { v: "声音", s: "姿势", m: "材料" } },
-  en: { time: "Casting Time", range: "Range", comps: "Components", duration: "Duration", save: "Saving Throw",
-        classes: "Classes", source: "Source", conc: "Concentration, ", use: "Use this spell",
-        compsFull: { v: "V", s: "S", m: "M" } },
-};
-
-/** Full spell details, shown under a row when its ⓘ is open. */
-function renderDetails(s, lang, onUse) {
-  const t = DETAIL_TEXT[lang];
-  const box = Object.assign(document.createElement("div"), { className: "details" });
-  // Reading the details must not pick the spell (the row's click handler).
-  box.addEventListener("click", (e) => e.stopPropagation());
-
-  const comps = ["v", "s", "m"].filter((c) => s.components[c]).map((c) => t.compsFull[c]);
-  const materials = s.materials?.[lang];
-  const duration = (s.concentration ? t.conc : "") + s.duration[lang];
-  const rows = [
-    [t.time, s.castingTime[lang]],
-    [t.range, s.range[lang]],
-    [t.comps, comps.join(", ") + (materials ? (lang === "zh" ? `（${materials}）` : ` (${materials})`) : "")],
-    [t.duration, lang === "en" && s.concentration ? t.conc + s.duration.en.replace(/^Up/, "up") : duration],
-    [t.save, s.save ? [R20F.ABILITY_NAMES?.[s.save]?.[lang] || s.save, s.saveSuccess?.[lang]].filter(Boolean).join(" · ") : ""],
-    [t.classes, (s.classes || []).map((c) => R20F.CLASS_NAMES[c]?.[lang] || c).join(", ")],
-  ].filter(([, v]) => v);
-
-  const dl = document.createElement("dl");
-  for (const [k, v] of rows) dl.append(Object.assign(document.createElement("dt"), { textContent: k }),
-    Object.assign(document.createElement("dd"), { textContent: v }));
-  box.append(dl, Object.assign(document.createElement("p"), { className: "desc", textContent: s.description[lang] }));
-  if (s.higherLevels?.[lang]) {
-    box.append(Object.assign(document.createElement("p"), { className: "desc higher", textContent: s.higherLevels[lang] }));
-  }
-  const foot = Object.assign(document.createElement("div"), { className: "foot" });
-  foot.append(span("src", `${t.source}: PHB 2024 p.${s.page}${s.srd52 ? " · SRD 5.2" : ""}`));
-  const use = Object.assign(document.createElement("button"), { className: "use", textContent: t.use });
-  use.addEventListener("click", onUse);
-  foot.append(use);
-  box.append(foot);
-  return box;
-}
-
-/**
- * @param {object} [opts]
- * @param {boolean} [opts.expanded]       show the details under the row
- * @param {() => void} [opts.onToggleInfo] ⓘ clicked
- * @param {() => void} [opts.onUse]        "use this spell" in the details
- * @param {""|"current"|"chosen"} [opts.state] already in the row being edited / in another row
- */
-function renderItem(s, lang, { expanded = false, onToggleInfo, onUse, state = "", showAlt = true } = {}) {
-  const text = UI_TEXT[lang];
-  const other = lang === "zh" ? "en" : "zh";
-  const li = document.createElement("li");
-  li.classList.toggle("expanded", expanded);
-  if (state) li.classList.add(state);
-
-  const l1 = Object.assign(document.createElement("div"), { className: "line1" });
-  if (state) l1.append(span(`badge ${state}`, text[state]));
-  l1.append(span("name", s.name[lang]));
-  if (showAlt) l1.append(span("alt", s.name[other]));
-  l1.append(span("school", R20F.SCHOOL_NAMES[s.school]?.[lang] || s.school));
-  if (s.ritual) l1.append(span("tag ritual", text.ritual));
-  if (s.concentration) l1.append(span("tag conc", text.conc));
-
-  const roll = s.healing ? `${s.healing} ${text.heal}` : s.damage && `${s.damage} ${s.damageType[lang]}`.trim();
-  const comps = ["v", "s", "m"].filter((c) => s.components[c]).map((c) => COMPONENT_LABELS[lang][c]);
-  const l2 = Object.assign(document.createElement("div"), { className: "line2" });
-  l2.append(span("", [shortTime(s.castingTime[lang]), s.range[lang], roll].filter(Boolean).join(" · ")));
-  if (comps.length) l2.append(span("comps", `[${comps.join(", ")}]`));
-
-  const info = Object.assign(document.createElement("button"), {
-    className: "info", textContent: "i", title: lang === "zh" ? "查看详情" : "Show details",
-  });
-  info.classList.toggle("active", expanded);
-  info.addEventListener("click", (e) => {
-    e.stopPropagation(); // don't pick the spell
-    onToggleInfo?.();
-  });
-
-  const head = Object.assign(document.createElement("div"), { className: "head" });
-  const main = Object.assign(document.createElement("div"), { className: "main" });
-  main.append(l1, l2);
-  head.append(main, info);
-  li.append(head);
-  if (expanded) li.append(renderDetails(s, lang, onUse));
-  return li;
-}
-
 /**
  * Open the picker.
- * @param {object} opts
- * @param {{zh: string, en: string}} opts.title   localized title (follows the language toggle)
- * @param {object[]} opts.spells
- * @param {string} opts.lang                      "zh" | "en"
- * @param {string[]} [opts.classes]               initial class filter ([] = all classes)
- * @param {string[]} [opts.detectedClasses]       classes detected on the sheet (marked in the UI)
- * @param {(spell: object, lang: string) => void} opts.onPick
- * @param {boolean} [opts.showAltName]            also show the name in the other language
- * @param {(show: boolean) => void} [opts.onAltToggle]
- * @param {string} [opts.currentName]             spell name in the row being edited -> [Current], pinned on top
- * @param {string[]} [opts.chosenNames]           spell names in the section's other rows -> [Chosen], greyed
+ * @param {object} o
+ * @param {string} o.module                       module id (for its CSS)
+ * @param {string} [o.css]                        module CSS for row/details content
+ * @param {{zh: string, en: string}} o.title
+ * @param {object[]} o.items                      entries with at least `id` and `name: {zh, en}`
+ * @param {"zh"|"en"} o.lang
+ * @param {object} o.text                         per language: { empty, use, dupWarn(name) }
+ * @param {(item, ctx) => {line1: Node[], line2: Node[]}} o.renderRow
+ *        ctx = { lang, showAlt }; the picker adds the [Current]/[Chosen] badge, name(s) and ⓘ itself
+ *        unless the module returns its own name nodes (see `ownName`)
+ * @param {(item, ctx) => {rows: [string, string][], body: Node[], source?: string}} [o.renderDetails]
+ * @param {object} [o.chips]                      optional filter chips
+ * @param {{key: string, label: {zh: string, en: string}}[]} o.chips.options
+ * @param {string[]} [o.chips.selected]           initially selected keys ([] = all)
+ * @param {string[]} [o.chips.detected]           keys detected on the sheet (shown as a hint)
+ * @param {(item, selected: Set<string>) => boolean} o.chips.test
+ * @param {boolean} [o.showAltName]               also show the name in the other language
+ * @param {(show: boolean) => void} [o.onAltToggle]
+ * @param {string} [o.currentName]                name in the row being edited -> [Current], pinned on top
+ * @param {string[]} [o.chosenNames]              names in the section's other rows -> [Chosen], greyed
+ * @param {(item, lang: string) => void} o.onPick
  */
-R20F.openPicker = function ({
-  title, spells, lang, classes = [], detectedClasses = [], onPick, showAltName = true, onAltToggle,
-  currentName = "", chosenNames = [],
-}) {
+R20U.openPicker = function (o) {
+  const { title, items, text: modText, renderRow, renderDetails, chips: chipCfg, onPick, onAltToggle } = o;
+  let lang = o.lang === "en" ? "en" : "zh";
+  let showAlt = o.showAltName ?? true;
+
   // Names on the sheet may be in either language (or edited case/spacing).
   const norm = (n) => String(n || "").trim().toLowerCase().replace(/\s+/g, " ");
-  const matches = (s, name) => [s.name.zh, s.name.en].some((n) => norm(n) === norm(name));
-  const chosenSet = new Set(chosenNames.map(norm));
-  const stateOf = (s) =>
-    currentName && matches(s, currentName) ? "current"
-      : chosenSet.has(norm(s.name.zh)) || chosenSet.has(norm(s.name.en)) ? "chosen" : "";
+  const namesOf = (it) => [it.name.zh, it.name.en];
+  const chosenSet = new Set((o.chosenNames || []).map(norm));
+  const current = norm(o.currentName);
+  const stateOf = (it) =>
+    current && namesOf(it).some((n) => norm(n) === current) ? "current"
+      : namesOf(it).some((n) => chosenSet.has(norm(n))) ? "chosen" : "";
+
   const root = shadowHost();
+  ensureModuleCss(root, o.module, o.css);
   root.querySelector(".backdrop")?.remove();
 
   const backdrop = document.createElement("div");
@@ -265,125 +180,164 @@ R20F.openPicker = function ({
 
   const panel = backdrop.querySelector(".panel");
   const altBtn = backdrop.querySelector("[data-alt]");
-  let showAlt = showAltName;
   const titleEl = backdrop.querySelector("h2");
   const input = backdrop.querySelector("input");
-  const chips = backdrop.querySelector(".chips");
+  const chipsEl = backdrop.querySelector(".chips");
   const list = backdrop.querySelector("ul");
   const close = () => {
     backdrop.remove();
     document.removeEventListener("keydown", onKey, true);
   };
 
-  // Only offer classes that have spells in this list (e.g. no Paladin cantrips).
-  const available = R20F.SPELL_CLASSES.filter((c) => spells.some((s) => s.classes?.includes(c)));
-  let selected = new Set(classes.filter((c) => available.includes(c)));
+  // Only offer chips that match something in this list (e.g. no Paladin cantrips).
+  const chipOptions = (chipCfg?.options || []).filter((c) => items.some((it) => chipCfg.test(it, new Set([c.key]))));
+  const selected = new Set((chipCfg?.selected || []).filter((k) => chipOptions.some((c) => c.key === k)));
   let shown = [];
   let focusIdx = 0;
-  let expandedId = null; // spell whose ⓘ details are open
+  let expandedId = null; // entry whose ⓘ details are open
 
   function renderChips() {
-    const text = UI_TEXT[lang];
+    chipsEl.replaceChildren();
+    if (!chipOptions.length) return;
+    const t = PICKER_TEXT[lang];
     const chip = (label, active, onClick) => {
       const b = Object.assign(document.createElement("button"), { textContent: label });
       b.classList.toggle("active", active);
       b.addEventListener("click", onClick);
       return b;
     };
-    chips.replaceChildren(
-      chip(text.all, selected.size === 0, () => {
+    chipsEl.append(
+      chip(t.all, selected.size === 0, () => {
         selected.clear();
         focusIdx = 0;
         render();
       }),
-      ...available.map((c) =>
-        chip(R20F.CLASS_NAMES[c]?.[lang] || c, selected.has(c), () => {
-          selected.has(c) ? selected.delete(c) : selected.add(c);
+      ...chipOptions.map((c) =>
+        chip(c.label[lang], selected.has(c.key), () => {
+          selected.has(c.key) ? selected.delete(c.key) : selected.add(c.key);
           focusIdx = 0;
           render();
         })
       )
     );
-    const detected = detectedClasses.filter((c) => available.includes(c));
+    const detected = chipOptions.filter((c) => (chipCfg.detected || []).includes(c.key));
     if (detected.length) {
-      chips.append(
-        Object.assign(document.createElement("span"), {
-          className: "hint",
-          textContent: detected.map((c) => R20F.CLASS_NAMES[c]?.[lang] || c).join(", ") + text.detected,
-        })
-      );
+      chipsEl.append(R20U.span("hint", detected.map((c) => c.label[lang]).join(", ") + t.detected));
     }
   }
 
+  function renderDetailsBox(it, onUse) {
+    const d = renderDetails(it, { lang, showAlt });
+    const box = Object.assign(document.createElement("div"), { className: "details" });
+    // Reading the details must not pick the entry (the row's click handler).
+    box.addEventListener("click", (e) => e.stopPropagation());
+    const dl = document.createElement("dl");
+    for (const [k, v] of d.rows || []) {
+      if (v) dl.append(Object.assign(document.createElement("dt"), { textContent: k }),
+        Object.assign(document.createElement("dd"), { textContent: v }));
+    }
+    box.append(dl, ...(d.body || []));
+    const foot = Object.assign(document.createElement("div"), { className: "foot" });
+    foot.append(R20U.span("src", d.source || ""));
+    const use = Object.assign(document.createElement("button"), { className: "use", textContent: modText[lang].use });
+    use.addEventListener("click", onUse);
+    foot.append(use);
+    box.append(foot);
+    return box;
+  }
+
+  function renderEntry(it, i) {
+    const t = PICKER_TEXT[lang];
+    const state = stateOf(it);
+    const expanded = expandedId === it.id;
+    const li = document.createElement("li");
+    li.classList.toggle("expanded", expanded);
+    li.classList.toggle("focus", i === focusIdx);
+    if (state) li.classList.add(state);
+
+    const { line1 = [], line2 = [] } = renderRow(it, { lang, showAlt });
+    const l1 = Object.assign(document.createElement("div"), { className: "line1" });
+    if (state) l1.append(R20U.span(`badge ${state}`, t[state]));
+    l1.append(R20U.span("name", it.name[lang]));
+    if (showAlt) l1.append(R20U.span("alt", it.name[lang === "zh" ? "en" : "zh"]));
+    l1.append(...line1);
+    const l2 = Object.assign(document.createElement("div"), { className: "line2" });
+    l2.append(...line2);
+
+    const head = Object.assign(document.createElement("div"), { className: "head" });
+    const main = Object.assign(document.createElement("div"), { className: "main" });
+    main.append(l1, l2);
+    head.append(main);
+    if (renderDetails) {
+      const info = Object.assign(document.createElement("button"), { className: "info", textContent: "i", title: t.info });
+      info.classList.toggle("active", expanded);
+      info.addEventListener("click", (e) => {
+        e.stopPropagation(); // don't pick the entry
+        expandedId = expanded ? null : it.id;
+        focusIdx = i;
+        const scroll = list.scrollTop;
+        render();
+        list.scrollTop = scroll; // re-render without jumping
+        if (expandedId) {
+          // Bring the opened entry to the top of the list. Near the end of the list the
+          // browser clamps the scroll, so the last entries just scroll as far as they can.
+          list.scrollTo({ top: list.querySelector("li.expanded").offsetTop, behavior: "smooth" });
+        }
+      });
+      head.append(info);
+    }
+    li.append(head);
+    const pick = () => choose(it);
+    if (expanded) li.append(renderDetailsBox(it, pick));
+    li.addEventListener("click", pick);
+    return li;
+  }
+
   function render() {
-    const text = UI_TEXT[lang];
+    const t = PICKER_TEXT[lang];
     titleEl.textContent = title[lang] || title.en;
-    input.placeholder = text.search;
-    backdrop.querySelector("[data-close]").title = text.close;
+    input.placeholder = t.search;
+    backdrop.querySelector("[data-close]").title = t.close;
     altBtn.textContent = lang === "zh" ? "EN" : "中";
-    altBtn.title = text.altToggle;
+    altBtn.title = t.altToggle;
     altBtn.classList.toggle("active", showAlt);
     renderChips();
 
     const q = input.value.trim().toLowerCase();
-    shown = spells.filter(
-      (s) =>
-        (!q || s.name.en.toLowerCase().includes(q) || s.name.zh.toLowerCase().includes(q)) &&
-        (selected.size === 0 || s.classes?.some((c) => selected.has(c)))
+    shown = items.filter(
+      (it) =>
+        (!q || namesOf(it).some((n) => n.toLowerCase().includes(q))) &&
+        (selected.size === 0 || chipCfg.test(it, selected))
     );
-    // The row's current spell is pinned to the top.
+    // The row's current entry is pinned to the top.
     shown.sort((a, b) => (stateOf(b) === "current") - (stateOf(a) === "current"));
     focusIdx = Math.min(focusIdx, Math.max(shown.length - 1, 0));
 
     list.replaceChildren(
       ...(shown.length
-        ? shown.map((s, i) => {
-            const pick = () => choose(s);
-            const li = renderItem(s, lang, {
-              showAlt,
-              state: stateOf(s),
-              expanded: expandedId === s.id,
-              onToggleInfo: () => {
-                expandedId = expandedId === s.id ? null : s.id;
-                focusIdx = i;
-                const scroll = list.scrollTop;
-                render();
-                list.scrollTop = scroll; // re-render without jumping
-                if (expandedId) {
-                  // Bring the opened spell to the top of the list. Near the end of the list the
-                  // browser clamps the scroll, so the last spells just scroll as far as they can.
-                  const opened = list.querySelector("li.expanded");
-                  list.scrollTo({ top: opened.offsetTop, behavior: "smooth" });
-                }
-              },
-              onUse: pick,
-            });
-            li.classList.toggle("focus", i === focusIdx);
-            li.addEventListener("click", pick);
-            return li;
-          })
-        : [Object.assign(document.createElement("li"), { className: "empty", textContent: text.empty })])
+        ? shown.map(renderEntry)
+        : [Object.assign(document.createElement("li"), { className: "empty", textContent: modText[lang].empty })])
     );
   }
 
-  /** Pick a spell; a spell already in another row asks for confirmation first. */
-  function choose(s) {
-    if (stateOf(s) !== "chosen") {
+  /** Pick an entry; one already in another row asks for confirmation first. */
+  function choose(it) {
+    if (stateOf(it) !== "chosen") {
       close();
-      onPick(s, lang);
+      onPick(it, lang);
       return;
     }
-    const text = UI_TEXT[lang];
+    const t = PICKER_TEXT[lang];
     panel.querySelector(".confirm")?.remove();
     const bar = Object.assign(document.createElement("div"), { className: "confirm" });
-    const yes = Object.assign(document.createElement("button"), { className: "yes", textContent: text.dupYes });
-    const no = Object.assign(document.createElement("button"), { textContent: text.dupNo });
+    const yes = Object.assign(document.createElement("button"), { className: "yes", textContent: t.dupYes });
+    const no = Object.assign(document.createElement("button"), { textContent: t.dupNo });
     yes.addEventListener("click", () => {
       close();
-      onPick(s, lang);
+      onPick(it, lang);
     });
     no.addEventListener("click", () => bar.remove());
-    bar.append(span("msg", text.dupWarn(s.name[lang])), no, yes);
+    bar.append(R20U.span("msg", modText[lang].dupWarn(it.name[lang])), no, yes);
     panel.append(bar);
     yes.focus();
   }

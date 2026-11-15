@@ -1,10 +1,12 @@
-# Roll20 Sheet Filler
+# Roll20 Utils Extension
 
-An open-source Chrome extension (Manifest V3) that helps you fill a D&D 5e character sheet on
-[Roll20](https://app.roll20.net) (the "D&D 5E by Roll20" sheet). Pick a spell from a searchable
-list, in Chinese or English, and the extension fills the whole spell row for you: school,
-casting time, range, components, duration, description, attack/save, damage or healing,
-cantrip scaling and upcast dice.
+An open-source Chrome extension (Manifest V3) with helper tools for [Roll20](https://app.roll20.net).
+Each tool is a module you can switch on or off.
+
+The first module is the **spell picker** for the D&D 5e character sheet ("D&D 5E by Roll20"
+sheet). Pick a spell from a searchable list, in Chinese or English, and the extension fills the
+whole spell row for you: school, casting time, range, components, duration, description,
+attack/save, damage or healing, cantrip scaling and upcast dice.
 
 > **Unofficial fan project.** Not affiliated with, endorsed or sponsored by Roll20 or
 > Wizards of the Coast. **The game data is not mine**: see [Data sources & disclaimer](#data-sources--disclaimer).
@@ -59,12 +61,23 @@ filter.
 
 ## Development
 
+**Adding a module:**
+1. Create `src/modules/<id>/`. Register it with `R20U.registerModule({ id, inject })`, and reuse
+   `R20U.injectSectionButtons`, `R20U.openPicker` and `R20U.fillWithProgress`
+   (see `src/modules/spells/`).
+2. Add its scripts to `manifest.json`, before `src/content/content.js`.
+3. Add an entry to `R20U.MODULES` (`src/shared/settings.js`) and a card in `src/popup/popup.html`.
+
 ```
 manifest.json                Extension config (permissions, scripts)
 src/background/background.js Loads the data files, answers content-script queries
-src/content/                 Runs inside the Roll20 sheet: field filling, picker, 📖 buttons
-src/shared/settings.js       Settings and UI text shared by popup and content scripts
-src/popup/                   Toolbar popup (settings)
+src/content/                 Core, runs inside the Roll20 sheet: field filling (fields.js),
+                             sheet helpers + 📖 buttons + module registry (sheet.js),
+                             generic picker (picker.js), entry point (content.js)
+src/modules/<name>/          One folder per module, e.g. spells/: module.js (buttons, picker
+                             wiring), view.js (list row + details), fill.js (data -> sheet fields)
+src/shared/settings.js       Settings, module list and UI text shared by popup and content scripts
+src/popup/                   Toolbar popup (general settings + one card per module)
 scripts/build-all.js         Builds data/ from 5etools-cn (spells, items, feats, species, ...)
 scripts/lib/5etools.js       Shared build helpers: fetch, 5etools markup -> plain text
 data/srd/                    Generated SRD 5.2 data (committed)
@@ -76,7 +89,7 @@ tools/harness/               Local test page that emulates the Roll20 sheet
   [tools/harness/README.md](tools/harness/README.md).
 - **Debugging:** the sheet runs in a cross-origin iframe
   (`storage.googleapis.com/roll20-cdn/.../legacy-sheets/index.html`). In DevTools, filter the
-  console by `Roll20 Sheet Filler`, and switch the console context (top-left, `top`) to that
+  console by `Roll20 Utils`, and switch the console context (top-left, `top`) to that
   frame to inspect sheet fields.
 - After editing code: reload the extension on `chrome://extensions`, then refresh the Roll20 tab.
 
