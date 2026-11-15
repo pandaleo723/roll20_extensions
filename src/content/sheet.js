@@ -155,13 +155,14 @@ function applyLabel(btn) {
  * Standard buttons for repeating sections:
  *  - inside each row's edit panel (opened by the row's gear ⚙) -> onRow(groupName, row)
  *  - next to Roll20's "+Add" ("📖 +")                        -> onAdd(groupName)
- * Idempotent; skips print layouts.
+ * `rowPanel` = selector of the row's edit panel (default ".options"; the inventory uses
+ * ".subitem", shown by the row's "i" toggle). Idempotent; skips print layouts.
  */
-R20U.injectSectionButtons = function (moduleId, groupNames, { rowLabel, addLabel, onRow, onAdd }) {
+R20U.injectSectionButtons = function (moduleId, groupNames, { rowLabel, addLabel, onRow, onAdd, rowPanel = ".options" }) {
   for (const groupName of groupNames) {
     for (const row of R20U.sectionRows(groupName)) {
       if (row.querySelector(`.r20u-btn[data-module="${moduleId}"]`)) continue;
-      const panel = row.querySelector(".options"); // only visible while the gear is open
+      const panel = row.querySelector(rowPanel); // only visible while the gear / "i" is open
       if (panel) panel.prepend(R20U.makeButton(moduleId, "row", rowLabel, () => onRow(groupName, row)));
     }
     const control = [...document.querySelectorAll(`.repcontrol[data-groupname="${groupName}"]`)].find(R20U.notPrint);

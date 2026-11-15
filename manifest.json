@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "default_locale": "en",
   "description": "__MSG_extDesc__",
   "permissions": [
@@ -38,6 +38,9 @@
         "src/modules/spells/fill.js",
         "src/modules/spells/view.js",
         "src/modules/spells/module.js",
+        "src/modules/items/fill.js",
+        "src/modules/items/view.js",
+        "src/modules/items/module.js",
         "src/content/content.js"
       ],
       "all_frames": true,
@@ -57,6 +60,9 @@
         "src/modules/spells/fill.js",
         "src/modules/spells/view.js",
         "src/modules/spells/module.js",
+        "src/modules/items/fill.js",
+        "src/modules/items/view.js",
+        "src/modules/items/module.js",
         "src/content/content.js"
       ],
       "all_frames": true,

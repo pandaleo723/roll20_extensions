@@ -47,6 +47,14 @@ R20U.MODULES = [
     name: { zh: "法术选择器", en: "Spell picker" },
     desc: { zh: "在角色卡法术栏加入 📖 按钮，从列表选择并填入法术。", en: "📖 buttons in the sheet's spell sections: pick a spell from a list and fill the row." },
   },
+  {
+    id: "items",
+    name: { zh: "物品选择器", en: "Item picker" },
+    desc: {
+      zh: "在物品栏加入 📖 按钮：从列表选择武器、护甲、装备或魔法物品并填入。武器会建立攻击，消耗品和弹药会成为资源。",
+      en: "📖 buttons in the inventory: pick a weapon, armour, gear or magic item from a list. Weapons get an attack; consumables and ammo become resources.",
+    },
+  },
 ];
 
 /** Project links shown in the popup's beta notice. */
@@ -56,7 +64,7 @@ R20U.ISSUES_URL = `${R20U.REPO_URL}/issues`;
 R20U.DEFAULT_SETTINGS = {
   lang: "zh", // language of the UI and of the game text: "zh" | "en"
   showAltName: true, // in picker lists, also show the name in the other language
-  modules: { spells: true }, // module id -> enabled (missing = enabled)
+  modules: { spells: true, items: true }, // module id -> enabled (missing = enabled)
   autoClass: true, // spells: filter the list by the class(es) detected on the sheet
   classFilter: [], // spells: classes to filter by when autoClass is off ([] = all classes)
 };
@@ -68,6 +76,9 @@ R20U.UI_STRINGS = {
     addFromList: "从列表新增法术",
     waitFill: "请等待目前的填入完成",
     noData: "没有载入法术资料 — 请执行 scripts/build-data.js",
+    pickItem: "📖 从列表选择物品",
+    addItem: "从列表新增物品",
+    noItemData: "没有载入物品资料 — 请执行 scripts/build-items.js",
     // popup
     popupHint: "Roll20 小工具：开启的模块会在角色卡上加入 📖 按钮。",
     betaTitle: "测试版 (Beta)",
@@ -94,6 +105,9 @@ R20U.UI_STRINGS = {
     addFromList: "Add a spell from the list",
     waitFill: "Please wait for the current fill to finish",
     noData: "No spell data loaded — run scripts/build-data.js",
+    pickItem: "📖 Pick from list",
+    addItem: "Add an item from the list",
+    noItemData: "No item data loaded — run scripts/build-items.js",
     popupHint: "Roll20 helpers: enabled modules add 📖 buttons to the character sheet.",
     betaTitle: "Beta",
     betaText: "This is a beta version and may still have issues.",

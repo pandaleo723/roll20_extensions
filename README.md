@@ -3,10 +3,14 @@
 An open-source Chrome extension (Manifest V3) with helper tools for [Roll20](https://app.roll20.net).
 Each tool is a module you can switch on or off.
 
-The first module is the **spell picker** for the D&D 5e character sheet ("D&D 5E by Roll20"
-sheet). Pick a spell from a searchable list, in Chinese or English, and the extension fills the
-whole spell row for you: school, casting time, range, components, duration, description,
-attack/save, damage or healing, cantrip scaling and upcast dice.
+Modules for the D&D 5e character sheet ("D&D 5E by Roll20" sheet), in Chinese or English:
+
+- **Spell picker**: pick a spell from a searchable list and the extension fills the whole spell
+  row: school, casting time, range, components, duration, description, attack/save, damage or
+  healing, cantrip scaling and upcast dice.
+- **Item picker**: pick a weapon, armour, gear, tool, consumable or magic item and it is added to
+  the inventory; the sheet then builds the weapon's attack, counts armour in your AC and tracks
+  consumables and ammo as resources.
 
 > **Unofficial fan project.** Not affiliated with, endorsed or sponsored by Roll20 or
 > Wizards of the Coast. **The game data is not mine**: see [Data sources & disclaimer](#data-sources--disclaimer).
@@ -23,6 +27,14 @@ attack/save, damage or healing, cantrip scaling and upcast dice.
   - Chinese or English text, optionally showing the name in the other language
 - Fills the fields Roll20 uses for rolls: attack or spell card output, damage / healing,
   cantrip progression, upcast dice, spellcasting ability, saves
+- 📖 buttons in the inventory: inside a row's "i" details (replace that item) and **📖 +**
+  next to **+Add**
+- Searchable item list (PHB 2024 equipment + the SRD 5.2 magic items of the DMG 2024) with
+  category chips (weapons, armour, ammo, gear, tools, consumables, magic items) and details
+  (damage, properties, mastery, AC, rarity, weight, cost, description)
+- Fills name, count, weight, properties, modifiers (Roll20 compendium format, so the sheet creates
+  the attack, AC and magic bonuses), notes (description + weapon mastery), *has attack* for
+  weapons and *use as resource* for consumables and ammo (e.g. Arrows ×20)
 - Saves reliably: edits are paced to match how the Roll20 sheet saves changes
 
 ## Install (from source)
@@ -55,6 +67,8 @@ Then in Chrome:
    **📖 Pick from list**.
 3. Search, optionally filter by class, then click a spell. Filling takes a few seconds
    (about 0.6 s per changed field) because Roll20 only saves one edit at a time.
+4. Items: on the inventory, click **📖 +** next to **+Add**, or open an item row's **i** details
+   and click **📖 Pick from list**. Filter by category, then click an item.
 
 Settings (toolbar icon): language, show other-language names, auto-detect class, manual class
 filter.
@@ -129,6 +143,8 @@ The extension collects no data and makes no network requests. See [PRIVACY.md](P
 ## Roadmap
 
 - [x] Spell picker for all spell levels (zh/en, class filter, details, duplicate markers)
-- [ ] Weapons and armour (inventory → attacks), using `data/*/items.json`
+- [x] Item picker: weapons, armour, gear, consumables and SRD magic items (inventory → attacks,
+  AC, resources)
+- [ ] Generic magic variants (+1 weapons/armour), equipment packs, starting equipment
 - [ ] Feats, backgrounds, species traits and class features (Features & Traits)
 - [ ] Optional in-extension data import
