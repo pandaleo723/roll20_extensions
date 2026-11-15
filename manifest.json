@@ -43,6 +43,7 @@
         "src/modules/items/module.js",
         "src/modules/traits/fill.js",
         "src/modules/traits/view.js",
+        "src/modules/traits/species.js",
         "src/modules/traits/module.js",
         "src/content/content.js"
       ],
@@ -68,6 +69,7 @@
         "src/modules/items/module.js",
         "src/modules/traits/fill.js",
         "src/modules/traits/view.js",
+        "src/modules/traits/species.js",
         "src/modules/traits/module.js",
         "src/content/content.js"
       ],

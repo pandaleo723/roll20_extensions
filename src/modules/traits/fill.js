@@ -30,7 +30,8 @@ var R20U = (globalThis.R20U ??= {});
    */
   R20U.speciesEntries = function (species) {
     return species.flatMap((s) => {
-      const base = { ...s, kind: "species" };
+      // speciesId / speciesName / lineageName: for the species panel's two tile rows.
+      const base = { ...s, kind: "species", speciesId: s.id, speciesName: s.name, lineageName: null };
       delete base.lineages;
       if (!s.lineages?.length) return [base];
       return s.lineages.map((l) => {
@@ -45,6 +46,7 @@ var R20U = (globalThis.R20U ??= {});
         return {
           ...base,
           id: l.id,
+          lineageName: l.name,
           name: l.traits[0]?.sourceType || { en: `${s.name.en} (${l.name.en})`, zh: `${s.name.zh}（${l.name.zh}）` },
           speed: l.speed ?? s.speed,
           senses: l.senses ?? s.senses,

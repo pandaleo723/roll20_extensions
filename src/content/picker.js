@@ -115,6 +115,17 @@ function shadowHost() {
   return host.shadowRoot;
 }
 
+/**
+ * The picker's shadow root (with the picker CSS and a module's own CSS), for modules that build
+ * their own panel in the same look (e.g. the species panel). Closes an open picker/panel.
+ */
+R20U.pickerRoot = function (moduleId, css) {
+  const root = shadowHost();
+  ensureModuleCss(root, moduleId, css);
+  root.querySelector(".backdrop")?.remove();
+  return root;
+};
+
 /** Add a module's picker CSS once. */
 function ensureModuleCss(root, id, css) {
   if (!css || root.querySelector(`style[data-module="${id}"]`)) return;

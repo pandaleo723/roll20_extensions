@@ -59,8 +59,8 @@ R20U.MODULES = [
     id: "traits",
     name: { zh: "特性选择器", en: "Traits picker" },
     desc: {
-      zh: "在特性栏加入 📖 按钮选择专长；👥 + 按钮按背景或种族自动加入特性（背景专长、坚韧不屈、黑暗视觉等），已有的会跳过。",
-      en: "📖 buttons in Features & Traits pick a feat; 👥 + adds the traits of a background or species (origin feat, Relentless Endurance, Darkvision, ...), skipping ones already there.",
+      zh: "在特性栏加入 📖 按钮选择专长；👥 背景 + 加入背景的起源专长；🧝 种族 + 选择种族与血统，勾选并加入其特性（坚韧不屈、黑暗视觉等）。已有的会跳过。",
+      en: "📖 buttons in Features & Traits pick a feat; 👥 Background + adds a background's origin feat; 🧝 Species + picks a species and lineage and adds the ticked traits (Relentless Endurance, Darkvision, ...). Ones already there are skipped.",
     },
   },
 ];
@@ -90,7 +90,10 @@ R20U.UI_STRINGS = {
     noItemData: "没有载入物品资料 — 请执行 scripts/build-items.js",
     pickFeat: "📖 从列表选择专长",
     addFeat: "从列表新增专长",
-    addOrigin: "按背景或种族加入特性（只加入缺少的）",
+    bgButton: "👥 背景 +",
+    bgButtonHint: "按背景加入它的起源专长（已有则跳过）",
+    speciesButton: "🧝 种族 +",
+    speciesButtonHint: "按种族与血统勾选并加入特性（已有的会跳过）",
     noTraitData: "没有载入专长/背景/种族资料 — 请执行 scripts/build-traits.js",
     traitsAdded: ({ added, updated, skipped }) =>
       `已加入 ${added} 项` + (updated ? `，更新 ${updated} 项` : "") + (skipped ? `，跳过 ${skipped} 项（已存在）` : ""),
@@ -126,7 +129,10 @@ R20U.UI_STRINGS = {
     noItemData: "No item data loaded — run scripts/build-items.js",
     pickFeat: "📖 Pick a feat",
     addFeat: "Add a feat from the list",
-    addOrigin: "Add traits from a background or species (only missing ones)",
+    bgButton: "👥 Background +",
+    bgButtonHint: "Add a background's origin feat (skipped if already there)",
+    speciesButton: "🧝 Species +",
+    speciesButtonHint: "Choose a species and lineage, tick the traits to add (ones already there are skipped)",
     noTraitData: "No feat/background/species data loaded — run scripts/build-traits.js",
     traitsAdded: ({ added, updated, skipped }) =>
       `Added ${added}` + (updated ? `, updated ${updated}` : "") + (skipped ? `, skipped ${skipped} (already there)` : ""),
