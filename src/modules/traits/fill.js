@@ -9,15 +9,57 @@ var R20U = (globalThis.R20U ??= {});
 (() => {
   const PREREQ = { zh: "先决条件", en: "Prerequisite" };
 
+  /** "{darkvision} feet" -> "120 feet", from the trait's `params` defaults. */
+  const fillTemplate = (text, params) =>
+    text.replace(/\{(\w+)\}/g, (m, k) => (params?.[k]?.default != null ? String(params[k].default) : m));
+
   /** Text for the row's description; a feat's prerequisite goes on its first line. */
   R20U.traitDescription = function (entry, lang) {
     const t = (localized) => localized?.[lang] || localized?.en || "";
     const parts = [];
     const pre = t(entry.prerequisite);
     if (pre) parts.push(lang === "zh" ? `${PREREQ.zh}：${pre}` : `${PREREQ.en}: ${pre}`);
-    if (t(entry.description)) parts.push(t(entry.description));
+    if (t(entry.description)) parts.push(fillTemplate(t(entry.description), entry.params));
     return parts.join("\n\n");
   };
+
+  /**
+   * Species as picker entries: one per species without lineages, one per lineage otherwise
+   * ("Elf (Drow Lineage)"). A lineage's traits replace the base trait they extend
+   * (Darkvision -> Darkvision 120, "Elven Lineage" -> "Elven Lineage (Drow)").
+   */
+  R20U.speciesEntries = function (species) {
+    return species.flatMap((s) => {
+      const base = { ...s, kind: "species" };
+      delete base.lineages;
+      if (!s.lineages?.length) return [base];
+      return s.lineages.map((l) => {
+        const extends_ = (lt, b) => lt.name.en === b.name.en || lt.name.en.startsWith(`${b.name.en} (`);
+        const used = new Set();
+        const traits = s.traits.map((b) => {
+          const lt = l.traits.find((x) => extends_(x, b));
+          if (lt) used.add(lt);
+          return lt || b;
+        });
+        traits.push(...l.traits.filter((lt) => !used.has(lt)));
+        return {
+          ...base,
+          id: l.id,
+          name: l.traits[0]?.sourceType || { en: `${s.name.en} (${l.name.en})`, zh: `${s.name.zh}（${l.name.zh}）` },
+          speed: l.speed ?? s.speed,
+          senses: l.senses ?? s.senses,
+          traits,
+        };
+      });
+    });
+  };
+
+  /**
+   * Values a trait's existing row must contain to count as up to date (e.g. ["120"] for
+   * Darkvision 120); [] when any row with the trait's name will do.
+   */
+  R20U.traitParamValues = (trait) =>
+    Object.values(trait.params || {}).filter((p) => p.default != null).map((p) => String(p.default));
 
   /**
    * Returns [attrName, value] pairs, in fill order (edit panel top to bottom).

@@ -172,29 +172,39 @@ function applyLabel(btn) {
  *  - optional ⓘ next to the row button ("i" in a circle)     -> onRowInfo(groupName, row)
  * `rowPanel` = selector of the row's edit panel (default ".options"; the inventory uses
  * ".subitem", shown by the row's "i" toggle); `compact` = small bar for sections with small text.
+ * Without `rowLabel` only the add button is made. `key` tells apart several button sets of one
+ * module (default: the module id); a later set's add button goes after the earlier ones.
  * Idempotent; skips print layouts.
  */
 R20U.injectSectionButtons = function (moduleId, groupNames,
-  { rowLabel, addLabel, onRow, onAdd, onRowInfo, infoLabel, rowPanel = ".options", compact = false }) {
+  { rowLabel, addLabel, onRow, onAdd, onRowInfo, infoLabel, rowPanel = ".options", compact = false, key = moduleId }) {
+  const mine = `.r20u-btn[data-module="${moduleId}"][data-key="${key}"]`;
+  const make = (kind, label, onClick) => {
+    const btn = R20U.makeButton(moduleId, kind, label, onClick);
+    btn.dataset.key = key;
+    return btn;
+  };
   for (const groupName of groupNames) {
-    for (const row of R20U.sectionRows(groupName)) {
-      if (row.querySelector(`.r20u-rowbar[data-module="${moduleId}"]`)) continue;
-      const panel = row.querySelector(rowPanel); // only visible while the gear / "i" is open
-      if (!panel) continue;
-      const bar = Object.assign(document.createElement("div"), { className: compact ? "r20u-rowbar compact" : "r20u-rowbar" });
-      bar.dataset.module = moduleId;
-      bar.append(R20U.makeButton(moduleId, "row", rowLabel, () => onRow(groupName, row)));
-      if (onRowInfo) {
-        bar.append(R20U.makeButton(moduleId, "info", () => ({ text: "i", title: infoLabel?.() || "" }),
-          () => onRowInfo(groupName, row)));
+    if (rowLabel) {
+      for (const row of R20U.sectionRows(groupName)) {
+        if (row.querySelector(`.r20u-rowbar[data-module="${moduleId}"][data-key="${key}"]`)) continue;
+        const panel = row.querySelector(rowPanel); // only visible while the gear / "i" is open
+        if (!panel) continue;
+        const bar = Object.assign(document.createElement("div"), { className: compact ? "r20u-rowbar compact" : "r20u-rowbar" });
+        bar.dataset.module = moduleId;
+        bar.dataset.key = key;
+        bar.append(make("row", rowLabel, () => onRow(groupName, row)));
+        if (onRowInfo) {
+          bar.append(make("info", () => ({ text: "i", title: infoLabel?.() || "" }), () => onRowInfo(groupName, row)));
+        }
+        panel.prepend(bar);
       }
-      panel.prepend(bar);
     }
     const control = [...document.querySelectorAll(`.repcontrol[data-groupname="${groupName}"]`)].find(R20U.notPrint);
-    if (control && !control.querySelector(`.r20u-btn[data-module="${moduleId}"]`)) {
-      const btn = R20U.makeButton(moduleId, "add", addLabel, () => onAdd(groupName));
-      const addBtn = control.querySelector(".repcontrol_add");
-      if (addBtn) addBtn.after(btn);
+    if (control && !control.querySelector(mine)) {
+      const btn = make("add", addLabel, () => onAdd(groupName));
+      const after = [...control.querySelectorAll(".r20u-btn.r20u-add")].pop() || control.querySelector(".repcontrol_add");
+      if (after) after.after(btn);
       else control.append(btn);
     }
   }
