@@ -16,9 +16,9 @@ R20U.LOG_PREFIX = "[Roll20 Utils]";
  *     we put in the DOM but haven't saved yet is overwritten (dropdowns revert to defaults, text on
  *     existing rows reverts to the old text).
  *
- * So: one text/select change at a time, each with no window open (= saved immediately), and the
- * DOM value is set right before its own change event. Checkboxes ride along right after a paced
- * change, while its window is open.
+ * So: fields are filled in the given order, one text/select change at a time, each with no window
+ * open (= saved immediately), and the DOM value is set right before its own change event. A
+ * checkbox that follows a text/select field saves inside that field's window at no extra cost.
  */
 const DEBOUNCE_GAP_MS = 560;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -88,8 +88,7 @@ function fireChange(el) {
 R20U.fillFields = async function (root, data, onProgress) {
   const filled = [];
   const missing = [];
-  const instant = []; // checkbox jobs
-  const paced = []; // text / select / textarea jobs
+  const jobs = []; // in the given order (top to bottom of the sheet panel)
 
   for (const [attrName, value] of data) {
     const els = R20U.editableFields(root, attrName).filter((el) => el.type !== "radio");
@@ -99,7 +98,7 @@ R20U.fillFields = async function (root, data, onProgress) {
       continue;
     }
     filled.push(attrName);
-    (els[0].type === "checkbox" ? instant : paced).push({ els, target });
+    jobs.push({ els, target, checkbox: els[0].type === "checkbox" });
   }
 
   // Set every copy of the field right before firing; Roll20 needs one change event per attribute.
@@ -115,24 +114,29 @@ R20U.fillFields = async function (root, data, onProgress) {
     return true;
   };
 
+  // Fill strictly in order, so the user sees the panel update top to bottom.
+  // `windowUntil` = when Roll20's current debounce window closes (0 = none open).
+  //  - text/select: wait until no window is open, then fire (saves now, opens a window).
+  //  - checkbox inside an open window: saves now and leaves the window alone, so no wait.
+  //  - checkbox with no window open: saves now but opens a window itself.
+  let windowUntil = 0;
+  const waitForWindow = async () => {
+    const left = windowUntil - Date.now();
+    if (left > 0) await sleep(left);
+  };
+
   let done = 0;
-  const total = paced.length;
-  for (const job of paced) {
+  for (const job of jobs) {
+    if (!job.checkbox) await waitForWindow();
     if (apply(job)) {
+      // Our window estimate is a bit longer than Roll20's 500 ms; leave a safety margin.
+      const windowOpen = Date.now() < windowUntil - 200;
       fireChange(job.els[0]);
-      // Checkboxes save immediately while this change's debounce window is open.
-      instant.splice(0).forEach((cb) => apply(cb) && fireChange(cb.els[0]));
-      await sleep(DEBOUNCE_GAP_MS);
+      if (!job.checkbox || !windowOpen) windowUntil = Date.now() + DEBOUNCE_GAP_MS;
     }
-    onProgress?.(++done, total);
+    onProgress?.(++done, jobs.length);
   }
-  // Only checkboxes changed (or none of the paced fields needed a save).
-  for (const cb of instant) {
-    if (apply(cb)) {
-      fireChange(cb.els[0]);
-      await sleep(DEBOUNCE_GAP_MS);
-    }
-  }
+  await waitForWindow(); // let the last save settle before the next fill starts
   return { filled, missing };
 };
 
