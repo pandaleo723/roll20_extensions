@@ -29,6 +29,11 @@ const PICKER_CSS = `
   .chips { padding: 0 12px 8px; border-bottom: 1px solid #eee; }
   .chips:empty { display: none; }
   .chiprow { display: flex; flex-wrap: wrap; gap: 4px; }
+  /* one choice per row: square tiles; several choices: round pills with a ✓ when on */
+  .chiprow.single { gap: 3px; }
+  .chips .chiprow.single button { border-radius: 3px; }
+  .chips .chiprow.multi button { border-radius: 10px; }
+  .chips .chiprow.multi button.active:not(.all)::before { content: "✓ "; }
   /* sub-filters of the selected chip, under a faint line */
   .chiprow.sub { margin-top: 6px; padding-top: 6px; border-top: 1px dashed #e3d6d6; }
   .chiprow.sub button { background: #fff; }
@@ -240,12 +245,12 @@ R20U.openPicker = function (o) {
     };
     const row = (cls) => Object.assign(document.createElement("div"), { className: cls });
 
-    const main = row("chiprow");
+    const main = row(chipCfg.single ? "chiprow single" : "chiprow multi");
     main.append(
-      chip(t.all, selected.size === 0, () => {
+      Object.assign(chip(t.all, selected.size === 0, () => {
         selected.clear();
         resetSub();
-      }),
+      }), { className: selected.size === 0 ? "all active" : "all" }),
       ...chipOptions.map((c) =>
         chip(c.label[lang], selected.has(c.key), () => {
           const on = selected.has(c.key);
@@ -262,7 +267,7 @@ R20U.openPicker = function (o) {
     chipsEl.append(main);
 
     subRows.forEach((def, i) => {
-      const sub = row("chiprow sub");
+      const sub = row(def.multi ? "chiprow sub multi" : "chiprow sub single");
       const sel = subSel[i];
       sub.append(...def.options.map((c) =>
         chip(c.label[lang], sel.has(c.key), () => {
