@@ -78,6 +78,7 @@ R20U.UI_STRINGS = {
     noData: "没有载入法术资料 — 请执行 scripts/build-data.js",
     pickItem: "📖 从列表选择物品",
     addItem: "从列表新增物品",
+    itemInfo: "查看此物品的详情",
     noItemData: "没有载入物品资料 — 请执行 scripts/build-items.js",
     // popup
     popupHint: "Roll20 小工具：开启的模块会在角色卡上加入 📖 按钮。",
@@ -107,6 +108,7 @@ R20U.UI_STRINGS = {
     noData: "No spell data loaded — run scripts/build-data.js",
     pickItem: "📖 Pick from list",
     addItem: "Add an item from the list",
+    itemInfo: "Show this item's details",
     noItemData: "No item data loaded — run scripts/build-items.js",
     popupHint: "Roll20 helpers: enabled modules add 📖 buttons to the character sheet.",
     betaTitle: "Beta",

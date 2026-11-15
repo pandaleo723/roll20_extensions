@@ -26,8 +26,13 @@ const PICKER_CSS = `
   button.active { background: #b5121b; border-color: #b5121b; color: #fff; }
   button[data-alt] { min-width: 34px; }
   input { margin: 10px 12px 6px; padding: 6px 8px; font: inherit; border: 1px solid #ccc; border-radius: 4px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 4px; padding: 0 12px 8px; border-bottom: 1px solid #eee; }
+  .chips { padding: 0 12px 8px; border-bottom: 1px solid #eee; }
   .chips:empty { display: none; }
+  .chiprow { display: flex; flex-wrap: wrap; gap: 4px; }
+  /* sub-filters of the selected chip, under a faint line */
+  .chiprow.sub { margin-top: 6px; padding-top: 6px; border-top: 1px dashed #e3d6d6; }
+  .chiprow.sub button { background: #fff; }
+  .chiprow.sub button.active { background: #c9474e; border-color: #c9474e; }
   .chips button { font-size: 12px; padding: 1px 7px; border-radius: 10px; }
   .chips .hint { color: #888; font-size: 12px; align-self: center; margin-left: 2px; }
   ul { list-style: none; margin: 0; padding: 0 0 8px; overflow-y: auto; position: relative; /* li.offsetTop is relative to the list */ }
@@ -67,6 +72,8 @@ const PICKER_CSS = `
   .details .desc { margin: 0 0 6px; white-space: pre-line; font-size: 12.5px; line-height: 1.5; }
   .details .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; }
   .details .src { color: #999; font-size: 11px; }
+  /* machine-translated text (5e-cn "机翻"), shown at the top of the details */
+  .details .mt { margin: 0 0 6px; color: #d40000; font-weight: 700; font-size: 12px; }
   .details button.use { background: #b5121b; border-color: #b5121b; color: #fff; }
   .toast {
     position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 2147483647;
@@ -139,6 +146,11 @@ R20U.toast = function (text, ms = 2500) {
  * @param {string[]} [o.chips.selected]           initially selected keys ([] = all)
  * @param {string[]} [o.chips.detected]           keys detected on the sheet (shown as a hint)
  * @param {(item, selected: Set<string>) => boolean} o.chips.test
+ * @param {boolean} [o.chips.single]              one chip at a time (clicking it again = all)
+ * @param {(key: string) => object[]} [o.chips.sub]  with `single`: sub-filter rows for the selected
+ *        chip, each { options: [{key, label}], multi?: boolean, test(item, selected: Set) }; a row
+ *        filters only while something in it is selected; `multi` rows match any selected key (OR)
+ * @param {boolean} [o.expandCurrent]             open the [Current] entry's ⓘ details at once
  * @param {boolean} [o.showAltName]               also show the name in the other language
  * @param {(show: boolean) => void} [o.onAltToggle]
  * @param {string} [o.currentName]                name in the row being edited -> [Current], pinned on top
@@ -195,6 +207,22 @@ R20U.openPicker = function (o) {
   let shown = [];
   let focusIdx = 0;
   let expandedId = null; // entry whose ⓘ details are open
+  if (o.expandCurrent) expandedId = items.find((it) => stateOf(it) === "current")?.id ?? null;
+
+  // Sub-filter rows of the selected chip (single mode): definitions + one Set of keys per row.
+  let subRows = [];
+  let subSel = [];
+  const mainPass = (it) => selected.size === 0 || chipCfg.test(it, selected);
+  function resetSub() {
+    const key = chipCfg?.single && selected.size === 1 ? [...selected][0] : null;
+    const inMain = items.filter(mainPass);
+    // Only offer sub-chips that match something under the selected chip.
+    subRows = (key && chipCfg.sub ? chipCfg.sub(key) || [] : [])
+      .map((row) => ({ ...row, options: row.options.filter((c) => inMain.some((it) => row.test(it, new Set([c.key])))) }))
+      .filter((row) => row.options.length > 1);
+    subSel = subRows.map(() => new Set());
+  }
+  const subPass = (it) => subRows.every((row, i) => subSel[i].size === 0 || row.test(it, subSel[i]));
 
   function renderChips() {
     chipsEl.replaceChildren();
@@ -203,27 +231,48 @@ R20U.openPicker = function (o) {
     const chip = (label, active, onClick) => {
       const b = Object.assign(document.createElement("button"), { textContent: label });
       b.classList.toggle("active", active);
-      b.addEventListener("click", onClick);
-      return b;
-    };
-    chipsEl.append(
-      chip(t.all, selected.size === 0, () => {
-        selected.clear();
+      b.addEventListener("click", () => {
+        onClick();
         focusIdx = 0;
         render();
+      });
+      return b;
+    };
+    const row = (cls) => Object.assign(document.createElement("div"), { className: cls });
+
+    const main = row("chiprow");
+    main.append(
+      chip(t.all, selected.size === 0, () => {
+        selected.clear();
+        resetSub();
       }),
       ...chipOptions.map((c) =>
         chip(c.label[lang], selected.has(c.key), () => {
-          selected.has(c.key) ? selected.delete(c.key) : selected.add(c.key);
-          focusIdx = 0;
-          render();
+          const on = selected.has(c.key);
+          if (chipCfg.single) selected.clear();
+          on ? selected.delete(c.key) : selected.add(c.key);
+          resetSub();
         })
       )
     );
     const detected = chipOptions.filter((c) => (chipCfg.detected || []).includes(c.key));
     if (detected.length) {
-      chipsEl.append(R20U.span("hint", detected.map((c) => c.label[lang]).join(", ") + t.detected));
+      main.append(R20U.span("hint", detected.map((c) => c.label[lang]).join(", ") + t.detected));
     }
+    chipsEl.append(main);
+
+    subRows.forEach((def, i) => {
+      const sub = row("chiprow sub");
+      const sel = subSel[i];
+      sub.append(...def.options.map((c) =>
+        chip(c.label[lang], sel.has(c.key), () => {
+          const on = sel.has(c.key);
+          if (!def.multi) sel.clear();
+          on ? sel.delete(c.key) : sel.add(c.key);
+        })
+      ));
+      chipsEl.append(sub);
+    });
   }
 
   function renderDetailsBox(it, onUse) {
@@ -306,8 +355,7 @@ R20U.openPicker = function (o) {
     const q = input.value.trim().toLowerCase();
     shown = items.filter(
       (it) =>
-        (!q || namesOf(it).some((n) => n.toLowerCase().includes(q))) &&
-        (selected.size === 0 || chipCfg.test(it, selected))
+        (!q || namesOf(it).some((n) => n.toLowerCase().includes(q))) && mainPass(it) && subPass(it)
     );
     // The row's current entry is pinned to the top.
     shown.sort((a, b) => (stateOf(b) === "current") - (stateOf(a) === "current"));
@@ -375,6 +423,7 @@ R20U.openPicker = function (o) {
   });
   document.addEventListener("keydown", onKey, true);
 
+  resetSub();
   render();
   input.focus();
 };

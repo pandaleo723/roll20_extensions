@@ -10,14 +10,19 @@ var R20U = (globalThis.R20U ??= {});
 
   const itemName = (row) => R20U.editableFields(row, "itemname")[0]?.value?.trim() || "";
 
-  /** @param {Element|null} row  row to overwrite, or null to add a new row first */
-  async function openItemPicker(groupName, row) {
+  /**
+   * @param {Element|null} row  row to overwrite, or null to add a new row first
+   * @param {boolean} [showInfo]  open the details of the row's current item (the row's ⓘ)
+   */
+  async function openItemPicker(groupName, row, showInfo = false) {
     const ui = R20U.ui(R20U.settings.lang);
     if (R20U.isFilling()) {
       R20U.toast(ui.waitFill);
       return;
     }
-    const [settings, all] = await Promise.all([R20U.getSettings(), R20U.getData("items")]);
+    const [settings, all, glossary] = await Promise.all([
+      R20U.getSettings(), R20U.getData("items"), R20U.getData("item-properties"),
+    ]);
     // Mounts and vehicles ("other") don't belong in a character's inventory.
     const items = (all || []).filter((it) => it.category && it.category !== "other");
     if (!items.length) {
@@ -25,6 +30,7 @@ var R20U = (globalThis.R20U ??= {});
       return;
     }
     const view = R20U.itemView;
+    view.setGlossary(glossary);
 
     R20U.openPicker({
       module: MODULE_ID,
@@ -35,7 +41,8 @@ var R20U = (globalThis.R20U ??= {});
       text: view.TEXT,
       renderRow: view.renderRow,
       renderDetails: view.renderDetails,
-      chips: { options: view.CATEGORIES, selected: [], test: view.inCategories },
+      chips: { options: view.CATEGORIES, selected: [], test: view.inCategories, single: true, sub: view.subFilters },
+      expandCurrent: showInfo,
       showAltName: settings.showAltName,
       onAltToggle: (showAltName) => R20U.saveSettings({ showAltName }),
       // Items already in the inventory: the row being edited is "current", the others "chosen".
@@ -61,8 +68,11 @@ var R20U = (globalThis.R20U ??= {});
         rowPanel: ".subitem",
         rowLabel: () => ({ text: R20U.ui(R20U.settings.lang).pickItem }),
         addLabel: () => ({ text: "📖 +", title: R20U.ui(R20U.settings.lang).addItem }),
-        onRow: openItemPicker,
+        onRow: (groupName, row) => openItemPicker(groupName, row),
         onAdd: (groupName) => openItemPicker(groupName, null),
+        // ⓘ: the list with the row's current item details open
+        onRowInfo: (groupName, row) => openItemPicker(groupName, row, true),
+        infoLabel: () => R20U.ui(R20U.settings.lang).itemInfo,
       });
     },
   });

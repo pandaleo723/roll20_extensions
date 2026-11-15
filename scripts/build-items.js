@@ -20,7 +20,7 @@
  * in English, because the sheet's workers parse those English keys to build attacks and AC.
  */
 
-const { renderEntries, stripTags, DAMAGE_TYPES_ZH, loc, fetchPair, zhIndex, zhLookup, writeSplit, runMain } =
+const { renderEntries, stripTags, DAMAGE_TYPES_ZH, loc, fetchPair, zhIndex, zhLookup, write, writeSplit, runMain } =
   require("./lib/5etools");
 
 const SOURCE = "XPHB";
@@ -164,14 +164,27 @@ function buildLookups(en, zh) {
     }
   }
 
-  const propText = {};
+  // Weapon properties and masteries go to their own dictionary (item-properties.json); items
+  // only reference them by key.
+  const glossary = [];
   const zhProps = new Map((zh.itemProperty || []).map((p) => [`${p.abbreviation}|${p.source}`, p]));
   for (const p of en.itemProperty || []) {
-    if (p.source !== SOURCE) continue;
+    if (p.source !== SOURCE || !PROPERTIES[p.abbreviation]) continue;
     const z = zhProps.get(`${p.abbreviation}|${p.source}`);
+    const def = PROPERTIES[p.abbreviation];
     // entries = [{ name: "Finesse", entries: [...] }]: keep only the body text
     const body = (x) => renderEntries((x?.entries || []).flatMap((e) => e.entries || [e]));
-    propText[p.abbreviation] = { en: body(p), zh: body(z || p) };
+    glossary.push({
+      id: `property:${def.key}`,
+      type: "property",
+      key: def.key,
+      // Property rules text has no srd52 flag of its own in 5etools: the SRD build keeps only names.
+      srd52: false,
+      source: p.source,
+      page: p.page,
+      name: loc(def.en, def.zh),
+      description: loc(body(p), body(z || p)),
+    });
   }
 
   const masteries = {};
@@ -179,40 +192,44 @@ function buildLookups(en, zh) {
   for (const m of en.itemMastery || []) {
     if (m.source !== SOURCE) continue;
     const z = zhLookup(zhMast, m);
-    masteries[m.name] = {
+    const key = m.name.toLowerCase();
+    masteries[m.name] = { key, srd52: Boolean(m.srd52) };
+    glossary.push({
+      id: `mastery:${key}`,
+      type: "mastery",
+      key,
       srd52: Boolean(m.srd52),
+      source: m.source,
+      page: m.page,
       name: loc(m.name, z?.name),
       description: loc(renderEntries(m.entries), renderEntries((z || m).entries)),
-    };
+    });
   }
-  return { types, propText, masteries };
+  return { types, masteries, glossary };
 }
 
-function weaponProperties(item, lk) {
+/** [{ key, note }]: the name and rules text come from item-properties.json (`property:<key>`). */
+function weaponProperties(item) {
   return (item.property || []).map((p) => {
     const uid = typeof p === "string" ? p : p.uid;
     const note = typeof p === "string" ? "" : p.note || "";
     const code = typeCode(uid);
-    const def = PROPERTIES[code] || { key: code, en: code, zh: code };
-    return {
-      key: def.key,
-      name: loc(def.en, def.zh),
-      note: loc(note, PROPERTY_NOTES_ZH[note] || note),
-      // Property rules text has no srd52 flag of its own in 5etools -> local build only.
-      description: lk.propText[code] || loc("", ""),
-    };
+    return { key: (PROPERTIES[code] || { key: code }).key, code, note: loc(note, PROPERTY_NOTES_ZH[note] || note) };
   });
 }
 
 /** "Finesse, Light, Thrown" (English, matched by the sheet: /finesse/i picks STR or DEX). */
 const roll20Properties = (props) =>
-  props.map((p) => (p.note.en ? `${p.name.en} (${p.note.en})` : p.name.en)).join(", ");
+  props.map((p) => {
+    const en = PROPERTIES[p.code]?.en || p.key;
+    return p.note.en ? `${en} (${p.note.en})` : en;
+  }).join(", ");
 
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 function weaponFields(item, lk) {
   const code = typeCode(item.type);
-  const props = weaponProperties(item, lk);
+  const props = weaponProperties(item);
   const has = (k) => props.some((p) => p.key === k);
   const dmgType = DAMAGE_CODES[item.dmgType] || "";
   const range = parseRange(item.range);
@@ -237,8 +254,9 @@ function weaponFields(item, lk) {
       versatileDamage: item.dmg2 || "",
       range, // normal/long in feet: thrown or ranged weapons only
       reach: has("reach"),
-      properties: props,
-      mastery,
+      properties: props.map(({ key, note }) => ({ key, note })),
+      mastery: mastery?.key || null, // -> item-properties.json `mastery:<key>`
+      firearm: Boolean(item.firearm),
       ammoType: item.ammoType ? item.ammoType.split("|")[0] : "",
       // Attack/damage ability: finesse -> STR or DEX (higher); ranged -> DEX; else STR.
       // Roll20 atkattr_base / dmgattr: "@{strength_mod}" / "@{dexterity_mod}".
@@ -286,6 +304,9 @@ function buildItem(en, zh, lk) {
     type: { code, ...typeName },
     name: loc(en.name, zh?.name),
     magic,
+    // Picker sub-filters: a staff, or usable as a spellcasting focus.
+    staff: Boolean(en.staff) || /quarterstaff/i.test(en.name),
+    focus: kind === "focus" || Boolean(en.focus),
     weight: en.weight ?? null, // pounds (Roll20 itemweight)
     cost: formatCost(en.value),
     roll20Properties: "",
@@ -310,16 +331,11 @@ function buildItem(en, zh, lk) {
   return record;
 }
 
-/** SRD build: drop text that has no srd52 flag (weapon property rules, non-SRD masteries). */
-function srdSafe(item) {
-  if (!item.weapon) return item;
-  const weapon = {
-    ...item.weapon,
-    properties: item.weapon.properties.map((p) => ({ ...p, description: loc("", "") })),
-    mastery: item.weapon.mastery?.srd52 ? item.weapon.mastery : null,
-  };
-  return { ...item, weapon };
-}
+/** SRD build: drop references to text without an srd52 flag (non-SRD masteries). */
+const srdSafe = (srdMasteries) => (item) => {
+  if (!item.weapon?.mastery || srdMasteries.has(item.weapon.mastery)) return item;
+  return { ...item, weapon: { ...item.weapon, mastery: null } };
+};
 
 async function main() {
   const [base, items] = await Promise.all([fetchPair("items-base.json"), fetchPair("items.json")]);
@@ -351,7 +367,15 @@ async function main() {
   const xdmg = items.en.item.filter((i) => i.source === DMG_SOURCE);
   console.log(`XDMG items: ${xdmg.filter((i) => i.srd52).length} srd52 built, ${xdmg.filter((i) => !i.srd52).length} non-SRD skipped`);
 
-  writeSplit("items.json", out, "items", srdSafe);
+  const srdMasteries = new Set(lk.glossary.filter((g) => g.type === "mastery" && g.srd52).map((g) => g.key));
+  writeSplit("items.json", out, "items", srdSafe(srdMasteries));
+
+  // Property / mastery dictionary. The SRD copy keeps every property name (the picker needs them)
+  // but no rules text without an srd52 flag, and only the SRD masteries.
+  write("data/local/item-properties.json", lk.glossary, "properties/masteries");
+  write("data/srd/item-properties.json", lk.glossary
+    .filter((g) => g.type === "property" || g.srd52)
+    .map((g) => (g.srd52 ? g : { ...g, description: loc("", "") })), "properties/masteries");
 }
 
 module.exports = { main };

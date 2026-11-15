@@ -31,10 +31,24 @@ var R20U = (globalThis.R20U ??= {});
         .join(zh ? "，" : ", "));
     }
     if (t(item.description)) parts.push(t(item.description));
-    const m = item.weapon?.mastery;
+    const m = R20U.itemView.mastery(item.weapon?.mastery); // from item-properties.json
     if (m) parts.push(`${zh ? "武器精通" : "Mastery"}: ${t(m.name)}${t(m.description) ? ` — ${t(m.description)}` : ""}`);
     return parts.join("\n\n");
   };
+
+  const DAMAGE_TYPES_ZH = {
+    Acid: "强酸", Bludgeoning: "钝击", Cold: "寒冷", Fire: "火焰", Force: "力场", Lightning: "闪电",
+    Necrotic: "黯蚀", Piercing: "穿刺", Poison: "毒素", Psychic: "心灵", Radiant: "光耀", Slashing: "挥砍",
+    Thunder: "雷鸣",
+  };
+
+  /**
+   * The Roll20 modifiers with the damage type values in the UI language
+   * ("Damage Type: 穿刺"): the sheet copies them into the attack as text. The keys stay English,
+   * because the sheet's workers look for "Damage Type:", "Item Type:"...
+   */
+  R20U.localizedModifiers = (mods, lang) =>
+    lang !== "zh" ? mods : mods.replace(/(Damage Type: )([A-Za-z]+)/g, (all, key, type) => key + (DAMAGE_TYPES_ZH[type] || type));
 
   /**
    * Returns [attrName, value] pairs, in fill order.
@@ -55,9 +69,10 @@ var R20U = (globalThis.R20U ??= {});
       ["itemname", bundle ? stripBundleCount(t(item.name)) : t(item.name)],
       ["itemcount", String(count)],
       ["itemweight", String(weight)],
-      // English on purpose: the sheet parses these (Finesse -> STR/DEX, Item Type, Damage, AC...).
+      // Properties stay English (the sheet looks for "Finesse" -> STR/DEX); modifiers keep English
+      // keys (Item Type, Damage, AC...) with damage type values in the UI language.
       ["itemproperties", item.roll20Properties || ""],
-      ["itemmodifiers", item.roll20Modifiers || ""],
+      ["itemmodifiers", R20U.localizedModifiers(item.roll20Modifiers || "", lang)],
       ["itemcontent", R20U.itemContent(item, lang)],
       // Checkboxes last: the sheet builds the attack / resource from the values saved above.
       ["equipped", true],

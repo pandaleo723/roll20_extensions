@@ -57,7 +57,10 @@ R20U.spellView = (() => {
       ? t.concPrefix + (lang === "en" ? s.duration.en.replace(/^Up/, "up") : s.duration[lang])
       : s.duration[lang];
     const p = (cls, txt) => Object.assign(document.createElement("p"), { className: cls, textContent: txt });
-    const body = [p("desc", s.description[lang])];
+    const body = [];
+    // 5e-cn marks entries without a named translator as machine-translated ("机翻").
+    if (lang === "zh" && (!s.translator || s.translator === "机翻")) body.push(p("mt", "⚠️ 机翻"));
+    body.push(p("desc", s.description[lang]));
     if (s.higherLevels?.[lang]) body.push(p("desc higher", s.higherLevels[lang]));
     return {
       rows: [

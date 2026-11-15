@@ -17,6 +17,7 @@ The extension loads `srd/` and, if present, `local/` (local entries override SRD
 |---|---|---|
 | `spells.json` | `scripts/build-data.js` | spells |
 | `items.json` | `scripts/build-items.js` | weapons, armor, shields, ammunition, foci, tools, gear, mounts, vehicles (XPHB), and the SRD 5.2 magic items of the 2024 DMG (XDMG: potions, scrolls, rings, wands, rods, wondrous items, specific magic weapons/armor; no generic "+1 Weapon" variants, no non-SRD XDMG items) |
+| `item-properties.json` | `scripts/build-items.js` | weapon properties (`property:<key>`) and masteries (`mastery:<key>`): name + rules text, referenced by the items' `weapon.properties[].key` / `weapon.mastery`. In `srd/`, properties keep only their names (no srd52 flag on the rules text) and only SRD masteries are included |
 | `feats.json` | `scripts/build-traits.js` | feats: `category` = `origin` / `general` / `fightingStyle` / `epicBoon` |
 | `backgrounds.json` | `scripts/build-traits.js` | backgrounds + the origin feat they grant (`feat.id` → `feats.json`) |
 | `species.json` | `scripts/build-traits.js` | species with `traits` and `lineages` (Drow, Black Dragonborn, …) |
@@ -30,8 +31,8 @@ feat) carry the Roll20 `repeating_traits` fields: `name`, `traitSource` (→ `so
 i18n key: `racial` / `class` / `feat` / `background`), `sourceType` (→ `source_type`, e.g.
 "Wizard 3 (Abjurer)", "Elf (Drow Lineage)", "Origin Feat") and `description`.
 
-**Weapons** have `weapon` (dice, `damageType`, `versatileDamage`, `range` {normal, long},
-`properties`, `mastery`, `ability`: `str` / `dex` / `str-or-dex`), plus `roll20Properties`
+**Weapons** have `weapon` (dice, `damageType`, `versatileDamage`, `range` {normal, long}, `firearm`,
+`properties` [{key, note}], `mastery` key (→ `item-properties.json`), `ability`: `str` / `dex` / `str-or-dex`), plus `roll20Properties`
 (→ `itemproperties`, English, e.g. "Finesse, Light, Thrown") and `roll20Modifiers`
 (→ `itemmodifiers`, Roll20 compendium format, English, e.g. "Item Type: Melee Weapon, Damage: 1d8,
 Damage Type: Slashing, Alternate Damage: 1d10, Alternate Damage Type: Slashing"). **Armor/shields**

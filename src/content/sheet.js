@@ -113,9 +113,14 @@ const BUTTON_CSS = `
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
   }
   .r20u-btn:hover { background: #fbeaea; }
-  /* Row buttons get their own line, so the sheet's inline field flow below them (e.g. the
-     inventory's checkbox + label pairs) keeps its layout. */
-  .r20u-btn.r20u-row { display: block; width: max-content; }
+  /* Row buttons sit in a bar on their own line, so the sheet's inline field flow below them
+     (e.g. the inventory's checkbox + label pairs) keeps its layout. */
+  .r20u-rowbar { all: initial; display: block; margin: 4px 0 6px; }
+  .r20u-rowbar .r20u-btn { margin: 0 6px 0 0; vertical-align: middle; }
+  .r20u-btn.r20u-info {
+    width: 22px; height: 22px; padding: 0; border-radius: 50%; text-align: center;
+    font: italic 700 13px/20px Georgia, serif;
+  }
   .r20u-btn.r20u-add { margin: 0 0 0 6px; padding: 2px 6px; vertical-align: middle; }
   @media print { .r20u-btn { display: none !important; } }
 `;
@@ -158,15 +163,25 @@ function applyLabel(btn) {
  * Standard buttons for repeating sections:
  *  - inside each row's edit panel (opened by the row's gear ⚙) -> onRow(groupName, row)
  *  - next to Roll20's "+Add" ("📖 +")                        -> onAdd(groupName)
+ *  - optional ⓘ next to the row button ("i" in a circle)     -> onRowInfo(groupName, row)
  * `rowPanel` = selector of the row's edit panel (default ".options"; the inventory uses
  * ".subitem", shown by the row's "i" toggle). Idempotent; skips print layouts.
  */
-R20U.injectSectionButtons = function (moduleId, groupNames, { rowLabel, addLabel, onRow, onAdd, rowPanel = ".options" }) {
+R20U.injectSectionButtons = function (moduleId, groupNames,
+  { rowLabel, addLabel, onRow, onAdd, onRowInfo, infoLabel, rowPanel = ".options" }) {
   for (const groupName of groupNames) {
     for (const row of R20U.sectionRows(groupName)) {
-      if (row.querySelector(`.r20u-btn[data-module="${moduleId}"]`)) continue;
+      if (row.querySelector(`.r20u-rowbar[data-module="${moduleId}"]`)) continue;
       const panel = row.querySelector(rowPanel); // only visible while the gear / "i" is open
-      if (panel) panel.prepend(R20U.makeButton(moduleId, "row", rowLabel, () => onRow(groupName, row)));
+      if (!panel) continue;
+      const bar = Object.assign(document.createElement("div"), { className: "r20u-rowbar" });
+      bar.dataset.module = moduleId;
+      bar.append(R20U.makeButton(moduleId, "row", rowLabel, () => onRow(groupName, row)));
+      if (onRowInfo) {
+        bar.append(R20U.makeButton(moduleId, "info", () => ({ text: "i", title: infoLabel?.() || "" }),
+          () => onRowInfo(groupName, row)));
+      }
+      panel.prepend(bar);
     }
     const control = [...document.querySelectorAll(`.repcontrol[data-groupname="${groupName}"]`)].find(R20U.notPrint);
     if (control && !control.querySelector(`.r20u-btn[data-module="${moduleId}"]`)) {
@@ -193,7 +208,8 @@ const moduleEnabled = (id) => R20U.settings.modules?.[id] !== false;
 R20U.refreshModules = function () {
   for (const mod of R20U.modules) {
     if (moduleEnabled(mod.id)) mod.inject();
-    else document.querySelectorAll(`.r20u-btn[data-module="${mod.id}"]`).forEach((b) => b.remove());
+    else document.querySelectorAll(`.r20u-rowbar[data-module="${mod.id}"], .r20u-btn[data-module="${mod.id}"]`)
+      .forEach((b) => b.remove());
   }
   document.querySelectorAll(".r20u-btn").forEach((b) => b._r20uLabel && applyLabel(b));
 };
