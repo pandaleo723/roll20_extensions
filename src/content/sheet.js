@@ -113,6 +113,9 @@ const BUTTON_CSS = `
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
   }
   .r20u-btn:hover { background: #fbeaea; }
+  /* Row buttons get their own line, so the sheet's inline field flow below them (e.g. the
+     inventory's checkbox + label pairs) keeps its layout. */
+  .r20u-btn.r20u-row { display: block; width: max-content; }
   .r20u-btn.r20u-add { margin: 0 0 0 6px; padding: 2px 6px; vertical-align: middle; }
   @media print { .r20u-btn { display: none !important; } }
 `;
