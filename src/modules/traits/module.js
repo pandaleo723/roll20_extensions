@@ -141,7 +141,8 @@ var R20U = (globalThis.R20U ??= {});
       onAltToggle: (showAltName) => R20U.saveSettings({ showAltName }),
       onPick: async (bg, lang) => {
         try {
-          await addTraits(groupName, [bg.originFeat], lang);
+          // Filed under the background: source 背景, source type = the background's name.
+          await addTraits(groupName, [{ ...bg.originFeat, traitSource: "background", sourceType: bg.name }], lang);
         } catch (err) {
           fail(err);
         }
