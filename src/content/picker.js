@@ -71,6 +71,9 @@ const PICKER_CSS = `
   .confirm .msg { flex: 1; font-size: 12.5px; }
   .confirm button.yes { background: #b5121b; border-color: #b5121b; color: #fff; }
   .details { margin-top: 8px; padding: 8px 10px; background: #fff; border: 1px solid #eadada; border-radius: 6px; cursor: default; }
+  /* The sheet sets user-select: none on its body; details text should be selectable / copyable. */
+  .details, .details * { -webkit-user-select: text; user-select: text; cursor: text; }
+  .details button { -webkit-user-select: none; user-select: none; cursor: pointer; }
   .details dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; margin: 0 0 8px; font-size: 12px; }
   .details dt { color: #888; }
   .details dd { margin: 0; }
