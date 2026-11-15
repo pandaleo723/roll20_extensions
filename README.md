@@ -11,6 +11,9 @@ Modules for the D&D 5e character sheet ("D&D 5E by Roll20" sheet), in Chinese or
 - **Item picker**: pick a weapon, armour, gear, tool, consumable or magic item and it is added to
   the inventory; the sheet then builds the weapon's attack, counts armour in your AC and tracks
   consumables and ammo as resources.
+- **Traits picker**: 📖 picks a feat (origin, general, fighting style, epic boon) into Features &
+  Traits; 👥 Background + adds a background's origin feat; 🧝 Species + picks a species and lineage
+  and adds the ticked traits (Relentless Endurance, Darkvision, ...). Traits already there are skipped.
 
 > **Unofficial fan project.** Not affiliated with, endorsed or sponsored by Roll20 or
 > Wizards of the Coast. **The game data is not mine**: see [Data sources & disclaimer](#data-sources--disclaimer).
