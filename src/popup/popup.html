@@ -10,6 +10,9 @@
     <h1>Roll20 Utils Extension</h1>
     <p class="hint" data-i18n="popupHint"></p>
 
+    <!-- Beta notice; text and links filled by popup.js (R20U.UI_STRINGS.beta*) -->
+    <div class="beta" id="beta"></div>
+
     <h2 data-i18n="settings"></h2>
 
     <label for="lang" data-i18n="language"></label>
@@ -49,7 +52,8 @@
 
     <p id="saved" class="hint small"></p>
 
-    <details>
+    <!-- Debug tool: hidden in Chrome Web Store installs (see popup.js), kept for local/unpacked use -->
+    <details id="debug">
       <summary data-i18n="jsonFill"></summary>
       <p class="hint" data-i18n="jsonHint"></p>
       <label for="data" data-i18n="jsonLabel"></label>

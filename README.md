@@ -115,6 +115,10 @@ all credit belongs to them:
 - Rights holders: if you believe something here should not be included, please
   [open an issue](https://github.com/pandaleo723/roll20_extensions/issues) and it will be removed.
 
+## Privacy
+
+The extension collects no data and makes no network requests. See [PRIVACY.md](PRIVACY.md).
+
 ## Licence
 
 - **Code:** [MIT](LICENSE).

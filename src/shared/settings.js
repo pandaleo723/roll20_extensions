@@ -49,6 +49,10 @@ R20U.MODULES = [
   },
 ];
 
+/** Project links shown in the popup's beta notice. */
+R20U.REPO_URL = "https://github.com/pandaleo723/roll20_extensions";
+R20U.ISSUES_URL = `${R20U.REPO_URL}/issues`;
+
 R20U.DEFAULT_SETTINGS = {
   lang: "zh", // language of the UI and of the game text: "zh" | "en"
   showAltName: true, // in picker lists, also show the name in the other language
@@ -66,6 +70,10 @@ R20U.UI_STRINGS = {
     noData: "没有载入法术资料 — 请执行 scripts/build-data.js",
     // popup
     popupHint: "Roll20 小工具：开启的模块会在角色卡上加入 📖 按钮。",
+    betaTitle: "测试版 (Beta)",
+    betaText: "目前为测试版本，可能仍有问题。",
+    betaIssues: "回报问题 / 建议新功能",
+    betaRepo: "欢迎 Fork 并提交合并请求一起改进",
     settings: "通用设定",
     modulesTitle: "模块",
     language: "语言",
@@ -87,6 +95,10 @@ R20U.UI_STRINGS = {
     waitFill: "Please wait for the current fill to finish",
     noData: "No spell data loaded — run scripts/build-data.js",
     popupHint: "Roll20 helpers: enabled modules add 📖 buttons to the character sheet.",
+    betaTitle: "Beta",
+    betaText: "This is a beta version and may still have issues.",
+    betaIssues: "Report an issue / request a feature",
+    betaRepo: "Fork it and send a pull request to help improve it",
     settings: "General",
     modulesTitle: "Modules",
     language: "Language",

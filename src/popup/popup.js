@@ -62,7 +62,28 @@ function applyLanguage(lang) {
     card.querySelector(".module-name").textContent = mod.name[lang];
     card.querySelector(".module-desc").textContent = mod.desc[lang];
   }
+  renderBeta(ui);
 }
+
+/** Yellow beta notice with links to the issue tracker and the repository. */
+function renderBeta(ui) {
+  const box = document.getElementById("beta");
+  const link = (href, text) => Object.assign(document.createElement("a"), { href, textContent: text, target: "_blank", rel: "noopener" });
+  const title = Object.assign(document.createElement("strong"), { textContent: ui.betaTitle });
+  const items = document.createElement("ul");
+  for (const a of [link(R20U.ISSUES_URL, ui.betaIssues), link(R20U.REPO_URL, ui.betaRepo)]) {
+    const li = document.createElement("li");
+    li.append(a);
+    items.append(li);
+  }
+  box.replaceChildren(title, document.createTextNode(" " + ui.betaText), items);
+}
+
+// Chrome adds "update_url" to the manifest of Web Store installs; unpacked (local/dev) builds
+// have none. The JSON fill is a debug tool, so it only shows in local builds.
+const isStoreInstall = "update_url" in chrome.runtime.getManifest();
+// Hidden rather than removed: the code below still wires up its buttons.
+if (isStoreInstall) document.getElementById("debug").hidden = true;
 
 /** Module cards: the switch enables/disables the module; its settings fade when it's off. */
 function setupModules(s) {
