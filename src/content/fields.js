@@ -43,12 +43,15 @@ R20U.editableFields = function (root, attrName) {
 function resolveValue(el, value) {
   if (el.type === "checkbox") return Boolean(value);
   if (el.tagName === "SELECT") {
-    // Match option value first, then value/label ignoring case.
+    // Match option value first, then value/label ignoring case, then the option's i18n key:
+    // some dropdowns (repeating_traits "source") have no option values, only translated labels
+    // with data-i18n="racial|class|feat|..."; Roll20 then saves the label text as the value.
     const want = String(value).trim().toLowerCase();
     const opts = [...el.options];
     const opt =
       opts.find((o) => o.value === String(value)) ||
-      opts.find((o) => o.value.trim().toLowerCase() === want || o.text.trim().toLowerCase() === want);
+      opts.find((o) => o.value.trim().toLowerCase() === want || o.text.trim().toLowerCase() === want) ||
+      opts.find((o) => (o.dataset.i18n || "").toLowerCase() === want);
     if (!opt) {
       console.warn(R20U.LOG_PREFIX, `no option "${value}" in ${el.name}; options:`,
         opts.map((o) => `${o.value}=${o.text.trim()}`));

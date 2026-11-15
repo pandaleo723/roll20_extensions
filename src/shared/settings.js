@@ -55,6 +55,14 @@ R20U.MODULES = [
       en: "📖 buttons in the inventory: pick a weapon, armour, gear or magic item from a list. Weapons get an attack; consumables and ammo become resources.",
     },
   },
+  {
+    id: "traits",
+    name: { zh: "专长与背景选择器", en: "Feat & background picker" },
+    desc: {
+      zh: "在特性栏加入 📖 按钮：从列表选择专长或背景并填入。选择背景时，若特性栏还没有它的起源专长，会自动新增一行。",
+      en: "📖 buttons in Features & Traits: pick a feat or background from a list. Picking a background also adds its origin feat as a new row if it isn't there yet.",
+    },
+  },
 ];
 
 /** Project links shown in the popup's beta notice. */
@@ -64,7 +72,7 @@ R20U.ISSUES_URL = `${R20U.REPO_URL}/issues`;
 R20U.DEFAULT_SETTINGS = {
   lang: "zh", // language of the UI and of the game text: "zh" | "en"
   showAltName: true, // in picker lists, also show the name in the other language
-  modules: { spells: true, items: true }, // module id -> enabled (missing = enabled)
+  modules: { spells: true, items: true, traits: true }, // module id -> enabled (missing = enabled)
   autoClass: true, // spells: filter the list by the class(es) detected on the sheet
   classFilter: [], // spells: classes to filter by when autoClass is off ([] = all classes)
 };
@@ -80,6 +88,11 @@ R20U.UI_STRINGS = {
     addItem: "从列表新增物品",
     itemInfo: "查看此物品的详情",
     noItemData: "没有载入物品资料 — 请执行 scripts/build-items.js",
+    pickTrait: "📖 从列表选择专长/背景",
+    addTrait: "从列表新增专长或背景",
+    noTraitData: "没有载入专长/背景资料 — 请执行 scripts/build-traits.js",
+    bgFeatExists: (n) => `特性栏已有背景专长「${n}」`,
+    bgFeatMissing: (n) => `没有「${n}」的专长资料，请手动加入`,
     // popup
     popupHint: "Roll20 小工具：开启的模块会在角色卡上加入 📖 按钮。",
     betaTitle: "测试版 (Beta)",
@@ -110,6 +123,11 @@ R20U.UI_STRINGS = {
     addItem: "Add an item from the list",
     itemInfo: "Show this item's details",
     noItemData: "No item data loaded — run scripts/build-items.js",
+    pickTrait: "📖 Pick a feat / background",
+    addTrait: "Add a feat or background from the list",
+    noTraitData: "No feat/background data loaded — run scripts/build-traits.js",
+    bgFeatExists: (n) => `The background feat "${n}" is already in Features & Traits`,
+    bgFeatMissing: (n) => `No data for the feat "${n}"; please add it by hand`,
     popupHint: "Roll20 helpers: enabled modules add 📖 buttons to the character sheet.",
     betaTitle: "Beta",
     betaText: "This is a beta version and may still have issues.",

@@ -41,6 +41,9 @@
         "src/modules/items/fill.js",
         "src/modules/items/view.js",
         "src/modules/items/module.js",
+        "src/modules/traits/fill.js",
+        "src/modules/traits/view.js",
+        "src/modules/traits/module.js",
         "src/content/content.js"
       ],
       "all_frames": true,
@@ -63,6 +66,9 @@
         "src/modules/items/fill.js",
         "src/modules/items/view.js",
         "src/modules/items/module.js",
+        "src/modules/traits/fill.js",
+        "src/modules/traits/view.js",
+        "src/modules/traits/module.js",
         "src/content/content.js"
       ],
       "all_frames": true,

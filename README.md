@@ -146,5 +146,6 @@ The extension collects no data and makes no network requests. See [PRIVACY.md](P
 - [x] Item picker: weapons, armour, gear, consumables and SRD magic items (inventory → attacks,
   AC, resources)
 - [ ] Generic magic variants (+1 weapons/armour), equipment packs, starting equipment
-- [ ] Feats, backgrounds, species traits and class features (Features & Traits)
+- [x] Feats and backgrounds (Features & Traits; a background adds its origin feat)
+- [ ] Species traits and class features (Features & Traits)
 - [ ] Optional in-extension data import
