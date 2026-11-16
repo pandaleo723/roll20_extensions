@@ -4,7 +4,7 @@
     "description": "扩展名称（最多 75 个字符）"
   },
   "extDesc": {
-    "message": "测试版。非官方 Roll20 辅助工具：从可搜索的法术列表（中文 / English）选择法术，自动填入 D&D 5e 角色卡。",
+    "message": "测试版。非官方 Roll20 辅助工具：从可搜索的列表选择法术、物品、专长与种族特性，自动填入 D&D 5e 角色卡。支持中文 / English。",
     "description": "简短描述（最多 132 个字符）"
   },
   "actionTitle": {

@@ -4,7 +4,7 @@
     "description": "Extension name (Chrome Web Store, chrome://extensions). Max 75 characters."
   },
   "extDesc": {
-    "message": "Beta. Unofficial helpers for Roll20: pick spells from a searchable list (中文 / English) to fill D&D 5e character sheets.",
+    "message": "Beta. Unofficial Roll20 helpers: fill D&D 5e sheets with spells, items, feats and species traits from searchable lists. 中文/English.",
     "description": "Short description (store summary). Max 132 characters."
   },
   "actionTitle": {

@@ -4,7 +4,7 @@
     "description": "擴充功能名稱（最多 75 個字元）"
   },
   "extDesc": {
-    "message": "測試版。非官方 Roll20 輔助工具：從可搜尋的法術列表（中文 / English）選擇法術，自動填入 D&D 5e 角色卡。",
+    "message": "測試版。非官方 Roll20 輔助工具：從可搜尋的列表選擇法術、物品、專長與種族特性，自動填入 D&D 5e 角色卡。支援中文 / English。",
     "description": "簡短說明（最多 132 個字元）"
   },
   "actionTitle": {
