@@ -1,6 +1,6 @@
 # Privacy Policy: Roll20 Utils Extension (Unofficial)
 
-_Last updated: 15 November 2026_
+_Last updated: 17 November 2026_
 
 Roll20 Utils Extension (Unofficial) ("the extension") is an unofficial, open-source browser
 extension that adds helper tools, such as a spell picker, to D&D 5e character sheets on Roll20.
@@ -17,7 +17,7 @@ servers, no accounts, no analytics and no advertising.
   are switched on, class-filter options) are saved with `chrome.storage.sync`. This is Chrome's
   built-in storage. The data stays in your browser. If you have Chrome sync turned on, Google
   syncs it to your own signed-in browsers. The developer cannot see it.
-- **Developer builds only:** the optional character-JSON debug box in the popup remembers the
+- **Developer builds only:** the optional character-JSON debug box in the settings page remembers the
   text you paste into it in `chrome.storage.local`, on your device only. This box is not shown in
   the version installed from the Chrome Web Store.
 
@@ -35,7 +35,7 @@ elsewhere. Roll20 itself saves the sheet, under Roll20's own privacy policy.
 
 The extension makes no network requests of its own. Its game data is bundled inside the
 extension and is loaded from the extension package (`chrome-extension://…`). No remote code is
-downloaded or executed. The links in the popup (issue tracker, source code) open GitHub in a new
+downloaded or executed. The links in the settings popup and options page (issue tracker, source code) open GitHub in a new
 tab only when you click them.
 
 ## Third parties

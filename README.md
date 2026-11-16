@@ -38,6 +38,12 @@ Modules for the D&D 5e character sheet ("D&D 5E by Roll20" sheet), in Chinese or
 - Fills name, count, weight, properties, modifiers (Roll20 compendium format, so the sheet creates
   the attack, AC and magic bonuses), notes (description + weapon mastery), *has attack* for
   weapons and *use as resource* for consumables and ammo (e.g. Arrows ×20)
+- Features & Traits buttons: **📖** picks a feat (origin, general, fighting style, epic boon),
+  **👥 Background +** adds a background's origin feat (filed under that background),
+  **🧝 Species +** picks a species and lineage and adds the ticked traits; traits already on the
+  sheet are skipped
+- Settings: quick settings in the toolbar popup, all settings on the options page; each picker can
+  be switched on or off
 - Saves reliably: edits are paced to match how the Roll20 sheet saves changes
 
 ## Install (from source)
@@ -52,7 +58,7 @@ git clone https://github.com/pandaleo723/roll20_extensions.git
 cd roll20_extensions
 ```
 
-The SRD spell data is included in the repo. To (re)build the data files:
+The bundled data files (`data/srd/`) are included in the repo. To (re)build them:
 
 ```bash
 node scripts/build-all.js
@@ -72,9 +78,11 @@ Then in Chrome:
    (about 0.6 s per changed field) because Roll20 only saves one edit at a time.
 4. Items: on the inventory, click **📖 +** next to **+Add**, or open an item row's **i** details
    and click **📖 Pick from list**. Filter by category, then click an item.
+5. Feats, backgrounds, species: in Features & Traits, use **📖 +**, **👥 Background +** or
+   **🧝 Species +**.
 
-Settings (toolbar icon): language, show other-language names, auto-detect class, manual class
-filter.
+Settings: click the toolbar icon, or open the options page (**All settings** in the popup, or
+right-click the icon → **Options**): language, other-language names, modules on/off, class filter.
 
 ## Development
 
@@ -94,7 +102,8 @@ src/content/                 Core, runs inside the Roll20 sheet: field filling (
 src/modules/<name>/          One folder per module, e.g. spells/: module.js (buttons, picker
                              wiring), view.js (list row + details), fill.js (data -> sheet fields)
 src/shared/settings.js       Settings, module list and UI text shared by popup and content scripts
-src/popup/                   Toolbar popup (general settings + one card per module)
+src/popup/                   Settings page, used as both the toolbar popup and the options page
+                             (manifest options_ui; two columns in a wide tab)
 scripts/build-all.js         Builds data/ from 5etools-cn (spells, items, feats, species, ...)
 scripts/lib/5etools.js       Shared build helpers: fetch, 5etools markup -> plain text
 data/srd/                    Generated SRD 5.2 data (committed)
@@ -122,11 +131,7 @@ all credit belongs to them:
 | [System Reference Document 5.2](https://www.dndbeyond.com/srd) by Wizards of the Coast LLC | The English rules text that is included in this repo | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) |
 | Community translators collated by "DND Common Library" via 5etools-cn | The Chinese text included in this repo (credited per entry in the `translator` field) | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
 
-- **Only SRD 5.2 content is committed** (`data/srd/`, entries flagged `srd52` by 5etools).
-  See [data/README.md](data/README.md) for the full attribution text and file formats.
-- The build scripts can also write fuller data to `data/local/`. That folder is git-ignored and
-  is **not distributed** by this project. If you generate it, it is for your own use and
-  you are responsible for respecting the rights of the content owners.
+- See [data/README.md](data/README.md) for the full attribution text and file formats.
 - *Dungeons & Dragons*, *D&D* and related names are trademarks of Wizards of the Coast LLC.
   *Roll20* is a trademark of Roll20, Inc. They are used here only to describe compatibility.
 - Rights holders: if you believe something here should not be included, please
